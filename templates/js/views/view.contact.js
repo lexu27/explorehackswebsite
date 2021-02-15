@@ -4,246 +4,246 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version:	7.6.0
 */
 
-(function($) {
+(function ($) {
 
-	'use strict';
+    'use strict';
 
-	/*
-	Custom Rules
-	*/
-	
-	// No White Space
-	$.validator.addMethod("noSpace", function(value, element) {
-    	if( $(element).attr('required') ) {
-    		return value.search(/[a-zA-Z0-9À-žа-яА-ЯёЁα-ωΑ-Ω\s\u0621-\u064A\u0660-\u0669 ]/i) == 0;
-    	}
+    /*
+    Custom Rules
+    */
 
-    	return true;
-	}, 'Please fill this empty field.');
+    // No White Space
+    $.validator.addMethod("noSpace", function (value, element) {
+        if ($(element).attr('required')) {
+            return value.search(/[a-zA-Z0-9À-žа-яА-ЯёЁα-ωΑ-Ω\s\u0621-\u064A\u0660-\u0669 ]/i) == 0;
+        }
 
-	/*
-	Assign Custom Rules on Fields
-	*/
-	$.validator.addClassRules({
-	    'form-control': {
-	        noSpace: true
-	    }
-	});
+        return true;
+    }, 'Please fill this empty field.');
 
-	/*
-	Contact Form: Basic
-	*/
-	$('.contact-form').each(function(){
-		$(this).validate({
-			submitHandler: function(form) {
+    /*
+    Assign Custom Rules on Fields
+    */
+    $.validator.addClassRules({
+        'form-control': {
+            noSpace: true
+        }
+    });
 
-				var $form = $(form),
-					$messageSuccess = $form.find('.contact-form-success'),
-					$messageError = $form.find('.contact-form-error'),
-					$submitButton = $(this.submitButton),
-					$errorMessage = $form.find('.mail-error-message'),
-					submitButtonText = $submitButton.val();
+    /*
+    Contact Form: Basic
+    */
+    $('.contact-form').each(function () {
+        $(this).validate({
+            submitHandler: function (form) {
 
-				$submitButton.val( $submitButton.data('loading-text') ? $submitButton.data('loading-text') : 'Loading...' ).attr('disabled', true);
+                var $form = $(form),
+                    $messageSuccess = $form.find('.contact-form-success'),
+                    $messageError = $form.find('.contact-form-error'),
+                    $submitButton = $(this.submitButton),
+                    $errorMessage = $form.find('.mail-error-message'),
+                    submitButtonText = $submitButton.val();
 
-				// Fields Data
-				var formData = $form.serializeArray(),
-					data = {};
+                $submitButton.val($submitButton.data('loading-text') ? $submitButton.data('loading-text') : 'Loading...').attr('disabled', true);
 
-				$(formData).each(function(index, obj){
-				    data[obj.name] = obj.value;
-				});
+                // Fields Data
+                var formData = $form.serializeArray(),
+                    data = {};
 
-				// Google Recaptcha v2
-				if( data["g-recaptcha-response"] != undefined ) {
-					data["g-recaptcha-response"] = $form.find('#g-recaptcha-response').val();
-				}
+                $(formData).each(function (index, obj) {
+                    data[obj.name] = obj.value;
+                });
 
-				// Ajax Submit
-				$.ajax({
-					type: 'POST',
-					url: $form.attr('action'),
-					data: data
-				}).always(function(data, textStatus, jqXHR) {
+                // Google Recaptcha v2
+                if (data["g-recaptcha-response"] != undefined) {
+                    data["g-recaptcha-response"] = $form.find('#g-recaptcha-response').val();
+                }
 
-					$errorMessage.empty().hide();
+                // Ajax Submit
+                $.ajax({
+                    type: 'POST',
+                    url: $form.attr('action'),
+                    data: data
+                }).always(function (data, textStatus, jqXHR) {
 
-					if (data.response == 'success') {
+                    $errorMessage.empty().hide();
 
-						// Uncomment the code below to redirect for a thank you page
-						// self.location = 'thank-you.html';
+                    if (data.response == 'success') {
 
-						$messageSuccess.removeClass('d-none');
-						$messageError.addClass('d-none');
+                        // Uncomment the code below to redirect for a thank you page
+                        // self.location = 'thank-you.html';
 
-						// Reset Form
-						$form.find('.form-control')
-							.val('')
-							.blur()
-							.parent()
-							.removeClass('has-success')
-							.removeClass('has-danger')
-							.find('label.error')
-							.remove();
+                        $messageSuccess.removeClass('d-none');
+                        $messageError.addClass('d-none');
 
-						if (($messageSuccess.offset().top - 80) < $(window).scrollTop()) {
-							$('html, body').animate({
-								scrollTop: $messageSuccess.offset().top - 80
-							}, 300);
-						}
+                        // Reset Form
+                        $form.find('.form-control')
+                            .val('')
+                            .blur()
+                            .parent()
+                            .removeClass('has-success')
+                            .removeClass('has-danger')
+                            .find('label.error')
+                            .remove();
 
-						$form.find('.form-control').removeClass('error');
+                        if (($messageSuccess.offset().top - 80) < $(window).scrollTop()) {
+                            $('html, body').animate({
+                                scrollTop: $messageSuccess.offset().top - 80
+                            }, 300);
+                        }
 
-						$submitButton.val( submitButtonText ).attr('disabled', false);
-						
-						return;
+                        $form.find('.form-control').removeClass('error');
 
-					} else if (data.response == 'error' && typeof data.errorMessage !== 'undefined') {
-						$errorMessage.html(data.errorMessage).show();
-					} else {
-						$errorMessage.html(data.responseText).show();
-					}
+                        $submitButton.val(submitButtonText).attr('disabled', false);
 
-					$messageError.removeClass('d-none');
-					$messageSuccess.addClass('d-none');
+                        return;
 
-					if (($messageError.offset().top - 80) < $(window).scrollTop()) {
-						$('html, body').animate({
-							scrollTop: $messageError.offset().top - 80
-						}, 300);
-					}
+                    } else if (data.response == 'error' && typeof data.errorMessage !== 'undefined') {
+                        $errorMessage.html(data.errorMessage).show();
+                    } else {
+                        $errorMessage.html(data.responseText).show();
+                    }
 
-					$form.find('.has-success')
-						.removeClass('has-success');
-						
-					$submitButton.val( submitButtonText ).attr('disabled', false);
+                    $messageError.removeClass('d-none');
+                    $messageSuccess.addClass('d-none');
 
-				});
-			}
-		});
-	});
+                    if (($messageError.offset().top - 80) < $(window).scrollTop()) {
+                        $('html, body').animate({
+                            scrollTop: $messageError.offset().top - 80
+                        }, 300);
+                    }
 
-	/*
-	Contact Form: Advanced
-	*/
-	$('#contactFormAdvanced').validate({
-		onkeyup: false,
-		onclick: false,
-		onfocusout: false,
-		rules: {
-			'captcha': {
-				captcha: true
-			},
-			'checkboxes[]': {
-				required: true
-			},
-			'radios': {
-				required: true
-			}
-		},
-		errorPlacement: function(error, element) {
-			if (element.attr('type') == 'radio' || element.attr('type') == 'checkbox') {
-				error.appendTo(element.closest('.form-group'));
-			} else {
-				error.insertAfter(element);
-			}
-		}
-	});
+                    $form.find('.has-success')
+                        .removeClass('has-success');
 
-	/*
-	Contact Form: reCaptcha v3
-	*/
-	$('.contact-form-recaptcha-v3').each(function(){
-		$(this).validate({
-			submitHandler: function(form) {
+                    $submitButton.val(submitButtonText).attr('disabled', false);
 
-				var $form = $(form),
-					$messageSuccess = $form.find('.contact-form-success'),
-					$messageError = $form.find('.contact-form-error'),
-					$submitButton = $(this.submitButton),
-					$errorMessage = $form.find('.mail-error-message'),
-					submitButtonText = $submitButton.val();
+                });
+            }
+        });
+    });
 
-				$submitButton.val( $submitButton.data('loading-text') ? $submitButton.data('loading-text') : 'Loading...' ).attr('disabled', true);
+    /*
+    Contact Form: Advanced
+    */
+    $('#contactFormAdvanced').validate({
+        onkeyup: false,
+        onclick: false,
+        onfocusout: false,
+        rules: {
+            'captcha': {
+                captcha: true
+            },
+            'checkboxes[]': {
+                required: true
+            },
+            'radios': {
+                required: true
+            }
+        },
+        errorPlacement: function (error, element) {
+            if (element.attr('type') == 'radio' || element.attr('type') == 'checkbox') {
+                error.appendTo(element.closest('.form-group'));
+            } else {
+                error.insertAfter(element);
+            }
+        }
+    });
 
-				var site_key = $('#google-recaptcha-v3').attr('src').split("render=")[1];
-				grecaptcha.execute(site_key, {action: 'contact_us'}).then(function(token) {
+    /*
+    Contact Form: reCaptcha v3
+    */
+    $('.contact-form-recaptcha-v3').each(function () {
+        $(this).validate({
+            submitHandler: function (form) {
 
-					// Fields Data
-					var formData = $form.serializeArray(),
-						data = {};
+                var $form = $(form),
+                    $messageSuccess = $form.find('.contact-form-success'),
+                    $messageError = $form.find('.contact-form-error'),
+                    $submitButton = $(this.submitButton),
+                    $errorMessage = $form.find('.mail-error-message'),
+                    submitButtonText = $submitButton.val();
 
-					$(formData).each(function(index, obj){
-					    data[obj.name] = obj.value;
-					});
+                $submitButton.val($submitButton.data('loading-text') ? $submitButton.data('loading-text') : 'Loading...').attr('disabled', true);
 
-					// Recaptcha v3 Token
-					data["g-recaptcha-response"] = token;
+                var site_key = $('#google-recaptcha-v3').attr('src').split("render=")[1];
+                grecaptcha.execute(site_key, {action: 'contact_us'}).then(function (token) {
 
-					// Ajax Submit
-					$.ajax({
-						type: 'POST',
-						url: $form.attr('action'),
-						data: data
-					}).always(function(data, textStatus, jqXHR) {
+                    // Fields Data
+                    var formData = $form.serializeArray(),
+                        data = {};
 
-						$errorMessage.empty().hide();
+                    $(formData).each(function (index, obj) {
+                        data[obj.name] = obj.value;
+                    });
 
-						if (data.response == 'success') {
+                    // Recaptcha v3 Token
+                    data["g-recaptcha-response"] = token;
 
-							// Uncomment the code below to redirect for a thank you page
-							// self.location = 'thank-you.html';
+                    // Ajax Submit
+                    $.ajax({
+                        type: 'POST',
+                        url: $form.attr('action'),
+                        data: data
+                    }).always(function (data, textStatus, jqXHR) {
 
-							$messageSuccess.removeClass('d-none');
-							$messageError.addClass('d-none');
+                        $errorMessage.empty().hide();
 
-							// Reset Form
-							$form.find('.form-control')
-								.val('')
-								.blur()
-								.parent()
-								.removeClass('has-success')
-								.removeClass('has-danger')
-								.find('label.error')
-								.remove();
+                        if (data.response == 'success') {
 
-							if (($messageSuccess.offset().top - 80) < $(window).scrollTop()) {
-								$('html, body').animate({
-									scrollTop: $messageSuccess.offset().top - 80
-								}, 300);
-							}
+                            // Uncomment the code below to redirect for a thank you page
+                            // self.location = 'thank-you.html';
 
-							$form.find('.form-control').removeClass('error');
+                            $messageSuccess.removeClass('d-none');
+                            $messageError.addClass('d-none');
 
-							$submitButton.val( submitButtonText ).attr('disabled', false);
-							
-							return;
+                            // Reset Form
+                            $form.find('.form-control')
+                                .val('')
+                                .blur()
+                                .parent()
+                                .removeClass('has-success')
+                                .removeClass('has-danger')
+                                .find('label.error')
+                                .remove();
 
-						} else if (data.response == 'error' && typeof data.errorMessage !== 'undefined') {
-							$errorMessage.html(data.errorMessage).show();
-						} else {
-							$errorMessage.html(data.responseText).show();
-						}
+                            if (($messageSuccess.offset().top - 80) < $(window).scrollTop()) {
+                                $('html, body').animate({
+                                    scrollTop: $messageSuccess.offset().top - 80
+                                }, 300);
+                            }
 
-						$messageError.removeClass('d-none');
-						$messageSuccess.addClass('d-none');
+                            $form.find('.form-control').removeClass('error');
 
-						if (($messageError.offset().top - 80) < $(window).scrollTop()) {
-							$('html, body').animate({
-								scrollTop: $messageError.offset().top - 80
-							}, 300);
-						}
+                            $submitButton.val(submitButtonText).attr('disabled', false);
 
-						$form.find('.has-success')
-							.removeClass('has-success');
-							
-						$submitButton.val( submitButtonText ).attr('disabled', false);
+                            return;
 
-					});
+                        } else if (data.response == 'error' && typeof data.errorMessage !== 'undefined') {
+                            $errorMessage.html(data.errorMessage).show();
+                        } else {
+                            $errorMessage.html(data.responseText).show();
+                        }
 
-				});
-			}
-		});
-	});
+                        $messageError.removeClass('d-none');
+                        $messageSuccess.addClass('d-none');
+
+                        if (($messageError.offset().top - 80) < $(window).scrollTop()) {
+                            $('html, body').animate({
+                                scrollTop: $messageError.offset().top - 80
+                            }, 300);
+                        }
+
+                        $form.find('.has-success')
+                            .removeClass('has-success');
+
+                        $submitButton.val(submitButtonText).attr('disabled', false);
+
+                    });
+
+                });
+            }
+        });
+    });
 
 }).apply(this, [jQuery]);

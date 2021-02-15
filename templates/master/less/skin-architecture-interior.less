@@ -14,69 +14,70 @@
 
 // Custom Square Style
 .custom-square-1 {
-	rect {
-		stroke: @color-primary;
-		fill: @color-primary;
-	}
+  rect {
+    stroke: @color-primary;
+    fill: @color-primary;
+  }
 }
 
 // Custom Featured Boxes Style
 .custom-featured-boxes-style-1 {
-	.featured-box {
-		&:hover {
-			.box-content {
-				border: 7px solid @color-primary;
-				svg {
-					fill: @color-primary;
-				}
-			}
-		}
-	}
+  .featured-box {
+    &:hover {
+      .box-content {
+        border: 7px solid @color-primary;
+
+        svg {
+          fill: @color-primary;
+        }
+      }
+    }
+  }
 }
 
 // Custom Thumb Info Style
 .custom-thumb-info-style-1 {
-	.thumb-info-wrapper:after {
-		background: @color-primary;
-	}
+  .thumb-info-wrapper:after {
+    background: @color-primary;
+  }
 }
 
 // Testimonial Colored Quote
 .custom-testimonial-colored-quotes {
-	&.testimonial-with-quotes {
-		blockquote {
-			&:before, &:after {
-				color: @color-primary !important;
-			}
-		}
-	}
+  &.testimonial-with-quotes {
+    blockquote {
+      &:before, &:after {
+        color: @color-primary !important;
+      }
+    }
+  }
 }
 
 // Animations
 @keyframes customTextColored {
-	from {
-	    color: #FFF;
-	}
+  from {
+    color: #FFF;
+  }
 
-	to {
-	    color: @color-primary;
-	}
+  to {
+    color: @color-primary;
+  }
 }
 
 .customTextColored {
-	animation-name: customTextColored;
+  animation-name: customTextColored;
 }
 
 @keyframes customBorderColored {
-	from {
-	    border-color: #43474A;
-	}
+  from {
+    border-color: #43474A;
+  }
 
-	to {
-	    border-color: @color-primary;
-	}
+  to {
+    border-color: @color-primary;
+  }
 }
 
 .customBorderColored {
-	animation-name: customBorderColored;
+  animation-name: customBorderColored;
 }

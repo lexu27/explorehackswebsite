@@ -4,10 +4,9 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version:	7.6.0
 */
 
-(function( $ ) {
+(function ($) {
 
-	'use strict';
+    'use strict';
 
-	
 
-}).apply( this, [ jQuery ]);
+}).apply(this, [jQuery]);

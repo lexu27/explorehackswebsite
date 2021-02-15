@@ -14,78 +14,80 @@
 
 // Rev Slider Arrows
 .tp-leftarrow, .tp-rightarrow {
-	&.custom-arrows-style-1 {
-		background: fade(@color-quaternary, 50%);
+  &.custom-arrows-style-1 {
+    background: fade(@color-quaternary, 50%);
 
-		&:hover {
-			background: fade(@color-quaternary, 100%);
-		}
-	}
+    &:hover {
+      background: fade(@color-quaternary, 100%);
+    }
+  }
 }
 
 // Owl Carousel Arrows
 .owl-carousel {
-	.owl-nav {
-		button[class*="owl-"] {
-			background: @color-quaternary !important;
-		}
-	}
-	&.custom-arrows-style-1 {
-		.owl-nav {
-			button.owl-prev, button.owl-next {
-	    		&:before {
-					border-color: @color-primary;
-	    		}
+  .owl-nav {
+    button[class*="owl-"] {
+      background: @color-quaternary !important;
+    }
+  }
 
-	    		&:after {
-	    			border-color: @color-primary;
-	    		}
-			}
-		}
-	}
+  &.custom-arrows-style-1 {
+    .owl-nav {
+      button.owl-prev, button.owl-next {
+        &:before {
+          border-color: @color-primary;
+        }
+
+        &:after {
+          border-color: @color-primary;
+        }
+      }
+    }
+  }
 }
 
 // Custom Social Icons :hover
 .custom-social-icons {
-	li {
-		&:hover {
-			a {
-			    color: @color-primary !important;
-			}
-		}
-	}
+  li {
+    &:hover {
+      a {
+        color: @color-primary !important;
+      }
+    }
+  }
 }
 
 // Custom Thumb Carousel
 .custom-thumb-carousel {
-	.img-thumbnail {
-		&.img-thumbnail-hover-icon {
-			&:before {
-				background: fade(@color-quaternary, 65%) !important;
-			}
-		}
-	}
+  .img-thumbnail {
+    &.img-thumbnail-hover-icon {
+      &:before {
+        background: fade(@color-quaternary, 65%) !important;
+      }
+    }
+  }
 }
 
 // Custom Thumb info
 .thumb-info {
-	&.custom-thumb-info-4 {
-		&:hover {
-			.thumb-info-wrapper {
-				&:before {
-					background: fade(@color-quaternary, 55%);
-				}
-			}
-		}
-	}
+  &.custom-thumb-info-4 {
+    &:hover {
+      .thumb-info-wrapper {
+        &:before {
+          background: fade(@color-quaternary, 55%);
+        }
+      }
+    }
+  }
 }
 
 // Custom Social Icons
 .custom-social-icons-2, .custom-social-icons-big {
-	li:hover {
-	    border-color: @color-primary;
-		a {
-			color: @color-primary !important;
-		}
-	}
+  li:hover {
+    border-color: @color-primary;
+
+    a {
+      color: @color-primary !important;
+    }
+  }
 }

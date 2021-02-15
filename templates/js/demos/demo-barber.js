@@ -4,15 +4,15 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version:	7.6.0
 */
 
-(function( $ ) {
+(function ($) {
 
-	'use strict';
+    'use strict';
 
     // Instagram Feed
-    var clientId    = '3b45f8860dfc4bb2b8a15c3057746304',
+    var clientId = '3b45f8860dfc4bb2b8a15c3057746304',
         accessToken = '10868028576.3b45f88.ba467930afe0456aade54ae16322a405';
 
-    if( $('#instafeedCarouselDemoBarber').get(0) ) {
+    if ($('#instafeedCarouselDemoBarber').get(0)) {
         // Instagram Feed Carousel
         var feed = new Instafeed({
             target: 'instafeedCarouselDemoBarber',
@@ -22,13 +22,13 @@ Theme Version:	7.6.0
             accessToken: accessToken,
             resolution: 'standard_resolution',
             limit: 12,
-            template: 
+            template:
                 '<div>' +
-                    '<a target="_blank" href="{{link}}">' +
-                        '<img src="{{image}}" class="img-fluid" alt="{{caption}}" />' +
-                    '</a>' +
+                '<a target="_blank" href="{{link}}">' +
+                '<img src="{{image}}" class="img-fluid" alt="{{caption}}" />' +
+                '</a>' +
                 '</div>',
-            after: function(){
+            after: function () {
                 var $wrapper = $('#instafeedCarouselDemoBarber');
 
                 $wrapper.addClass('owl-carousel mb-0').owlCarousel({
@@ -55,7 +55,7 @@ Theme Version:	7.6.0
                     navText: [],
                     autoplay: true,
                     autoplayTimeout: 6000,
-                    rtl: ( $('html').attr('dir') == 'rtl' ) ? true : false
+                    rtl: ($('html').attr('dir') == 'rtl') ? true : false
                 });
             }
         });
@@ -64,4 +64,4 @@ Theme Version:	7.6.0
         feed.run();
     }
 
-}).apply( this, [ jQuery ]);
+}).apply(this, [jQuery]);

@@ -7,28 +7,28 @@
 .rev_slider > ul > li[data-liquideffect] > img,
 .tp-revslider-slidesli[data-liquideffect] .tp-bgimg,
 .tp-revslider-slidesli[data-liquideffect] .slot {
-	
-	display: none !important;
-	
+
+    display: none !important;
+
 }
 
 .tp-revslider-slidesli[data-liquideffect] .slotholder canvas {
-	
-	position: absolute;
-	display: block;
-	
+
+    position: absolute;
+    display: block;
+
 }
 
 .tp-revslider-slidesli.liquid-force-visible,
 .tp-revslider-slidesli.liquid-force-visible .slotholder {
-	
-	visibility: visible !important;
-	opacity: 1 !important;
-	
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
 }
 
 .tp-revslider-slidesli.liquid-force-visible {
-	
-	z-index: 99 !important;
-	
+
+    z-index: 99 !important;
+
 }

@@ -1,18 +1,22 @@
 .tp-caption[data-typewriter]:after {
-	
-	position: absolute;
-	
+
+    position: absolute;
+
 }
 
 .tp-caption[data-typewriter-blinking]:after {
-	
-	position: static;
-	
+
+    position: static;
+
 }
 
 @keyframes tp-typewriter {
-	
-	from {visibility: visible}
-	to {visibility: hidden}
-	
+
+    from {
+        visibility: visible
+    }
+    to {
+        visibility: hidden
+    }
+
 }

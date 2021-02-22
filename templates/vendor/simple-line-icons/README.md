@@ -13,9 +13,11 @@ Preview & Docs
 Installation
 ====
 via [cdnjs](http://cdnjs.com/libraries/simple-line-icons)
+
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 ```
+
 via [bower](http://bower.io/search/?q=simple-line-icons)
 
 ```shell
@@ -23,6 +25,7 @@ via [bower](http://bower.io/search/?q=simple-line-icons)
 bower install simple-line-icons --save
 
 ```
+
 via [npm](https://www.npmjs.com/package/simple-line-icons)
 
 ```shell
@@ -31,8 +34,8 @@ npm install simple-line-icons --save
 
 ```
 
-Or, you can also clone or [download this repository](https://github.com/thesabbir/simple-line-icons/archive/master.zip) as zip.
-
+Or, you can also clone or [download this repository](https://github.com/thesabbir/simple-line-icons/archive/master.zip)
+as zip.
 
 If you are a designers you can use [this creative cloud library](http://adobe.ly/2bQ48wl).
 
@@ -55,10 +58,10 @@ $simple-line-font-family      : "desired-name-font-family";
 $simple-line-icon-prefix      : "prefix-";
 ```
 
-
 Credits
 ===
-[Jamal Jama](https://twitter.com/byjml) for creating this awesome webfont & [Ahmad Firoz](https://twitter.com/firoz_usf) for extending it further.
+[Jamal Jama](https://twitter.com/byjml) for creating this awesome webfont & [Ahmad Firoz](https://twitter.com/firoz_usf)
+for extending it further.
 
 Contributors
 ====

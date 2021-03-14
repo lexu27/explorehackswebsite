@@ -323,6 +323,7 @@ img {
 	line-height: 35px;
 	background: transparent;
 	border-radius: 50%;
+	margin: 1em;
 	border: 1px solid #93949a;
 	color: #93949a !important;
 }

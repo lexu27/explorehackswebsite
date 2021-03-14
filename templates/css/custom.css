@@ -1,3 +1,21 @@
+@media (min-width: 800px){
+    .cust{
+        width: 82em; 
+        height: auto;
+    }
+}
+@media (max-width: 799px){
+    .cust{
+        width: 80em; 
+        height: auto;
+    }
+}
+@media (max-width: 600px){
+    .cust{
+        width: 78em; 
+        height: auto;
+    }
+}
 * { margin: 0; padding: 0; }
 h1 {
 	font-size: 4.9285714286em;
@@ -741,11 +759,11 @@ i.custom-long-arrow-right:after {
 					box-shadow: none;
 }
 .social-icons li a {
-	width: 35px;
-	height: 35px;
+	width: 40px;
+	height: 40px;
 	line-height: 35px;
 	background: transparent;
-	border-radius: 0;
+	border-radius: 100%;
 	border: 1px solid #93949a;
 	color: #93949a !important;
 }

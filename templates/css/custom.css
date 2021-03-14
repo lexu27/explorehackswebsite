@@ -322,7 +322,7 @@ img {
 	height: 35px;
 	line-height: 35px;
 	background: transparent;
-	border-radius: 0;
+	border-radius: 50%;
 	border: 1px solid #93949a;
 	color: #93949a !important;
 }

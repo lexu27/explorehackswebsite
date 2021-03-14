@@ -11537,14 +11537,15 @@ html.boxed .slider-container {
     transition: all 0.2s ease;
     border-radius: 100%;
     display: block;
-    height: 28px;
+    height: 40px;
     line-height: 28px;
-    width: 28px;
+    width: 40px;
     text-align: center;
     color: #333 !important;
     text-decoration: none;
     font-size: 12.8px;
     font-size: 0.8rem;
+    margin:auto;
 }
 
 .social-icons li:hover a {
@@ -11554,10 +11555,12 @@ html.boxed .slider-container {
 
 .social-icons li:hover.social-icons-twitter a {
     background: #1aa9e1;
+
 }
 
 .social-icons li:hover.social-icons-facebook a {
     background: #3b5a9a;
+
 }
 
 .social-icons li:hover.social-icons-linkedin a {

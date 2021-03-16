@@ -1338,9 +1338,9 @@ html .btn-with-arrow.btn-secondary:active {
 }
 
 html .btn-with-arrow.btn-secondary span {
-    background-color: #e36159;
-    -webkit-box-shadow: 2px 3px 18px -3px #e36159;
-    box-shadow: 2px 3px 18px -3px #e36159;
+    background-color: #8872ad;
+    -webkit-box-shadow: 2px 3px 18px -3px #a0ff00;
+    box-shadow: 2px 3px 18px -3px #0048ff;
 }
 
 html .btn-with-arrow.btn-secondary.btn-outline {
@@ -1348,7 +1348,7 @@ html .btn-with-arrow.btn-secondary.btn-outline {
 }
 
 html .btn-with-arrow.btn-secondary.btn-outline:hover span {
-    background-color: #e7766f !important;
+    background-color: #e8c1f4 !important;
     -webkit-box-shadow: none;
     box-shadow: none;
 }

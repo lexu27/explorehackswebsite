@@ -401,3 +401,17 @@ img {
         height: auto;
     }
 }
+
+@media (max-width: 1480px) {
+    .monkey {
+        max-height: 50% !important;
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 1333px) {
+    .monkey {
+        max-height: 40% !important;
+        font-size: 12px !important;
+    }
+}

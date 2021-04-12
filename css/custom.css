@@ -402,114 +402,12 @@ img {
     }
 }
 
-@media only screen and (max-width: 2100px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 23px !important;
-        text-align: left;
-        height: 20px !important;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 21px !important;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        text-align: left;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 26px !important;
-        margin-bottom: 0px !important;
-        text-align: left;
-        height: 20px !important;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size: 24px !important;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        text-align: left;
-    }
-}
 
-@media screen and (max-width: 1510px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 21px !important;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 19px !important;
-        margin-top:2%;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 24px !important;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size: 22px !important;
-    }
-}
 
-@media screen and (max-width: 1410px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 19px !important;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 17px !important;
-        margin-top:1px !important;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 22px !important;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size: 20px !important;
-        margin-top:1px !important;
-    }
-}
 
-@media screen and (max-width: 1315px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 17px !important;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 15px !important;
-        margin-top:2%;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 21px !important;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size: 19px !important;
-    }
-}
+
 @media screen and (max-width: 1115px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 15px !important;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 12px !important;
-        margin-top:2%;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 19px !important;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size: 17px !important;
-    }
+
     .leader{
         max-width: 30% !important;
         margin-left: auto;
@@ -544,23 +442,7 @@ img {
 }
 
 @media screen and (max-width: 828px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 15px !important;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 12px !important;
-        margin-top:2%;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 19px !important;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size: 17px !important;
-    }
+
     .leader{
         max-width: 40% !important;
         margin-left: auto ;
@@ -595,23 +477,7 @@ img {
 }
 
 @media screen and (max-width: 828px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 15px !important;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 12px !important;
-        margin-top:2%;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 19px !important;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size: 17px !important;
-    }
+   
     .leader{
         max-width: 40% !important;
         margin-left: auto ;
@@ -644,22 +510,7 @@ img {
         margin-bottom: 1%;
     }
 @media screen and (max-width: 594px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 13px !important;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 11px !important;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 15px !important;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size:13px !important;
-    }
+   
     .leader{
         max-width: 47% !important;
         margin-left: auto ;
@@ -777,49 +628,7 @@ img {
 }
 
 @media screen and (max-width: 524px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 13px !important;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 11px !important;
-        margin-bottom: 0px;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 13px !important;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size:11px !important;
-        margin-bottom: 0px;
-    }
-    .thumb-info-title
-    {
-        padding-top: 2px !important
-    }
-}
-@media screen and (max-width: 430px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 11px !important;
-        height: 10px;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 9px !important;
-        margin-top: 2%;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 11px !important;
-        height: 15px;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size:9px !important;
-    }
+
     .thumb-info-title
     {
         padding: 3px !important;
@@ -827,27 +636,7 @@ img {
 }
 
 @media screen and (max-width: 380px) {
-    .monkey {
-        max-height: 100% !important;
-        font-size: 11px !important;
-        height: 12px !important;
-    }
-    .monke {
-        max-height: 100% !important;
-        font-size: 9px !important;
-        margin-top: 2%;
-        height: 23px !important;
-    }
-    .monky {
-        max-height: 100% !important;
-        font-size: 11px !important;
-        height: 12px !important;
-    }
-    .monkye {
-        max-height: 100% !important;
-        font-size:9px !important;
-        height: 23px !important
-    }
+
     .thumb-info-title
     {
         padding: 3px !important;
@@ -862,4 +651,52 @@ img {
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
+}
+
+@media screen and (max-width: 1720px) {
+    .ppl{
+        color: #fff !important;
+        text-transform: capitalize !important;
+        line-height: 10px !important;
+        font-size:1.5em !important;
+        font-weight: 600 !important;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .ppl{
+        color: #fff !important;
+        text-transform: capitalize !important;
+        line-height: 5px !important;
+        font-size:1.3em !important;
+        font-weight: 600 !important;
+    }
+    .ppl{
+        margin-bottom: 27px !important;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .ppl{
+        color: #fff !important;
+        text-transform: capitalize !important;
+        line-height: 3px !important;
+        font-size:1.1em !important;
+        font-weight: 600 !important;
+    }
+    .ppl{
+        margin-bottom: 15px !important;
+    }
+}
+
+.ppl{
+    color: #fff !important;
+    text-transform: capitalize !important;
+    line-height: 10px !important;
+    font-size:1.7em;
+    font-weight: 600;
+
+}
+.names{
+    margin-top: 30px;
 }

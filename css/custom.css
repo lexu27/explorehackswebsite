@@ -700,3 +700,69 @@ img {
 .names{
     margin-top: 30px;
 }
+
+.st{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 100000;
+    min-height: 6rem;
+}
+
+
+body {
+    height: 100%;
+    width:100%;
+}
+
+.color-me{
+    color:white  !important;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1.8em;
+    font-weight: 520;
+    margin: 10px;
+    position: relative;
+}
+.color-me:hover{
+    color:gray !important;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1.8em;
+    font-weight: 520;
+}
+li > .color-me:hover::before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+li > .color-me::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#about { 
+    scroll-margin-top: 8.5rem;
+  }
+
+#faq
+{
+    scroll-margin-top: 8.5rem;
+}
+#video {
+    scroll-margin-top: 8.5rem;
+}
+
+#schedule {
+    scroll-margin-top: 6rem;
+}
+#team {
+    scroll-margin-top: 9rem;
+}

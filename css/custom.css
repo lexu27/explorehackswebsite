@@ -772,21 +772,4 @@ li > .color-me::before
 #team {
     scroll-margin-top: 9rem;
 }
-/* 
-@media screen and (max-width: 740px) {
-    #sign
-    {
-        font-size: 20px !important;
-    }
-}
 
-@media screen and (max-width: 540px) {
-    #sign
-    {
-        font-size: 18px !important;
-
-    }
-    /* div.tp-splitted{
-        font-size: 20px;
-    } */
-} */

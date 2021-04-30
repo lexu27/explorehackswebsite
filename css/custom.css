@@ -707,14 +707,14 @@ img {
     margin-top: 30px;
 }
 
-.st{
+/* .st{
     position: fixed;
     top: 0;
     width: 100%;
     overflow: hidden;
     z-index: 100000;
     min-height: 6rem;
-}
+} */
 
 
 body {

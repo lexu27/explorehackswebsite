@@ -600,7 +600,7 @@ img {
         margin-right:1%;
     }
     div.tp-splitted{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -623,8 +623,14 @@ img {
         margin-right:1% !important;
     }
     div.tp-splitted{
-        font-size: 20px;
+        font-size: 18px;
     }
+    #sign{
+        padding:3px !important;
+        margin-left: 15px !important;
+    }
+
+
 }
 
 @media screen and (max-width: 524px) {
@@ -766,3 +772,4 @@ li > .color-me::before
 #team {
     scroll-margin-top: 9rem;
 }
+

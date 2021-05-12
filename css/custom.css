@@ -902,7 +902,7 @@ li > .color-me::before
 
 
 }
-@media screen and (max-width: 620px)
+@media screen and (max-width: 1028px)
 {
     .hex{
         width: 250px !important;
@@ -910,5 +910,28 @@ li > .color-me::before
         padding: 45px !important;
     }
 
-
+    .small{
+        width: 25vw !important;
+    }
+    .medium{
+        width: 40vw !important;
+    }
+}
+@media screen and (max-width: 720px)
+{
+    .small{
+        width: 30vw !important;
+    }
+    .medium{
+        width: 50vw !important;
+    }
+}
+@media screen and (max-width: 620px)
+{
+    .small{
+        width: 30vw !important;
+    }
+    .medium{
+        width: 50vw !important;
+    }
 }

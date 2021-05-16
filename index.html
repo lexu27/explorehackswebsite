@@ -110,7 +110,9 @@
                          data-y="center"
                          style="color: white; font-family: 'Poppins', sans-serif; display:flex; justify-content:center; margin-top: 50px;">
                         <div style="justify-content: center;">
-                            <div style="display: inline !important; font-size: 31px;">July 23rd-25th</div>
+                            <div style="display: inline !important; font-size: 31px;" id = "dates">
+                                July 23rd-25th
+                            </div>
                             <a class="btn btn-outline btn-xl btn-light mb-2 typeform-share button" id="sign"
                                style="margin-left: 20px; color: white; font-size: 20px; padding-left: 20px ; padding-right: 20px ;"
                                type="button"
@@ -118,6 +120,7 @@
                                href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet"
                                data-mode="popup"
                                data-size="100" target="_blank">Interested?</a>
+                            
                         </div>
                         
                     </div>
@@ -141,7 +144,8 @@
     <div class="container py-4 my-5" id = "about">
         <div class="row text-center mb-5">
             <div class="col-md-10 mx-md-auto">
-                <h1 class="word-rotator slide font-weight-bold text-8 mb-3 appear-animation"
+                <!-- USE THIS FOR THE EXPLORE HACKS WHY SECTION!! -->
+                <!-- <h1 class="word-rotator slide font-weight-bold text-8 mb-3 appear-animation"
                     data-appear-animation="fadeInUpShorter">
                     <span class="text-color-light">Gain the opportunity to</span>
                     <span class="word-rotator-words bg-dark">
@@ -150,8 +154,9 @@
                         <b>build</b>
                         <b>compete</b>
                     </span>
-                    <span class="text-color-light"> by participating in Explore Hacks </span>
-                </h1>
+                    <span class="text-color-light "> by participating in Explore Hacks </span>
+                </h1> -->
+                <h1 class="text-color-light font-weight-bold text-8 mb-3 appear-animation" style = "margin-bottom: 40px !important" data-appear-animation="fadeInUpShorter">Create a project that solves a current issue in the world and has an impact on a market of your choice in the future. </h1>
                 <p class="lead text-4 font-weight-normal appear-animation text-color-light"
                    data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
                     Explore Hacks is a 3 day hackathon that aims to grant both experienced and beginner student
@@ -159,10 +164,6 @@
                     ideation to product execution. Participants also gain the opportunity to attend a variety of
                     workshops and mini-events to enhance their programming skills
                     and explore new areas in computer science. And it's all for free! 
-                </p>
-                <p class="lead text-4 font-weight-bold appear-animation text-color-light"
-                   data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                The prompt is to create a project that solves a current issue in the world and has an impact on the future.
                 </p>
             </div>
         </div>
@@ -226,7 +227,7 @@
                 <div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter">
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-white">Why should I join Explore Hacks?</h4>
+                            <h4 class="font-weight-bold mb-2 text-white">What do I need to submit?</h4>
                             <p class="text-color-grey">Explore Hacks is the perfect opportunity for you to learn
                                 something new no matter how much you already know while also
                                 having lots of fun through workshops, mini events and interacting with mentors. You will
@@ -249,7 +250,7 @@
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-info">
                             <h4 class="font-weight-bold mb-2 text-white">Am I eligible to participate?</h4>
-                            <p class="text-color-grey">Anyone who is a high school student ages 13+ or an undergraduate from the class of 2021 - 2026 is eligible to participate. The only prerequisite for Explore Hacks is a longing to learn! You do not need to know how to code to join!</p>
+                            <p class="text-color-grey">Anyone who is a high school student of age 13+ is eligible to participate. The only prerequisite for Explore Hacks is a longing to learn! You do not need to know how to code to join!</p>
                         </div>
                     </div>
                 </div>
@@ -737,7 +738,7 @@
             
         </div>
         <div class="row text-center">
-            <div class="isotope-item leadership border-radius-0 left">
+            <!-- <div class="isotope-item leadership border-radius-0 left">
                 <span class="thumb-info-hide-wrapper-bg mb-4 border-radius-0">
                     <span style = "border-radius: 50% !important" class=" border-radius-0">
                         <a>
@@ -751,8 +752,8 @@
                     <h3 class = "ppl">Anna Wang</h3>
                     <h3 class = "ppl">Graphics Designer</h3>
                 </div>
-            </div>
-            <div class="isotope-item leadership border-radius-0 middle">
+            </div> -->
+            <div class="isotope-item leadership border-radius-0 charan">
                 <span class="thumb-info-hide-wrapper-bg mb-4 border-radius-0">
                     <span style = "border-radius: 50% !important" class=" border-radius-0">
                         <a>
@@ -766,7 +767,7 @@
                     <h3 class = "ppl">Website Co-Lead</h3>
                 </div>
             </div>
-            <div class="isotope-item leadership border-radius-0 right">
+            <div class="isotope-item leadership border-radius-0 rajas">
                 <span class=" thumb-info-hide-wrapper-bg mb-4 border-radius-0">
                     <span style = "border-radius: 50% !important" class=" border-radius-0">
                         <a>
@@ -795,15 +796,24 @@
         <div class="row pb-4 pt-4">
             <div class="col">
                 <h2 class="text-color-light text-uppercase font-weight-bold text-center mb-0 mt-5">SPONSORS</h2>
-                <p class="custom-font-size-1 text-center mb-0">Explore Hacks is currently in the process of looking for sponsors. If you would like to sponsor Explore Hacks, please email us at sponsorship@explorehacks.org</p>
+                <p class="custom-font-size-1 text-center mb-0">Thank you to all our sponsors, as Explore Hacks wouldn't be able to happen without your support!</p>
             </div>
         </div>
-        <section class="hexagon-gallery">
+        <section>
+            <!-- <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.crimsoneducation.org/us/"><img src="./img/CYF-Logo0-1.png" class = "sponsor"></a></div>
+            <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Dark.png"class = "sponsor"></a></div> -->
+
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; margin-bottom: 40px">
+                <a href="https://www.crimsoneducation.org/us/"><img src="./img/Crimson-Youth-Fund-Logo (1) (1) (1) (1) (2).png" style = "width: 30vw; height: auto;" class = "medium sponsor"></a>
+            </div>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; padding-bottom: 80px !important">
+                <a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Background.png" style = "width: 25vw; height: auto;" class = "small sponsor"></a>
+            </div>
 
         </section>
     </section>
 
-    <footer class="mt-0 appear-animation" data-appear-animation="fadeIn" id="footer">
+    <footer class="mt-0" id="footer">
         <div class="footer-copyright">
             <div class="container py-2">
                 <div class="row py-4">
@@ -816,6 +826,7 @@
                                                                 title="linkedin"><i class="fab fa-linkedin"></i></a></li>
                         </ul>
                         <p>Questions? Contact us at support@explorehacks.org</p>
+                        <p>Logo Created by Anna Wang</p>
                     </div>
 
                 </div>

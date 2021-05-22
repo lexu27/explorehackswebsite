@@ -81,6 +81,13 @@
       html{
           scroll-behavior: smooth;
       }
+      .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
   </style>
   
 <div class="main bg-color-dark-scale-3" role="main">
@@ -146,11 +153,11 @@
         <div class="row text-center mb-5">
             <div class="col-md-10 mx-md-auto">
                 <h1 class="text-color-light font-weight-bold text-8 mb-3 appear-animation"
-                    style="margin-bottom: 40px !important" data-appear-animation="fadeInUpShorter">Create a project that <span style="color: #32558C">solves</span>
-                    a current issue in the <span style="color: #E8C1F4">world</span> and has a strong <span style="color: #8872AD">impact</span> in the future on a <span style="color: #CC6686">market</span> of your choice. </h1>
+                    style="margin-bottom: 40px !important" data-appear-animation="fadeInUpShorter">Create a project that <span style="color: #82AAFF">solves</span>
+                    a current issue in the <span style="color: #E8C1F4">world</span> and has a lasting <span style="color: #8872AD">impact</span> on a <span style="color: #CC6686">market</span> of your choice in the future. </h1>
                 <p class="lead text-4 font-weight-normal appear-animation text-color-light"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                    Explore Hacks is a 3 day hackathon that aims to grant both experienced and beginner student
+                    Explore Hacks is a 3-day hackathon that aims to grant both experienced and beginner student
                     programmers the chance to explore the process of
                     ideation to product execution. Participants also gain the opportunity to attend a variety of
                     workshops and mini-events to enhance their programming skills
@@ -173,7 +180,7 @@
                 data-appear-animation-delay="1" style="padding: 0">
                 <div class="counter counter-with-unit counter-unit-on-top mx-auto">
                     <strong class="text-color-light font-weight-extra-bold text-13 text-lg-15 text-color-light animated faster"
-                        data-to="20" style="position:relative; left:8px;">0</strong>
+                        data-to="15" style="position:relative; left:8px;">0</strong>
                     <strong class="unit text-color-light font-weight-bold text-5 text-lg-8 text-color-light"
                         style="margin-left:0; position:relative; left:8px;">+</strong>
                     <label class="font-weight-normal text-3 text-lg-4 px-5 text-color-light">Mini
@@ -198,7 +205,6 @@
     <div class="container py-4 my-5" id = "about">
         <div class="row text-center">
             <div class="col-md-10 mx-md-auto">
-        <!-- USE THIS FOR THE EXPLORE HACKS WHY SECTION!! -->
         <h1 class="word-rotator slide font-weight-bold text-8 appear-animation"
             data-appear-animation="fadeInUpShorter">
             <span class="text-color-light">Gain the opportunity to</span>
@@ -211,20 +217,30 @@
             <span class="text-color-light "> by participating in Explore Hacks </span>
         </h1>
         <p class="lead text-4 font-weight-normal appear-animation text-color-light" data-appear-animation="fadeInUpShorter"
-            data-appear-animation-delay="200">By attending explorehacks, you will gain the chance not only learn more, but also apply your programming knowledge to solve real life problems. Whether you're a beginner or proficient at coding, if you're interested in an amazing and fun learning experience that can help you along the way of your coding journey, explorehacks is right for you!
+            data-appear-animation-delay="200">By attending Explore Hacks, you will not only gain the chance learn more, but also have the chance to improve your programming knowledge to solve real life problems. Whether you're a beginner or master at coding, as long as you're interested in an exciting and complementary learning experience to your coding journey, Explore Hacks is right for you!
         </p>
-
-        <img src="img/have fun! (3).png" alt="Nature" class="responsive">
+        <div style = "display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
+            <div style = "padding: 20px; max-width: 420px;">
+                <img src="img/1.png">
+            </div>
+            <div style = "padding: 20px; max-width: 420px;">
+                <img src="img/2.png">
             </div>
         </div>
+        <div style = "display: flex; justify-content: center; flex-wrap: wrap; margin-left: auto; margin-right: auto">
+            <div style = "padding: 20px; max-width: 420px;">
+                <img src="img/3.png">
+            </div>
+            <div style = "padding: 20px; max-width: 420px;">
+                <img src="img/4.png">
+            </div>
+    
+        </div>
+            </div>
+        </div>
+
         
     </div>
-    <style>
-        .responsive {
-  width: 100%;
-  height: auto;
-}
-    </style>
 
 
     <section class="section bg-color-black section-height-3 border-0" id = "faq">
@@ -254,11 +270,7 @@
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-info">
                             <h4 class="font-weight-bold mb-2 text-white">What do I need to submit?</h4>
-                            <p class="text-color-grey">Explore Hacks is the perfect opportunity for you to learn
-                                something new no matter how much you already know while also
-                                having lots of fun through workshops, mini events and interacting with mentors. You will
-                                also gain the experience of how
-                                to use programming to solve real world problems.</p>
+                            <p class="text-color-grey">You will need to submit a 5 minute video that pitches the impact of your project's integration within the market of your choice, along with a demo.</p>
                         </div>
                     </div>
                 </div>
@@ -267,7 +279,7 @@
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-info">
                             <h4 class="font-weight-bold mb-2 text-white">How are projects judged?</h4>
-                            <p class="text-color-grey">Projects are judged based on 4 criterias: Feasibility, Impact, Uniqueness, and Creativity. When you submit your project, you will need to send us a 5 minute video that pitches the impact of your project along with a demo.</p>
+                            <p class="text-color-grey">Projects are judged based on 4 criterias: Feasibility, Impact, Uniqueness, and Creativity.</p>
                         </div>
                     </div>
                 </div>
@@ -276,7 +288,7 @@
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-info">
                             <h4 class="font-weight-bold mb-2 text-white">Am I eligible to participate?</h4>
-                            <p class="text-color-grey">Anyone who is a high school student of age 13+ is eligible to participate. The only prerequisite for Explore Hacks is a longing to learn! You do not need to know how to code to join!</p>
+                            <p class="text-color-grey">Anyone who is a high school student is eligible to participate. The only prerequisite for Explore Hacks is a longing to learn! You do not need to know how to code to join!</p>
                         </div>
                     </div>
                 </div>
@@ -341,9 +353,10 @@
                     <div class="col">
                         
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe frameborder="0" allowfullscreen=""
-                                src="https://www.youtube.com/embed/0nhVq1oVjh0?showinfo=0&amp;wmode=opaque"></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ow6y97oQWOg" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                        
     
                         <hr class="solid my-3">
                     </div>
@@ -817,26 +830,115 @@
 
 </div>
 
+
 </div>
-    <section class=" bg-color-black" id="partners">
+<style>
+    .image-grid {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .bronze-item {
+        display: block;
+        flex-basis: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .bronze-image {
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    @media only screen and (min-width: 640px){
+        .bronze-item{
+            flex-basis: 50%;
+        }
+    }
+
+    @media only screen and (min-width: 960px){
+        .bronze-item{
+            flex-basis: 33.3333%;
+        }
+    }
+
+    @media only screen and (min-width: 1280px){
+        .bronze-item{
+            flex-basis: 25%;
+        }
+    }
+
+     .silver-item {
+        display: block;
+        flex-basis: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .silver-image {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    @media only screen and (min-width: 640px){
+        .silver-item{
+            flex-basis: 50%;
+        }
+    }
+
+    @media only screen and (min-width: 960px){
+        .silver-item{
+            flex-basis: 50%;
+        }
+    }
+
+    @media only screen and (min-width: 1280px){
+        .silver-item{
+            flex-basis: 33.3333%;
+        }
+    }
+</style>
+
+
+    <section class="mb-5" id="partners">
         <div class="row pb-4 pt-4">
             <div class="col">
-                <h2 class="text-color-light text-uppercase font-weight-bold text-center mb-0 mt-5">SPONSORS</h2>
+                <h2 class="text-color-dark text-uppercase font-weight-bold text-center mb-0 mt-5">SPONSORS</h2>
                 <p class="custom-font-size-1 text-center mb-0">Thank you to all our sponsors, as Explore Hacks wouldn't be able to happen without your support!</p>
             </div>
         </div>
-        <section>
-            <!-- <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.crimsoneducation.org/us/"><img src="./img/CYF-Logo0-1.png" class = "sponsor"></a></div>
+        <div class="image-grid">
+            <div class="silver-item"><a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image" src="/img/CYF-Logo0-1.png" /></a></div>
+        </div>
+        <div class="image-grid">
+            <div class="bronze-item"><a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image" src="/img/echoAR - Logo 2020 - Dark.png" /></a></div>
+
+            <!-- <img class="grid-image" src="https://source.unsplash.com/random/320x320" /> -->
+        </div>
+
+        <!-- <section>
+            <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.crimsoneducation.org/us/"><img src="./img/CYF-Logo0-1.png" class = "sponsor"></a></div>
             <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Dark.png"class = "sponsor"></a></div> -->
 
-            <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; margin-bottom: 40px">
+            <!-- <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; margin-bottom: 40px">
                 <a href="https://www.crimsoneducation.org/us/"><img src="./img/Crimson-Youth-Fund-Logo (1) (1) (1) (1) (2).png" style = "width: 30vw; height: auto;" class = "medium sponsor"></a>
             </div>
             <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; padding-bottom: 80px !important">
                 <a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Background.png" style = "width: 25vw; height: auto;" class = "small sponsor"></a>
-            </div>
-
-        </section>
+            </div> -->
+<!-- 
+        </section> -->
     </section>
 
     <footer class="mt-0" id="footer">

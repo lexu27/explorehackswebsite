@@ -81,6 +81,13 @@
       html{
           scroll-behavior: smooth;
       }
+      .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
   </style>
   
 <div class="main bg-color-dark-scale-3" role="main">
@@ -823,17 +830,106 @@
 
 </div>
 
+
 </div>
-    <section class=" bg-color-black" id="partners">
+<style>
+    .image-grid {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .bronze-item {
+        display: block;
+        flex-basis: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .bronze-image {
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    @media only screen and (min-width: 640px){
+        .bronze-item{
+            flex-basis: 50%;
+        }
+    }
+
+    @media only screen and (min-width: 960px){
+        .bronze-item{
+            flex-basis: 33.3333%;
+        }
+    }
+
+    @media only screen and (min-width: 1280px){
+        .bronze-item{
+            flex-basis: 25%;
+        }
+    }
+
+     .silver-item {
+        display: block;
+        flex-basis: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .silver-image {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    @media only screen and (min-width: 640px){
+        .silver-item{
+            flex-basis: 50%;
+        }
+    }
+
+    @media only screen and (min-width: 960px){
+        .silver-item{
+            flex-basis: 50%;
+        }
+    }
+
+    @media only screen and (min-width: 1280px){
+        .silver-item{
+            flex-basis: 33.3333%;
+        }
+    }
+</style>
+
+
+    <section class="mb-5" id="partners">
         <div class="row pb-4 pt-4">
             <div class="col">
-                <h2 class="text-color-light text-uppercase font-weight-bold text-center mb-0 mt-5">SPONSORS</h2>
+                <h2 class="text-color-dark text-uppercase font-weight-bold text-center mb-0 mt-5">SPONSORS</h2>
                 <p class="custom-font-size-1 text-center mb-0">Thank you to all our sponsors, as Explore Hacks wouldn't be able to happen without your support!</p>
             </div>
         </div>
-        <section>
+        <div class="image-grid">
+            <div class="silver-item"><a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image" src="/img/CYF-Logo0-1.png" /></a></div>
+        </div>
+        <div class="image-grid">
+            <div class="bronze-item"><a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image" src="/img/echoAR - Logo 2020 - Dark.png" /></a></div>
+
+            <!-- <img class="grid-image" src="https://source.unsplash.com/random/320x320" /> -->
+        </div>
+
+        <!-- <section>
             <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.crimsoneducation.org/us/"><img src="./img/CYF-Logo0-1.png" class = "sponsor"></a></div>
-            <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Dark.png"class = "sponsor"></a></div>
+            <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Dark.png"class = "sponsor"></a></div> -->
 
             <!-- <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; margin-bottom: 40px">
                 <a href="https://www.crimsoneducation.org/us/"><img src="./img/Crimson-Youth-Fund-Logo (1) (1) (1) (1) (2).png" style = "width: 30vw; height: auto;" class = "medium sponsor"></a>
@@ -841,8 +937,8 @@
             <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; padding-bottom: 80px !important">
                 <a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Background.png" style = "width: 25vw; height: auto;" class = "small sponsor"></a>
             </div> -->
-
-        </section>
+<!-- 
+        </section> -->
     </section>
 
     <footer class="mt-0" id="footer">

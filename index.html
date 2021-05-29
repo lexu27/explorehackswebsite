@@ -5,6 +5,9 @@
 
 <head>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
     <!-- Basic -->
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -366,319 +369,133 @@
     </div>
 
 
-    <section class="bg-color-black pb-4" id="schedule">
-        <div class="container pt-4 pb-4 mt-4">
-            <div class="row pt-2 pb-4">
-                <div class="col">
-                    <h2 class="text-color-light text-uppercase font-weight-bold text-center mb-1 mt-2">Tentative Schedule</h2>
-                    <p style="text-align: center; color: #fdfdfd"><i>All times here are specified in UTC, so please make sure to convert the time into your respective timezones.</i></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-lg-4">
-                    <div class="custom-circle-date no-border custom-circle-date-black bg-color-black text-center ml-4 mb-4">
-                        <div class="circle-dotted">
-                            <div class="circle-center">
-                                <span class="custom-font-size-6 text-color-light font-weight-bold text-uppercase mb-0">Day-1</span>
-                                <span class="text-color-light font-weight-normal" style="font-size: 11px">July 23th</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">9:00 AM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn"
-                             data-appear-animation-delay="0">
-                            <div class="balloon-content balloon-shadow bg-color-black text-color-quaternary p-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-description p-2">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold m-0">Opening Ceremony</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">11:00 AM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn"
-                             data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Event</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">1:00 PM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn"
-                             data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Event</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">4:00 PM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn"
-                             data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Event</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">7:00 PM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Game Night</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section class="bg-color-black pt-4" id="schedule">
+        <h2 class="text-color-light text-uppercase font-weight-bold text-center mt-5">Schedule</h2>
+        <div class="schedule">
+            <div class="schedule-day">
+
+                <h2 class="schedule-date">July 23rd</h2>
+
+                <div class="schedule-item-main">
+                    <p class="schedule-item-heading">Opening Ceremony</p>
+                    <p class="schedule-item-time">9:00 AM - 9:45 AM</p>
                 </div>
 
-                <div class="col-sm-12 col-lg-4">
-                    <div class="custom-circle-date custom-circle-date-black bg-color-black no-border text-center ml-4 mb-4">
-                        <div class="circle-dotted">
-                            <div class="circle-center">
-                                <span class="custom-font-size-6 text-color-light font-weight-bold text-uppercase mb-0">Day-2</span>
-                                <span class="text-color-light font-weight-normal" style="font-size: 11px">July 24th</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">11:00 AM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Event</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">1:00 PM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn"
-                             data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Event</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">4:00 PM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn"
-                             data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Event</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">6:00 PM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn"
-                             data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Event</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">7:00 PM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Game Night</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="schedule-item">
+                    <p class="schedule-item-heading">Team Formation</p>
+                    <p class="schedule-item-time">9:45 AM - 10:10 AM</p>
                 </div>
 
-                <div class="col-sm-12 col-lg-4">
-                    <div class="custom-circle-date custom-circle-date-black bg-color-black no-border text-center ml-4 mb-4">
-                        <div class="circle-dotted">
-                            <div class="circle-center">
-                                <span class="custom-font-size-6 text-color-light font-weight-bold text-uppercase mb-0">Day-3</span>
-                                <span class="text-color-light font-weight-normal" style="font-size: 11px">July 25th</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">10:00 AM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0">
-                            <div class="balloon-content balloon-shadow bg-color-black text-color-quaternary p-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-description p-2">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold m-0">Submissions Open</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">10:30 AM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Judging Begins</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">1:00 PM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Winners Announced
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-balloon pb-4 mb-2">
-                        <div class="balloon-cell balloon-time pt-4">
-                            <span class="time-text text-color-light font-weight-bold custom-font-size-3">2:00 PM</span>
-                            <div class="time-dot bg-color-black"></div>
-                        </div>
-                        <div class="balloon-cell appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0">
-                            <div class="balloon-content bg-color-black text-color-quaternary p-4 pr-3">
-                                <span class="balloon-arrow bg-color-black"></span>
-                                <div class="balloon-photo">
-                                    <div class="photo-radius">
-                                        <img alt="" class="img-fluid" src="img/icons/ExploreHacksLogoWhite.png">
-                                    </div>
-                                </div>
-                                <div class="balloon-description pl-4">
-                                    <h5 class="text-color-light text-uppercase font-weight-bold pt-1 mb-2">Closing Ceremony</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <p class="schedule-item-time">11:00 AM - 12:00 PM</p>
                 </div>
 
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <p class="schedule-item-time">12:30 PM - 1:30 PM</p>
+                </div>
+
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <p class="schedule-item-time">2:00 PM - 3:00 PM</p>
+                </div>
+
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <p class="schedule-item-time">4:00 PM - 5:00 PM</p>
+                </div>
+
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <p class="schedule-item-time">5:30 PM - 6:30 PM</p>
+                </div>
+
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <p class="schedule-item-time">7:00 PM - 8:00 PM</p>
+                </div>
+
+                <div class="schedule-item-fun">
+                    <p class="schedule-item-heading">Game Night</p>
+                    <p class="schedule-item-time">8:30 PM - 9:30 PM</p>
+                </div>
 
             </div>
-            <p><i>* Please note that all times are given in UTC</i></p>
+
+
+            <div class="schedule-day">
+            
+                <h2 class="schedule-date">July 24th</h2>
+            
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <p class="schedule-item-time">9:00 AM - 10:00 AM</p>
+                </div>
+            
+                <div class="schedule-item">
+                    <p class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <p class="schedule-item-time">12:00 PM - 1:00 PM</p>
+                </div>
+            
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <p class="schedule-item-time">2:00 PM - 3:00 PM</p>
+                </div>
+            
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <p class="schedule-item-time">5:00 PM - 6:00 PM</p>
+                </div>
+            
+                <div class="schedule-item-fun">
+                    <p class="schedule-item-heading">Game Night</p>
+                    <p class="schedule-item-time">8:00 PM - 9:00 PM</p>
+                </div>
+            
+            </div>
+
+            <div class="schedule-day">
+            
+                <h2 class="schedule-date">July 25th</h2>
+            
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Submissions Open</p>
+                    <p class="schedule-item-time">9:00 AM</p>
+                </div>
+            
+                <div class="schedule-item">
+                    <p class="schedule-item-heading">Judging</p>
+                    <p class="schedule-item-time">11:00 AM - 3:00 PM</p>
+                </div>
+            
+                <div class="schedule-item-workshop">
+                    <p class="schedule-item-heading">Closing Ceremony</p>
+                    <p class="schedule-item-time">3:00 PM - 4:00 PM</p>
+                </div>
+            
+            </div>
+
+
+            
         </div>
     </section>
 
+    <script>
+        var hue = 10;
+          $('.schedule-item-workshop').each(function () {
+
+            //   var hue = Math.floor(Math.random() * 360) + 1;
+            hue = hue + 30;
+              var saturation = 40;
+              var value = 40;
+
+              var hsvText = "hsl(" + hue + "," + saturation + "%," + value + "%)";
+              console.log(hsvText);
+
+                $(this).css({ "background-color": hsvText});
+            });
+    </script>
 <div class="container mt-5" style="min-width: fit-content;" id = "team">
 
     <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="team"

@@ -935,3 +935,11 @@ li > .color-me::before
         width: 50vw !important;
     }
 }
+
+#partners {
+    background-color: black;
+}
+.sponsorheadings {
+    text-align: center;
+    color: #fff;
+}

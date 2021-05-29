@@ -835,11 +835,10 @@
 <style>
     .image-grid {
         display: flex;
-        width: 90%;
         margin: 0 auto;
         flex-wrap: wrap;
+        margin-top: 10px;
         justify-content: center;
-        margin-bottom: 50px;
     }
     .bronze-item {
         display: block;
@@ -849,7 +848,7 @@
     }
 
     .bronze-image {
-        width: 300px;
+        width: auto;
         height: auto;
         margin: 0 auto;
         position: relative;
@@ -883,7 +882,7 @@
     }
 
     .silver-image {
-        width: 400px;
+        width: auto;
         height: auto;
         margin: 0 auto;
         position: relative;
@@ -893,39 +892,47 @@
     
     @media only screen and (min-width: 640px){
         .silver-item{
-            flex-basis: 50%;
+            flex-basis: 100%;
         }
     }
 
     @media only screen and (min-width: 960px){
         .silver-item{
-            flex-basis: 50%;
+            flex-basis: 100%;
         }
     }
 
     @media only screen and (min-width: 1280px){
         .silver-item{
-            flex-basis: 33.3333%;
+            flex-basis: 100%;
         }
     }
 </style>
 
 
-    <section class="mb-5" id="partners">
-        <div class="row pb-4 pt-4">
+    <section  id="partners">
+        <div class="row pb-0 pt-4">
             <div class="col">
-                <h2 class="text-color-dark text-uppercase font-weight-bold text-center mb-0 mt-5">SPONSORS</h2>
-                <p class="custom-font-size-1 text-center mb-0">Thank you to all our sponsors, as Explore Hacks wouldn't be able to happen without your support!</p>
+                <h2 class="text-color-dark text-uppercase font-weight-bold text-center mb-0 mt-5" style="color: #fdfdfd !important;">SPONSORS</h2>
+                <p class="custom-font-size-1 text-center mb-0" style="color: #969696">Thank you to all our sponsors, as Explore Hacks wouldn't be able to happen without your support!</p>
             </div>
         </div>
-        <div class="image-grid">
-            <div class="silver-item"><a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image" src="/img/CYF-Logo0-1.png" /></a></div>
-        </div>
-        <div class="image-grid">
-            <div class="bronze-item"><a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image" src="/img/echoAR - Logo 2020 - Dark.png" /></a></div>
+            <hr color="white" >
+            <h4 class="sponsorheadings">Silver Tier Sponsors<h4>
+            <div class="image-grid" >
+                <div class="silver-item">
+                    <a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image" src="/img/CYF-Logo0-1.png" style="max-width:100%; max-height:100%;"/></a>
+                </div>
+            </div>
+            <hr color="white" >
+            <h4 class="sponsorheadings">Bronze Tier Sponsors<h4>
+            <div class="image-grid" style="margin-bottom: -15px;">
+                <div class="bronze-item">
+                    <a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image" src="/img/echoAR - Logo 2020 - Dark.png" style="max-width:100%; max-height:100%;"/></a>
+                </div>
+            </div>
 
             <!-- <img class="grid-image" src="https://source.unsplash.com/random/320x320" /> -->
-        </div>
 
         <!-- <section>
             <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.crimsoneducation.org/us/"><img src="./img/CYF-Logo0-1.png" class = "sponsor"></a></div>

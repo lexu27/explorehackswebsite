@@ -55,6 +55,7 @@
         .schedule-item-workshop {
             
             display: flex;
+            background-color: #001799;
             min-height: 4em;
             margin: 1em;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -66,7 +67,8 @@
 
           .schedule-item-fun {
             display: flex;
-            background-color: hsl(231, 100%, 30%);
+             background-color: hsl(231, 100%, 30%);
+            
             min-height: 4em;
             margin: 1em;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

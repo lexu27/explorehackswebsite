@@ -376,12 +376,12 @@
 
                 <h2 class="schedule-date">July 23rd</h2>
 
-                <div class="schedule-item-main">
+                <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Opening Ceremony</p>
                     <p class="schedule-item-time">9:00 AM - 9:45 AM</p>
                 </div>
 
-                <div class="schedule-item">
+                <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Team Formation</p>
                     <p class="schedule-item-time">9:45 AM - 10:10 AM</p>
                 </div>
@@ -416,7 +416,7 @@
                     <p class="schedule-item-time">7:00 PM - 8:00 PM</p>
                 </div>
 
-                <div class="schedule-item-fun">
+                <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Game Night</p>
                     <p class="schedule-item-time">8:30 PM - 9:30 PM</p>
                 </div>
@@ -435,20 +435,20 @@
             
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Workshop/Speaker Event</p>
-                    <p class="schedule-item-time">12:00 PM - 1:00 PM</p>
+                    <p class="schedule-item-time">11:00 AM - 12:00 PM</p>
                 </div>
             
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Workshop/Speaker Event</p>
-                    <p class="schedule-item-time">2:00 PM - 3:00 PM</p>
+                    <p class="schedule-item-time">1:00 PM - 2:00 PM</p>
                 </div>
             
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Workshop/Speaker Event</p>
-                    <p class="schedule-item-time">5:00 PM - 6:00 PM</p>
+                    <p class="schedule-item-time">3:00 PM - 4:00 PM</p>
                 </div>
             
-                <div class="schedule-item-fun">
+                <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Game Night</p>
                     <p class="schedule-item-time">8:00 PM - 9:00 PM</p>
                 </div>
@@ -464,7 +464,7 @@
                     <p class="schedule-item-time">9:00 AM</p>
                 </div>
             
-                <div class="schedule-item">
+                <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Judging</p>
                     <p class="schedule-item-time">11:00 AM - 3:00 PM</p>
                 </div>
@@ -481,21 +481,32 @@
         </div>
     </section>
 
-    <!-- <script>
-        var hue = 10;
+    <script>
+        var hslColors = [[231, 40, 15, 9], [231, 40, 15, 5], [231, 40, 15, 3]]
+            var i = 0;
+            var hue = hslColors[i][0];
+            var saturation = hslColors[i][1];
+            var value = hslColors[i][2];
+            var count = 0;
           $('.schedule-item-workshop').each(function () {
+              count++;
+              if (count > hslColors[i][3]){
+                  i++;
+                  hue = hslColors[i][0];
+                  saturation = hslColors[i][1];
+                  value = hslColors[i][2];
+                  count = 1;
+              }
+              value += 5;
 
             //   var hue = Math.floor(Math.random() * 360) + 1;
-            hue = hue + 30;
-              var saturation = 40;
-              var value = 40;
 
               var hsvText = "hsl(" + hue + "," + saturation + "%," + value + "%)";
               console.log(hsvText);
 
                 $(this).css({ "background-color": hsvText});
             });
-    </script> -->
+    </script>
 <div class="container mt-5" style="min-width: fit-content;" id = "team">
 
     <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="team"

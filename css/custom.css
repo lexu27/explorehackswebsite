@@ -1,3 +1,136 @@
+/* SCHEDULE CSS START */
+
+
+
+
+        .schedule {
+            display: flex;
+            flex-direction: row;
+            padding-left: 5em;
+            padding-right: 5em;
+            padding-bottom: 1em;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .schedule-day {
+            display: flex;
+            background-color: #3949AB;
+            height: max-content;
+            flex: 1;
+            margin: 2em;
+            padding: 3em;
+            flex-direction: column;
+            flex-grow: 0.5;
+        }
+        .schedule-date{
+            display: flex;
+            color: white;
+            font-size: 2em;
+        }
+
+        .schedule-item {
+            display: flex;
+            background-color: hsl(231, 100%, 20%);;
+            min-height: 4em;
+            margin: 1em;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 1em;
+            flex-direction: row;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .schedule-item-main {
+            display: flex;
+            background-color: hsl(231, 100%, 0%);;
+            min-height: 4em;
+            margin: 1em;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 1em;
+            flex-direction: row;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .schedule-item-workshop {
+            
+            display: flex;
+            background-color: #001799;
+            min-height: 4em;
+            margin: 1em;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 1em;
+            flex-direction: row;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+          .schedule-item-fun {
+            display: flex;
+             background-color: hsl(231, 100%, 30%);
+            
+            min-height: 4em;
+            margin: 1em;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 1em;
+            flex-direction: row;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        @media only screen and (max-width: 960px){
+            .schedule-item{
+            min-width: 450px;
+            }
+        }
+
+        @media only screen and (max-width: 550px){
+            .schedule-item{
+            min-width: 350px;
+            }
+        }
+
+        .dot {
+            height: 1em;
+            width: 1em;
+            background-color: #bbb;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        .schedule-item-heading {
+            align-self: flex-start;
+            color: aliceblue;
+            font-size: 1em;
+            flex: 2;
+            text-align: left;
+            font-family: monospace;
+        }
+
+        .schedule-item-time {
+            color: aliceblue;
+            font-size: 1em;
+            flex: 1;
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+
+
+
+
+
+
+
+
+/* SCHEDULE CSS END */
+
+
+
+
+
 .custom-circle-date {
     position: relative;
     width: 118px;

@@ -655,7 +655,11 @@
         top: 50%;
         transform: translateY(-50%);
     }
-    
+    @media only screen and (min-width: 0px) {
+        .bronze-item {
+            flex-basis: 80%;
+        }
+    }
     @media only screen and (min-width: 640px){
         .bronze-item{
             flex-basis: 50%;
@@ -689,22 +693,26 @@
         top: 50%;
         transform: translateY(-50%);
     }
-    
+    @media only screen and (min-width: 0px) {
+        .silver-item {
+            flex-basis: 80%;
+        }
+    }
     @media only screen and (min-width: 640px){
         .silver-item{
-            flex-basis: 100%;
+            flex-basis: 50%;
         }
     }
 
     @media only screen and (min-width: 960px){
         .silver-item{
-            flex-basis: 100%;
+            flex-basis: 33.3333%;
         }
     }
 
     @media only screen and (min-width: 1280px){
         .silver-item{
-            flex-basis: 100%;
+            flex-basis: 25%;
         }
     }
 </style>
@@ -713,24 +721,22 @@
     <section  id="partners">
         <div class="row pb-0 pt-4">
             <div class="col">
-                <h2 class="text-color-dark text-uppercase font-weight-bold text-center mb-0 mt-5" style="color: #fdfdfd !important;">SPONSORS</h2>
+                <h2 class="text-color-dark text-uppercase font-weight-bold text-center mb-0 mt-5" >SPONSORS</h2>
                 <p class="custom-font-size-1 text-center mb-0" style="color: #969696">Thank you to all our sponsors, as Explore Hacks wouldn't be able to happen without your support!</p>
             </div>
         </div>
-            <hr color="white" >
-            <h4 class="sponsorheadings">Silver Tier Sponsors<h4>
+            <hr>
             <div class="image-grid" >
                 <div class="silver-item">
-                    <a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image" src="/img/CYF-Logo0-1.png" style="max-width:100%; max-height:100%;"/></a>
+                    <a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image" src="img/CYF-Logo0-1.png" style="max-width:100%; max-height:100%;" alt="Crimson Education"/></a>
                 </div>
             </div>
-            <hr color="white" >
-            <h4 class="sponsorheadings">Bronze Tier Sponsors<h4>
-            <div class="image-grid" style="margin-bottom: -15px;">
+            <div class="image-grid" >
                 <div class="bronze-item">
-                    <a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image" src="/img/echoAR - Logo 2020 - Dark.png" style="max-width:100%; max-height:100%;"/></a>
+                    <a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image" src="img/echoAR - Logo 2020 - Dark.png" style="max-width:100%; max-height:100%;" alt="echoAR"/></a>
                 </div>
             </div>
+        <hr>
 
             <!-- <img class="grid-image" src="https://source.unsplash.com/random/320x320" /> -->
 
@@ -739,7 +745,7 @@
             <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Dark.png"class = "sponsor"></a></div> -->
 
             <!-- <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; margin-bottom: 40px">
-                <a href="https://www.crimsoneducation.org/us/"><img src="./img/Crimson-Youth-Fund-Logo (1) (1) (1) (1) (2).png" style = "width: 30vw; height: auto;" class = "medium sponsor"></a>
+                <a href="https://www.crimsoneducation.org/us/"><img src="./img/Crimson-Youth-Fund-Logo.png" style = "width: 30vw; height: auto;" class = "medium sponsor"></a>
             </div>
             <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; padding-bottom: 80px !important">
                 <a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Background.png" style = "width: 25vw; height: auto;" class = "small sponsor"></a>

@@ -635,15 +635,15 @@
 <style>
     .image-grid {
         display: flex;
-        margin: 0 auto;
         flex-wrap: wrap;
-        margin-top: 10px;
+        margin: 10px auto 0;
         justify-content: center;
     }
     .bronze-item {
         display: block;
         flex-basis: 100%;
         padding: 10px;
+        max-width: 25em;
         box-sizing: border-box;
     }
 
@@ -678,10 +678,17 @@
         }
     }
 
+    @media only screen and (min-width: 1600px){
+        .bronze-item{
+            flex-basis: 25%;
+        }
+    }
+
      .silver-item {
         display: block;
         flex-basis: 100%;
         padding: 10px;
+         max-width: 25em;
         box-sizing: border-box;
     }
 
@@ -710,7 +717,7 @@
         }
     }
 
-    @media only screen and (min-width: 1280px){
+    @media only screen and (min-width: 1600px){
         .silver-item{
             flex-basis: 25%;
         }

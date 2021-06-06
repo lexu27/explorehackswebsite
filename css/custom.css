@@ -1,8 +1,80 @@
+
+/* TEAM CSS START */
+    .team-co-founders {
+        display: flex;
+        flex-direction: row;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 1em;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .team-lead-organizers {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 1em;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 960px){
+        .team-co-founders {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+
+    @media only screen and (max-width: 550px){
+        .team-co-founders {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+
+    .team-co-founder {
+        padding:1em;
+        max-width: 45%;
+        max-height: 45%;
+        min-width: 300px;
+        min-height: 333px;
+    }
+
+
+    .team-lead-organizer {
+        padding:1em;
+        max-width: 30%;
+        max-height: 30%;
+        min-width: 300px;
+        min-height: 333px;
+    }
+
+    .team-text {
+        font-weight: bold;
+        text-transform: none;
+        color: white;
+    }
+
+    .team-img {
+        border-radius: 50% !important;
+        padding-bottom: 1em !important;
+    }
+
+
+/* TEAM CSS END */
+
+
+
+
+
+
+
+
+
+
 /* SCHEDULE CSS START */
-
-
-
-
         .schedule {
             display: flex;
             flex-direction: row;
@@ -130,7 +202,7 @@
 
 
 
-
+/* 
 .custom-circle-date {
     position: relative;
     width: 118px;
@@ -335,7 +407,7 @@
 
 .grow:hover {
     transform: scale(1.1);
-}
+} */
 
 img {
     width: 100%;
@@ -343,13 +415,13 @@ img {
     display: block;
     object-fit: cover;
 }
-
+/* 
 .sponsor {
     height: 100%;
     width: 100%;
     object-fit: contain;
-}
-
+} */
+/* 
 .hexagon-gallery {
     margin: auto;
     max-width: 1000px;
@@ -933,7 +1005,7 @@ body {
     height: 100%;
     width:100%;
 }
-
+/* 
 .color-me{
     color:white  !important;
     font-family: "Open Sans", Arial, sans-serif;
@@ -1075,4 +1147,4 @@ li > .color-me::before
 .sponsorheadings {
     text-align: center;
     color: #fff;
-}
+} */

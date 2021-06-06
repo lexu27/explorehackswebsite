@@ -587,7 +587,7 @@ img {
     }
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
     .cust {
         width: 82em;
         height: auto;
@@ -989,7 +989,7 @@ img {
 }
 .names{
     margin-top: 30px;
-}
+} */
 
 /* .st{
     position: fixed;

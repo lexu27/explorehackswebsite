@@ -1,3 +1,45 @@
+/* NAVBAR CSS START*/
+
+:root {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    font-size: 16px;
+}
+
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 5rem;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #32558C;
+}
+
+/* NAVBAR CSS END*/
+
+
+
+
+
+
+
 
 /* TEAM CSS START */
     .team-co-founders {

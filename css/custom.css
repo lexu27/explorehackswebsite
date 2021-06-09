@@ -53,20 +53,30 @@
     font-size: 31px;
     color: white;
     font-weight: bold;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-100%, 450%);
+    display: inline-block !important;
+    margin-top: 15px;
+
+    margin-bottom: 0;
+    vertical-align: middle !important;
 }
 
 
 .intro-button {
+    display: flex;
     margin: 0;
-    position: absolute;
+}
+
+.date-and-button{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     position: absolute;
+    gap: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(20%, 170%);
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
 }
 
 .intro-rocket {
@@ -79,6 +89,9 @@
 
     overflow: hidden;
 }
+
+
+
     @media only screen and (max-width: 960px) {
         .intro-logo {
             width: 50em;
@@ -125,22 +138,10 @@
 
         .intro-date {
             font-size: 20px;
-            color: white;
-            font-weight: bold;
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-100%, 450%);
         }
 
 
         .intro-button {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(20%, 170%);
         }
     }
 
@@ -168,23 +169,9 @@
 
             .intro-date {
                 font-size: 15px;
-                color: white;
-                font-weight: bold;
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-130%, 450%);
             }
 
 
-            .intro-button {
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-5%, 170%);
-            }
     }
 
 .intro-planet1 {

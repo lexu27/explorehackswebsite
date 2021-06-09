@@ -1,3 +1,19 @@
+/* ESSENTIAL CSS START */
+
+@media screen and (max-width: 1300px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+
+/* ESSENTIAL CSS END */
+
+
+
 /* INTRO CSS START */
 
 .intro {

@@ -92,7 +92,7 @@
         transform: translateY(-50%);
     }
   </style>
-  
+<!--   
 <div class="main bg-color-dark-scale-3" role="main">
     <div class="slider-container rev_slider_wrapper" style="height: 100vh;">
         <div class="slider rev_slider"
@@ -100,7 +100,6 @@
              data-plugin-revolution-slider data-version="5.4.8"
              id="revolutionSlider">
             <ul>
-                <!-- <li class="slide-overlay slide-overlay-gradient-animated slide-overlay-level-4 slide-overlay-gradient" -->
                 <li class=""
                     data-transition="fade" style="width: 100%; height:100%">
                     <img alt="" data-bgposition="center center" src="img/custom/planetsScene.png">
@@ -135,20 +134,27 @@
                         
                     </div>
 
-                    <!-- <div class="tp-caption text-center font-weight-bold text-10 mt-5" data-fontsize="['18','18','18','40']"
-                        data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2300,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-                        data-lineheight="['26','26','26','90']" data-voffset="370" data-width="['325','325','325','550']" data-x="center"
-                        data-y="center"
-                        style="color: black; font-family: 'Poppins', sans-serif; display:flex; justify-content:center; margin-top: 50px;">
-                        <div style="justify-content: center;">
-                            <div style="display: inline !important; font-size: 20px;">July 23 to July 25</div>
-                        </div>
-                    </div> -->
 
                 </li>
             </ul>
         </div>
     </div>
+ -->
+
+    <section class="intro">
+        <div class="intro-bg" id="intro-bg"> </div>
+        <img src="img/custom/Planet1.png" class="intro-planet1" id="intro-planet1">
+        <img src="img/custom/Planet2.png" class="intro-planet2" id="intro-planet2">
+        <img src="img/custom/RocketWithTrailLong.png" class="intro-rocket" id="intro-rocket">
+        <img src="img/icons/ExploreHacksLogo.png" class="intro-logo" id="intro-logo">
+        <p class="intro-date" id="intro-date">July 23rd-25th</p>
+        <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" id="intro-button"
+            style="margin-left: 20px; color: white; font-size: 20px; padding-left: 20px ; padding-right: 20px ;" type="button"
+            id="signUpButton" href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet" data-mode="popup"
+            data-size="100" target="_blank">Interested?</a>
+    </section>
+
+
 
 
     <section class="section bg-color-black section-height-3 border-0" id = "faq" style = "margin-top: 0px">
@@ -205,7 +211,7 @@
     </section>
 
 
-    <div class="container py-4 my-5" id = "about">
+    <div class=" container py-4 my-5" id = "about">
         <div class="row text-center">
             <div class="col-md-10 mx-md-auto">
         <h1 class="word-rotator slide font-weight-bold text-8 appear-animation"
@@ -482,6 +488,7 @@
     </section>
 
     <script>
+
         var hslColors = [[231, 40, 15, 9], [231, 40, 15, 5], [231, 40, 15, 3]]
             var i = 0;
             var hue = hslColors[i][0];
@@ -549,200 +556,8 @@
         </div>
 
     </section>
-<!-- <div class="container mt-5" style="min-width: fit-content;" id = "team">
 
-    <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="team"
-        data-option-key="filter">
-    </ul>
-
-
-        <h2 class="text-color-light text-uppercase font-weight-bold text-center mb-4">Meet the Team</h2>
-        
-        <h2 class="font-weight-normal text-center text-6 pb-3"><strong class="font-weight-extra-bold text-white">Co-Founders</strong>
-        </h2>
-
-        <div class="row text-center" style = "margin-bottom: 20px">
-
-            <div style = "border-radius: 50% !important" class="isotope-item leader border-radius-0">
-                <span class=" thumb-info-hide-wrapper-bg mb-4 border-radius-0">
-                    <span style = "border-radius: 50% !important" class=" border-radius-0">
-                        <a>
-                            <img style = "border-radius: 50% !important" src = "img/team/Leo.jpg" class="img-fluid border-radius-0" alt="">
-
-                        </a>
-                    </span>
-                </span>
-                <div style="text-align:center;" class = "names">
-                    <h3 class = "ppl">Leo Xu</h3>
-                    <h3 class = "ppl">Program Lead</h3>
-                </div>
-            </div>
-
-            <div class="isotope-item danny border-radius-0">
-                <span class="thumb-info-hide-wrapper-bg mb-4 border-radius-0">
-                    <span style = "border-radius: 50% !important" class="border-radius-0">
-                        <a>
-                            <img style = "border-radius: 50% !important" src="img/team/Danny.jpg" class="img-fluid border-radius-0" alt="">
-
-                        </a>
-                    </span>
-                </span>
-
-        <div style="text-align:center;" class = "names">
-            <h3 class = "ppl">Dhanish Natarajan</h3>
-            <h3 class = "ppl">General Manager</h3>
-        </div>
-            </div>
-            
-        </div>
-    
-
-
-        <h2 class="font-weight-normal text-center text-6 pb-3"><strong class="font-weight-extra-bold text-white">Lead Organizers</strong>
-        </h2>
-        <div class="row text-center">
-            <div class="isotope-item leadership border-radius-0 left">
-                <span class="thumb-info-hide-wrapper-bg mb-4 border-radius-0">
-                    <span style = "border-radius: 50% !important" class=" border-radius-0">
-                        <a>
-                            <img style = "border-radius: 50% !important" src="img/team/Niranjan.jpg" class="img-fluid border-radius-0 lead" alt="">
-                        </a>
-                    </span>
-                </span>
-                <div style="text-align:center;" class = "names">
-                    <h3 class = "ppl">Niranjan Mathirajan</h3>
-                    <h3 class = "ppl">Website Lead</h3>
-                </div>
-            </div>
-            <div class="isotope-item leadership border-radius-0 middle">
-                <span class="thumb-info-hide-wrapper-bg mb-4 border-radius-0">
-                    <span style = "border-radius: 50% !important" class="border-radius-0">
-                        <a>
-                            <img style = "border-radius: 50% !important" src="img/team/David.jpg" class="img-fluid border-radius-0" alt="">
-                        </a>
-                    </span>
-                </span>
-                <div style="text-align:center;" class = "names">
-                    <h3 class = "ppl">David Phillips</h3>
-                    <h3 class = "ppl">UI Lead</h3>
-                </div>
-            </div>
-            <div class="isotope-item leadership border-radius-0 right">
-                <span class=" thumb-info-hide-wrapper-bg mb-4 border-radius-0">
-                    <span style = "border-radius: 50% !important" class=" border-radius-0">
-                        <a>
-                            <img style = "border-radius: 50% !important" src="img/team/Sanved.jpg" class="img-fluid border-radius-0" alt="">
-                            
-                        </a>
-                    </span>
-                </span>
-                <div style="text-align:center;" class = "names">
-                    <h3 class = "ppl">Sanved Doshi</h3>
-                    <h3 class = "ppl">Marketing Lead</h3>
-                </div>
-            </div> -->
-
-            
-            
-        </div>
-</div>
-
-
-</div>
-<style>
-    .image-grid {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px auto 0;
-        justify-content: center;
-    }
-    .bronze-item {
-        display: block;
-        flex-basis: 100%;
-        padding: 10px;
-        max-width: 25em;
-        box-sizing: border-box;
-    }
-
-    .bronze-image {
-        width: auto;
-        height: auto;
-        margin: 0 auto;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    @media only screen and (min-width: 0px) {
-        .bronze-item {
-            flex-basis: 50%;
-        }
-    }
-    @media only screen and (min-width: 640px){
-        .bronze-item{
-            flex-basis: 25%;
-        }
-    }
-
-    @media only screen and (min-width: 960px){
-        .bronze-item{
-            flex-basis: 25%;
-        }
-    }
-
-    @media only screen and (min-width: 1280px){
-        .bronze-item{
-            flex-basis: 15%;
-        }
-    }
-
-    @media only screen and (min-width: 1600px){
-        .bronze-item{
-            flex-basis: 15%;
-        }
-    }
-
-     .silver-item {
-        display: block;
-        flex-basis: 100%;
-        padding: 10px;
-         max-width: 25em;
-        box-sizing: border-box;
-    }
-
-    .silver-image {
-        width: auto;
-        height: auto;
-        margin: 0 auto;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    @media only screen and (min-width: 0px) {
-        .silver-item {
-            flex-basis: 80%;
-        }
-    }
-    @media only screen and (min-width: 640px){
-        .silver-item{
-            flex-basis: 50%;
-        }
-    }
-
-    @media only screen and (min-width: 960px){
-        .silver-item{
-            flex-basis: 33.3333%;
-        }
-    }
-
-    @media only screen and (min-width: 1600px){
-        .silver-item{
-            flex-basis: 25%;
-        }
-    }
-</style>
-
-
-    <section  id="partners" class="pb-5">
+    <section  class="sponsors pb-5">
         <div class="row pt-4">
             <div class="col">
                 <h2 class="text-color-dark text-uppercase font-weight-bold text-center mb-0 mt-5" >SPONSORS</h2>
@@ -759,21 +574,6 @@
                     <a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image" src="img/sponsors/echoar.png" style="max-width:100%; max-height:100%;" alt="echoAR"/></a>
                 </div>
             </div>
-
-            <!-- <img class="grid-image" src="https://source.unsplash.com/random/320x320" /> -->
-
-        <!-- <section>
-            <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.crimsoneducation.org/us/"><img src="./img/CYF-Logo0-1.png" class = "sponsor"></a></div>
-            <div class="hex" style = "background-color:white; padding:80px;"><a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Dark.png"class = "sponsor"></a></div> -->
-
-            <!-- <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; margin-bottom: 40px">
-                <a href="https://www.crimsoneducation.org/us/"><img src="./img/Crimson-Youth-Fund-Logo.png" style = "width: 30vw; height: auto;" class = "medium sponsor"></a>
-            </div>
-            <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-grow: 1; padding-bottom: 80px !important">
-                <a href="https://www.echoar.xyz/"><img src="./img/echoAR - Logo 2020 - Background.png" style = "width: 25vw; height: auto;" class = "small sponsor"></a>
-            </div> -->
-<!-- 
-        </section> -->
     </section>
 
     <footer class="mt-0" id="footer">

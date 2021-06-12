@@ -9,7 +9,7 @@
     <meta charset="utf-8">
 
     <title>Explore Hacks</title>
-    <meta content="Explore Hacks" name="keywords"/>
+    <meta content="Explore Hacks" name="keywords" />
     <meta content="Code Without Limits" name="description">
 
 
@@ -17,6 +17,8 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/intro.css" rel="stylesheet">
     <link href="css/intro-2.css" rel="stylesheet">
+    <link href="css/intro-3.css" rel="stylesheet">
+    <link href="css/faqs.css" rel="stylesheet">
     <link href="css/schedule.css" rel="stylesheet">
     <link href="css/team.css" rel="stylesheet">
     <link href="css/video.css" rel="stylesheet">
@@ -35,25 +37,42 @@
 
 <body>
 
-<script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
+    <script>
+        (function() {
+            var qs, js, q, s, d = document,
+                gi = d.getElementById,
+                ce = d.createElement,
+                gt = d.getElementsByTagName,
+                id = "typef_orm_share",
+                b = "https://embed.typeform.com/";
+            if (!gi.call(d, id)) {
+                js = ce.call(d, "script");
+                js.id = id;
+                js.src = b + "embed.js";
+                q = gt.call(d, "script")[0];
+                q.parentNode.insertBefore(js, q)
+            }
+        })()
+    </script>
 
-  <style>
-      html{
-          scroll-behavior: smooth;
-        margin: 0;
-      }
-
-      body {
-          margin: 0;
-      }
-      .vertical-center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-  </style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            margin: 0;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    </style>
 
     <section class="intro">
         <div class="intro-bg" id="intro-bg"> </div>
@@ -63,51 +82,81 @@
         <img src="img/icons/ExploreHacksLogo.png" class="intro-logo" id="intro-logo">
         <div class="date-and-button" id="date-and-button">
             <div class="intro-date" id="intro-date">July 23rd-25th</div>
-            <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" id="intro-button"
-                style="margin-left: 20px; color: white; font-size: 20px; padding-left: 20px ; padding-right: 20px ;" type="button"
-                id="signUpButton" href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet" data-mode="popup"
-                data-size="100" target="_blank">Interested?</a>
+            <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" id="intro-button" style="margin-left: 20px; color: white; font-size: 20px; padding-left: 20px ; padding-right: 20px ;" type="button" id="signUpButton" href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet"
+                data-mode="popup" data-size="100" target="_blank">Interested?</a>
         </div>
-        
+
     </section>
 
 
     <section class="intro-2 black-section">
-        <div class="intro-2-prompt"> <h1> Create a project that
-            <span class="c1">solves</span> a current issue in the
-            <span class="c2">world</span> and has a lasting
-            <span class="c3">impact</span> on a
-            <span class="c4">market</span> of your choice in the
-            future.
-        </h1></div>
-
-        <p class="intro-2-description">
-            Explore Hacks is a 3-day hackathon that aims to grant both experienced and beginner student programmers the chance to
-            explore the process of ideation to product execution. Participants also gain the opportunity to attend a variety of
-            workshops and mini-events to enhance their programming skills and explore new areas in computer science. And it's all
-            for free!
-        </p>
-
-        <!-- <span class="stats-symbol">$</span> -->
-        <div class="stats">
-            <div class="prizes">
-                <p class="prizes-text counter" data-target="5000">0</p>
-                <p class="stats-title">In prizes</p>
+        <div class="intro-2-container">
+            <div class="intro-2-prompt">
+                <h1> Create a project that
+                    <span class="c1">solves</span> a current issue in the
+                    <span class="c2">world</span> and has a lasting
+                    <span class="c3">impact</span> on a
+                    <span class="c4">market</span> of your choice in the future.
+                </h1>
             </div>
 
-            <div class="workshops">
-                <p class="workshops-text counter">15<span class="stats-symbol">+</span></p>
-                <p class="stats-title">Mini Events</p>
-            </div>
+            <p class="intro-2-description">
+                Explore Hacks is a 3-day hackathon that aims to grant both experienced and beginner student programmers the chance to explore the process of ideation to product execution. Participants also gain the opportunity to attend a variety of workshops and mini-events
+                to enhance their programming skills and explore new areas in computer science. And it's all for free!
+            </p>
 
-            <div class="particpants">
-                <p class="participants-text counter">400<span class="stats-symbol">+</span></p>
-                <p class="stats-title">Participants from around the world</p>
+            <!-- <span class="stats-symbol">$</span> -->
+            <div class="stats">
+                <div class="prizes">
+                    <p class="prizes-text counter" data-target="5000">0</p>
+                    <p class="stats-title">In prizes</p>
+                </div>
+
+                <div class="workshops">
+                    <p class="workshops-text counter">15<span class="stats-symbol">+</span></p>
+                    <p class="stats-title">Mini Events</p>
+                </div>
+
+                <div class="particpants">
+                    <p class="participants-text counter">400<span class="stats-symbol">+</span></p>
+                    <p class="stats-title">Participants from around the world</p>
+                </div>
             </div>
 
         </div>
     </section>
 
+    <section class="intro-3 gray-section">
+        <div class="intro-3-container">
+            <div class="intro-3-title">Gain the opportunity to build by participating in Explore Hacks</div>
+            <p class="intro-3-description">By attending Explore Hacks, you will not only gain the chance learn more, but also have the chance to improve your programming knowledge to solve real life problems. Whether you're a beginner or master at coding, as long as you're interested
+                in an exciting and complementary learning experience to your coding journey, Explore Hacks is right for you!
+            </p>
+            <div style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
+                <div style="padding: 20px; max-width: 420px;">
+                    <img src="img/opportunities/1.png">
+                </div>
+                <div style="padding: 20px; max-width: 420px;">
+                    <img src="img/opportunities/2.png">
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-left: auto; margin-right: auto">
+                <div style="padding: 20px; max-width: 420px;">
+                    <img src="img/opportunities/3.png">
+                </div>
+                <div style="padding: 20px; max-width: 420px;">
+                    <img src="img/opportunities/4.png">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faqs black-section">
+        <div class="faqs-container">
+            <div class="faqs-title">FAQs</div>
+        </div>
+    </section>
 
     <!-- <section class="video-section gray-section" id = "video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Ow6y97oQWOg" title="YouTube video player" 
@@ -116,9 +165,8 @@
     <section class="videoWrapper gray-section">
         <!-- Copy & Pasted from YouTube -->
         <!-- 560 x 315 -->
-        <iframe width="1120" height="630" src="https://www.youtube.com/embed/Ow6y97oQWOg" title="YouTube video player"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <iframe id="video" src="https://www.youtube.com/embed/Ow6y97oQWOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     </section>
 
 
@@ -178,88 +226,93 @@
 
 
             <div class="schedule-day">
-            
+
                 <h2 class="schedule-date">July 24th</h2>
-            
+
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Workshop/Speaker Event</p>
                     <p class="schedule-item-time">9:00 AM - 10:00 AM</p>
                 </div>
-            
+
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Workshop/Speaker Event</p>
                     <p class="schedule-item-time">11:00 AM - 12:00 PM</p>
                 </div>
-            
+
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Workshop/Speaker Event</p>
                     <p class="schedule-item-time">1:00 PM - 2:00 PM</p>
                 </div>
-            
+
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Workshop/Speaker Event</p>
                     <p class="schedule-item-time">3:00 PM - 4:00 PM</p>
                 </div>
-            
+
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Game Night</p>
                     <p class="schedule-item-time">8:00 PM - 9:00 PM</p>
                 </div>
-            
+
             </div>
 
             <div class="schedule-day">
-            
+
                 <h2 class="schedule-date">July 25th</h2>
-            
+
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Submissions</p>
                     <p class="schedule-item-time">9:00 AM - 11:00 AM</p>
                 </div>
-            
+
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Judging</p>
                     <p class="schedule-item-time">11:00 AM - 3:00 PM</p>
                 </div>
-            
+
                 <div class="schedule-item-workshop">
                     <p class="schedule-item-heading">Closing Ceremony</p>
                     <p class="schedule-item-time">3:00 PM - 4:00 PM</p>
                 </div>
-            
+
             </div>
 
 
-            
+
         </div>
     </section>
 
     <script>
-
-        var hslColors = [[231, 40, 15, 9], [231, 40, 15, 5], [231, 40, 15, 3]]
-            var i = 0;
-            var hue = hslColors[i][0];
-            var saturation = hslColors[i][1];
-            var value = hslColors[i][2];
-            var count = 0;
-          $('.schedule-item-workshop').each(function () {
-              count++;
-              if (count > hslColors[i][3]){
-                  i++;
-                  hue = hslColors[i][0];
-                  saturation = hslColors[i][1];
-                  value = hslColors[i][2];
-                  count = 1;
-              }
-              value += 5;
+        var hslColors = [
+            [231, 40, 15, 9],
+            [231, 40, 15, 5],
+            [231, 40, 15, 3]
+        ]
+        var i = 0;
+        var hue = hslColors[i][0];
+        var saturation = hslColors[i][1];
+        var value = hslColors[i][2];
+        var count = 0;
+        $('.schedule-item-workshop').each(function() {
+            count++;
+            if (count > hslColors[i][3]) {
+                i++;
+                hue = hslColors[i][0];
+                saturation = hslColors[i][1];
+                value = hslColors[i][2];
+                count = 1;
+            }
+            value += 5;
 
             //   var hue = Math.floor(Math.random() * 360) + 1;
 
-              var hsvText = "hsl(" + hue + "," + saturation + "%," + value + "%)";
-              console.log(hsvText);
+            var hsvText = "hsl(" + hue + "," + saturation + "%," + value + "%)";
+            console.log(hsvText);
 
-                $(this).css({ "background-color": hsvText});
+            $(this).css({
+                "background-color": hsvText
             });
+        });
     </script>
 
     <section class="pt-4">
@@ -269,58 +322,76 @@
         <div class="team-co-founders">
 
             <div class="team-co-founder">
-                <a><img src="img/team/Leo.jpg" class="team-img img-fluid border-radius-0"alt=""></a>
-                <div style="text-align:center;" class=""><h3 class="team-text">Leo Xu</h3><h3 class="team-text">Program Lead</h3></div>
+                <a><img src="img/team/Leo.jpg" class="team-img img-fluid border-radius-0" alt=""></a>
+                <div style="text-align:center;" class="">
+                    <h3 class="team-text">Leo Xu</h3>
+                    <h3 class="team-text">Program Lead</h3>
+                </div>
             </div>
 
             <div class="team-co-founder">
                 <img src="img/team/Danny.jpg" class="team-img img-fluid border-radius-0" alt="">
-                <div style="text-align:center;" class=""><h3 class="team-text">Dhanish Natarajan</h3><h3 class="team-text">General Manager</h3></div>
+                <div style="text-align:center;" class="">
+                    <h3 class="team-text">Dhanish Natarajan</h3>
+                    <h3 class="team-text">General Manager</h3>
+                </div>
             </div>
 
         </div>
         <div class="team-lead-organizers">
             <div class="team-lead-organizer">
-                <a><img src="img/team/Niranjan.jpg" class="team-img img-fluid border-radius-0"alt=""></a>
-                <div style="text-align:center;" class=""><h3 class="team-text">Niranjan Mathiranjan</h3><h3 class="team-text">Website Lead</h3></div>
+                <a><img src="img/team/Niranjan.jpg" class="team-img img-fluid border-radius-0" alt=""></a>
+                <div style="text-align:center;" class="">
+                    <h3 class="team-text">Niranjan Mathiranjan</h3>
+                    <h3 class="team-text">Website Lead</h3>
+                </div>
             </div>
 
             <div class="team-lead-organizer">
                 <img src="img/team/David.jpg" class="team-img img-fluid border-radius-0" alt="">
-                <div style="text-align:center;" class=""><h3 class="team-text">David Phillips</h3><h3 class="team-text">UI Lead</h3></div>
+                <div style="text-align:center;" class="">
+                    <h3 class="team-text">David Phillips</h3>
+                    <h3 class="team-text">UI Lead</h3>
+                </div>
             </div>
 
             <div class="team-lead-organizer">
                 <img src="img/team/Sanved.jpg" class="team-img img-fluid border-radius-0" alt="">
-                <div style="text-align:center;" class=""><h3 class="team-text">Sanved Doshi</h3><h3 class="team-text">Marketing Lead</h3></div>
+                <div style="text-align:center;" class="">
+                    <h3 class="team-text">Sanved Doshi</h3>
+                    <h3 class="team-text">Marketing Lead</h3>
+                </div>
             </div>
 
             <div class="team-lead-organizer">
                 <img src="img/team/Grace.png" class="team-img img-fluid border-radius-0" alt="">
-                <div style="text-align:center;" class=""><h3 class="team-text">Grace Jin</h3><h3 class="team-text">Graphics Designer</h3></div>
+                <div style="text-align:center;" class="">
+                    <h3 class="team-text">Grace Jin</h3>
+                    <h3 class="team-text">Graphics Designer</h3>
+                </div>
             </div>
 
         </div>
 
     </section>
 
-    <section  class="sponsors pb-5">
+    <section class="sponsors pb-5">
         <div class="row pt-4">
             <div class="col">
-                <h2 class="text-color-dark text-uppercase font-weight-bold text-center mb-0 mt-5" >SPONSORS</h2>
+                <h2 class="text-color-dark text-uppercase font-weight-bold text-center mb-0 mt-5">SPONSORS</h2>
                 <p class="custom-font-size-1 text-center mb-0" style="color: #969696">Thank you to all our sponsors for supporting Explore Hacks and helping our event succeed!</p>
             </div>
         </div>
-            <div class="image-grid" >
-                <div class="silver-item">
-                    <a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image" src="img/sponsors/crimson.png" style="max-width:100%; max-height:100%;" alt="Crimson Education"/></a>
-                </div>
+        <div class="image-grid">
+            <div class="silver-item">
+                <a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image" src="img/sponsors/crimson.png" style="max-width:100%; max-height:100%;" alt="Crimson Education" /></a>
             </div>
-            <div class="image-grid" >
-                <div class="bronze-item">
-                    <a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image" src="img/sponsors/echoar.png" style="max-width:100%; max-height:100%;" alt="echoAR"/></a>
-                </div>
+        </div>
+        <div class="image-grid">
+            <div class="bronze-item">
+                <a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image" src="img/sponsors/echoar.png" style="max-width:100%; max-height:100%;" alt="echoAR" /></a>
             </div>
+        </div>
     </section>
 
     <footer class="mt-0" id="footer">
@@ -328,12 +399,9 @@
             <div class="container py-2">
                 <div class="row py-4">
                     <div class="col text-center">
-                        <ul
-                                class="footer-social-icons social-icons social-icons-clean social-icons-icon-light mb-3">
-                            <li class="social-icons-instagram"><a href="https://www.instagram.com/explore_hacks/" target="_blank"
-                                                                 title="Instagram"><i class="fab fa-instagram"></i></a>
-                            <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/explore-hacks/about/" target="_blank"
-                                                                title="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                        <ul class="footer-social-icons social-icons social-icons-clean social-icons-icon-light mb-3">
+                            <li class="social-icons-instagram"><a href="https://www.instagram.com/explore_hacks/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/explore-hacks/about/" target="_blank" title="linkedin"><i class="fab fa-linkedin"></i></a></li>
                         </ul>
                         <p>Questions? Contact us at support@explorehacks.org</p>
                         <p>Logo Created by Anna Wang</p>

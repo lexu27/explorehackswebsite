@@ -1,0 +1,32 @@
+.intro-3 {
+    height: 80vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.intro-3-container {
+    width: fit-content;
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .intro-3-container {
+        max-width: 80%;
+    }
+}
+
+.intro-3-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro-3-description {
+    font-size: 1.6rem;
+    text-align: center;
+}

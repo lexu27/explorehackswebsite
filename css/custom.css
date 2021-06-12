@@ -18,15 +18,29 @@
     }
 }
 
-body {
-    /* font-family: 'Poppins', sans-serif !important; */
+:root {
     font-family: Arial, "Open Sans", sans-serif;
+    color: white;
+    font-size: 10px;
+}
+
+h1 {
+    line-height: 4.4rem;
+}
+
+p {
+    line-height: 2.7rem;
 }
 
 .gray-section {
     background-color: #181B1E;
-    color: #181B1E;
 }
+
+.black-section {
+    background-color: #000000;
+}
+
+
 
 
 

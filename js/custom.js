@@ -1,15 +1,4 @@
-// var i;
-// for (i = 0; i < 50; i++) {
-// }
-// node = document.getElementById('stars-below');
-// node.insertAdjacentHTML('afterend', '<div class="star"></div>');
-// stars = document.getElementsByClassName("star");
-// stars[0].style.borderRadius = "50%";
-// stars[0].style.backgroundColor = "white";
-// stars[0].style.width = "2px";
-// stars[0].style.height = "2px";
-// stars[0].style.top = "90%";
-// stars[0].style.left = "50%";
+// intro code
 
 let logo = document.getElementById("intro-logo");
 let dateAndButton = document.getElementById("date-and-button");
@@ -49,3 +38,54 @@ window.addEventListener('scroll', function(){
     }
 })
 
+
+
+// counter code
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // The lower the slower
+
+// Where el is the DOM element you'd like to test for visibility
+// function isHidden(el) {
+//     return (el.offsetParent === null)
+// }
+
+// Where el is the DOM element you'd like to test for visibility
+function isHidden(el) {
+    var style = window.getComputedStyle(el);
+    return (style.display === 'none')
+}
+const updateCounts = () => {
+    if (isHidden(counters[0])){
+        return
+    }
+    console.log("k pog")
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+
+            // Lower inc to slow and higher to slow
+            const inc = target / speed;
+
+            // console.log(inc);
+            // console.log(count);
+
+            // Check if target is reached
+            if (count < target) {
+                // Add inc to count and output in counter
+                counter.innerText = count + inc;
+                // Call function every ms
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCount();
+    });
+}
+
+
+
+window.addEventListener('scroll', updateCounts);
+window.addEventListener('load', updateCounts);

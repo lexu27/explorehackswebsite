@@ -6,17 +6,17 @@
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: #021C33;
-
 }
 
 .intro-logo {
-    width: 80em;
+    width: 110rem;
     height: auto;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: fadeIn 1.3s;
 }
 
 .intro-date {
@@ -24,12 +24,10 @@
     color: white;
     font-weight: bold;
     display: inline-block !important;
-    margin-top: 15px;
 
     margin-bottom: 0;
     vertical-align: middle !important;
 }
-
 
 .intro-button {
     display: flex;
@@ -37,18 +35,28 @@
 }
 
 .date-and-button{
-    margin-top: 130px;
+    margin-top: 13rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-     position: absolute;
-    gap: 20px;
+    position: absolute;
+    align-items: center;
+    gap: 20px 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     flex-wrap: wrap;
+    mix-blend-mode: hard-light;
 }
-
+.date-and-button::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, gray 5%, gray 100%);
+    animation: swipe 2.5s linear forwards;
+}
 .intro-rocket {
     margin: 0;
     height: 200vh;
@@ -156,4 +164,27 @@
     position: absolute;
     top: 5%;
     left: 16%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+        width: 170rem;
+        height: auto;
+    }
+    to {
+        opacity: 1;
+        width: 110rem;
+        height: auto;
+    }
+}
+
+@keyframes swipe {
+    0% {
+        left: 0%
+    }
+    100% {
+        left: 100%
+    }
 }

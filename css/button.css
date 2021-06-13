@@ -2,5 +2,19 @@
     -webkit-appearance: none;
     align-items: center;
     justify-content: center;
-    margin-top: 8px;
+    padding: 18px 20px 18px 20px;
+    text-decoration: none;
+    color: white; 
+    font-size: 20px;
+
+}
+.btn:hover {
+    background-color: white;
+    transition: background-color 0.2s linear;
+    color: #011C33;
+    transition: color 0.2s linear;
+}
+.btn-outline {
+    border: 2px solid rgb(217, 217, 217);
+    border-radius: 0.4rem;
 }

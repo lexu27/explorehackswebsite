@@ -1,12 +1,22 @@
-    .schedule {
+        .schedule {
             display: flex;
             flex-direction: row;
             padding-left: 5em;
             padding-right: 5em;
-            padding-bottom: 1em;
+            padding-bottom: 5em;
             flex-wrap: wrap;
             justify-content: center;
 
+        }
+
+        .schedule-title {
+            font-size: 2.7rem;
+            font-weight: bold;
+            margin-bottom: 3rem;
+            padding-top: 5rem;
+            vertical-align:middle;
+            align-self: center;
+            text-align: center;
         }
 
         .schedule-day {
@@ -99,7 +109,7 @@
         .schedule-item-heading {
             align-self: flex-start;
             color: aliceblue;
-            font-size: 1em;
+            font-size: 1.4rem;
             flex: 2;
             text-align: left;
             font-family: monospace;
@@ -107,7 +117,7 @@
 
         .schedule-item-time {
             color: aliceblue;
-            font-size: 1em;
+            font-size: 1.4rem;
             flex: 1;
             text-align: right;
             flex-shrink: 0;

@@ -53,6 +53,7 @@
         font-weight: bold;
         text-transform: none;
         color: white;
+        font-size: 2.52rem;
     }
 
     .team-img {
@@ -60,3 +61,19 @@
         padding-bottom: 1em !important;
     }
 
+
+    .team-title {
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .team-subtitle {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+        padding-top: 30px;
+        text-align: center;
+    }

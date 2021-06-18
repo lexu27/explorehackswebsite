@@ -1,8 +1,8 @@
   .team-co-founders {
         display: flex;
         flex-direction: row;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 18%;
+        padding-right: 18%;
         padding-bottom: 1em;
         justify-content: space-evenly;
         flex-wrap: wrap;

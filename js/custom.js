@@ -14,7 +14,6 @@ var layer3 = [planet1];
 
 window.addEventListener('scroll', function(){
     var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-    console.log("yea: "+vw);
     if (!(vw <= 670)){
         let value = window.scrollY;
         // console.log("yea "+stars[0].style.top);
@@ -33,7 +32,6 @@ window.addEventListener('scroll', function(){
             item.style.bottom = value * 0.03 * 0.5 + -3 + '%';
         });
 
-        console.log(value);
         // bg.style.bottom = value + "px";
     }
 })
@@ -42,30 +40,26 @@ window.addEventListener('scroll', function(){
 
 // counter code
 const counters = document.querySelectorAll('.counter');
-const speed = 200; // The lower the slower
 
 // Where el is the DOM element you'd like to test for visibility
 // function isHidden(el) {
 //     return (el.offsetParent === null)
 // }
 
-// Where el is the DOM element you'd like to test for visibility
-function isHidden(el) {
-    var style = window.getComputedStyle(el);
-    return (style.display === 'none')
-}
-const updateCounts = () => {
-    if (isHidden(counters[0])){
-        return
-    }
-    console.log("k pog")
+const updateCounts = (speed) => {
+    var i = 1;
     counters.forEach(counter => {
         const updateCount = () => {
             const target = +counter.getAttribute('data-target');
             const count = +counter.innerText;
+            console.log({iamspeed: count})
 
             // Lower inc to slow and higher to slow
-            const inc = target / speed;
+            var inc = target / speed;
+            if (i==2){
+                console.log("yeeeeeeeeeeeeeeeeee")
+                inc = target / 1;
+            }
 
             // console.log(inc);
             // console.log(count);
@@ -73,19 +67,15 @@ const updateCounts = () => {
             // Check if target is reached
             if (count < target) {
                 // Add inc to count and output in counter
-                counter.innerText = count + inc;
+                counter.innerText = Math.round(count + inc);
                 // Call function every ms
-                setTimeout(updateCount, 1);
+                setTimeout(updateCount, 10);
             } else {
                 counter.innerText = target;
             }
         };
 
         updateCount();
+        i++;
     });
 }
-
-
-
-window.addEventListener('scroll', updateCounts);
-window.addEventListener('load', updateCounts);

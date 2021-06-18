@@ -68,87 +68,6 @@
     overflow: hidden;
 }
 
-
-
-    @media only screen and (max-width: 960px) {
-        .intro-logo {
-            width: 50em;
-            height: auto;
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .intro-rocket {
-            margin: 0;
-            height: 150vh;
-            width: auto;
-            position: absolute;
-            left: 1%;
-            bottom: -108%;
-
-            overflow: hidden;
-        }
-    }
-
-    @media only screen and (max-width: 670px) {
-        .intro-logo {
-            width: 35em;
-            height: auto;
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .intro-rocket {
-            margin: 0;
-            height: 130vh;
-            width: auto;
-            position: absolute;
-            left: 1%;
-            bottom: -108%;
-
-            overflow: hidden;
-        }
-
-
-        .intro-date {
-            font-size: 20px;
-        }
-
-    }
-
-         @media only screen and (max-width: 420px) {
-            .intro-logo {
-                width: 20em;
-                height: auto;
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            .intro-rocket {
-                margin: 0;
-                height: 130vh;
-                width: auto;
-                position: absolute;
-                left: 1%;
-                bottom: -108%;
-
-                overflow: hidden;
-            }
-
-
-            .intro-date {
-                font-size: 15px;
-            }
-
-
-    }
-
 .intro-planet1 {
     width: 25vw;
     height: auto;
@@ -166,6 +85,171 @@
     left: 16%;
 }
 
+
+@media only screen and (max-width: 1044px) {
+    .intro-logo {
+        width: 85rem;
+        height: auto;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fadeIn1 1.3s !important;
+    }
+    .intro-rocket {
+        margin: 0;
+        height: 150vh;
+        width: auto;
+        position: absolute;
+        left: 1%;
+        bottom: -108%;
+
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 828px) {
+    .intro-logo {
+        width: 65rem;
+        height: auto;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fadeIn2 1.3s !important;
+    }
+    .intro-rocket {
+        margin: 0;
+        height: 130vh;
+        width: auto;
+        position: absolute;
+        left: 1%;
+        bottom: -108%;
+
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 638px) {
+    .intro-logo {
+        width: 45rem;
+        height: auto;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fadeIn3 1.3s !important;
+    }
+    .intro-rocket {
+        margin: 0;
+        height: 130vh;
+        width: auto;
+        position: absolute;
+        left: 1%;
+        bottom: -108%;
+
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    .intro-logo {
+        width: 45rem;
+        height: auto;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fadeIn4 1.3s !important;
+    }
+    .intro-rocket {
+        margin: 0;
+        height: 130vh;
+        width: auto;
+        position: absolute;
+        left: 1%;
+        bottom: -108%;
+
+        overflow: hidden;
+    }
+
+    .intro-date {
+        font-size: 25px !important;
+    }
+    .btn {
+        font-size: 18px !important;
+        padding: 14px 26px 14px 26px !important;
+    }
+    
+}
+@media only screen and (max-width: 436px) {
+    .intro-logo {
+        width: 38rem;
+        height: auto;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fadeIn5 1.3s !important;
+    }
+    .intro-rocket {
+        margin: 0;
+        height: 130vh;
+        width: auto;
+        position: absolute;
+        left: 1%;
+        bottom: -108%;
+
+        overflow: hidden;
+    }
+
+    .intro-date {
+        font-size: 20px !important;
+    }
+    .date-and-button{
+        margin-top: 10rem !important;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 340px) {
+    .intro-logo {
+        width: 33rem;
+        height: auto;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fadeIn6 1.3s !important;
+    }
+    .intro-rocket {
+        margin: 0;
+        height: 130vh;
+        width: auto;
+        position: absolute;
+        left: 1%;
+        bottom: -108%;
+
+        overflow: hidden;
+    }
+
+    .intro-date {
+        font-size: 20px !important;
+    }
+    .date-and-button{
+        margin-top: 10rem !important;
+    }
+    
+    
+ }
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -176,6 +260,86 @@
     to {
         opacity: 1;
         width: 110rem;
+        height: auto;
+    }
+}
+
+@keyframes fadeIn1 {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+        width: 120rem;
+        height: auto;
+    }
+    to {
+        opacity: 1;
+        width: 85rem;
+        height: auto;
+    }
+}
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+        width: 100rem;
+        height: auto;
+    }
+    to {
+        opacity: 1;
+        width: 65rem;
+        height: auto;
+    }
+}
+@keyframes fadeIn3 {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+        width: 75rem;
+        height: auto;
+    }
+    to {
+        opacity: 1;
+        width: 45rem;
+        height: auto;
+    }
+}
+
+@keyframes fadeIn4 {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+        width: 75rem;
+        height: auto;
+    }
+    to {
+        opacity: 1;
+        width: 45rem;
+        height: auto;
+    }
+}
+@keyframes fadeIn5 {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+        width: 60rem;
+        height: auto;
+    }
+    to {
+        opacity: 1;
+        width: 38rem;
+        height: auto;
+    }
+}
+@keyframes fadeIn6 {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+        width: 65rem;
+        height: auto;
+    }
+    to {
+        opacity: 1;
+        width: 33rem;
         height: auto;
     }
 }

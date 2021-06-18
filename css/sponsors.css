@@ -1,19 +1,20 @@
   .sponsors {
         background-color: white;
+        padding-bottom: 5rem;
     }
 
 
     .image-grid {
         display: flex;
         flex-wrap: wrap;
-        margin: 10px auto 0;
+        margin: 30px auto 0;
         justify-content: center;
+        column-gap: 20px;
     }
     .bronze-item {
         display: block;
         flex-basis: 100%;
         padding: 10px;
-        max-width: 25em;
         box-sizing: border-box;
     }
 
@@ -58,7 +59,6 @@
         display: block;
         flex-basis: 100%;
         padding: 10px;
-         max-width: 25em;
         box-sizing: border-box;
     }
 
@@ -91,4 +91,26 @@
         .silver-item{
             flex-basis: 25%;
         }
+    }
+
+
+    .sponsors-title {
+        color: black;
+        font-size: 2.7rem;
+        font-weight: bold;
+        padding-top: 5rem;
+        vertical-align:middle;
+        align-self: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .sponsors-subtitle {
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        vertical-align:middle;
+        align-self: center;
+        text-align: center;
     }

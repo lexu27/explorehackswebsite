@@ -55,7 +55,6 @@ body::-webkit-scrollbar-thumb {
   bottom:0;
   z-index:200;
   background:#021c33;
-    animation: fadeOut 2s;
 }
 
 .preloader__wrapper {

@@ -2,7 +2,7 @@
 html,body
 {
     width: 100%;
-    overflow-x: hidden !important; 
+    overflow-x: hidden !important;
 }
 
 :root {
@@ -54,8 +54,10 @@ body::-webkit-scrollbar-thumb {
   right:0;
   bottom:0;
   z-index:200;
-  background:#515781;
+  background:#021c33;
+    animation: fadeOut 2s;
 }
+
 .preloader__wrapper {
   margin:-50px 0 0 -50px;
 }
@@ -162,3 +164,54 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
+.fade-out {
+    animation: fadeOut ease 8s;
+    -webkit-animation: fadeOut ease 8s;
+    -moz-animation: fadeOut ease 8s;
+    -o-animation: fadeOut ease 8s;
+    -ms-animation: fadeOut ease 8s;
+}@keyframes fadeOut {
+     0% {
+         opacity:1;
+     }
+     100% {
+         opacity:0;
+     }
+ }
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

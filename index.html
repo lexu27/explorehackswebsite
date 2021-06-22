@@ -26,7 +26,6 @@
     <link href="css/sponsors.css" rel="stylesheet">
     <link href="css/button.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-    <link type="text/css" href="fontawesome/css/fontawesome.min.css" rel="stylesheet">
 
     <!-- custom font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,7 +42,7 @@
 
 <body>
 
-    <!-- Loading Screen Div -->
+<!--     Loading Screen Div-->
     <div class="loading-screen">
         <div class="preloader">
 
@@ -57,11 +56,12 @@
 
         </div>
     </div>
-
+<!--    JS to load preloader until website loads-->
     <script>
         let loadingWrapper = document.querySelector('.loading-screen')
-        window.addEventListener('load', () => {
-            loadingWrapper.style.display = 'none'
+        window.addEventListener('load', function() {
+          loadingWrapper.style.animation = "fadeOut 1s";
+          loadingWrapper.style.display = "none";
         })
     </script>
 
@@ -271,7 +271,7 @@
     </section>
 
     <!-- <section class="video-section gray-section" id = "video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ow6y97oQWOg" title="YouTube video player" 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ow6y97oQWOg" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section> -->
     <section class="videoWrapper gray-section">

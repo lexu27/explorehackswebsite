@@ -1,15 +1,4 @@
-// var i;
-// for (i = 0; i < 50; i++) {
-// }
-// node = document.getElementById('stars-below');
-// node.insertAdjacentHTML('afterend', '<div class="star"></div>');
-// stars = document.getElementsByClassName("star");
-// stars[0].style.borderRadius = "50%";
-// stars[0].style.backgroundColor = "white";
-// stars[0].style.width = "2px";
-// stars[0].style.height = "2px";
-// stars[0].style.top = "90%";
-// stars[0].style.left = "50%";
+// intro code
 
 let logo = document.getElementById("intro-logo");
 let dateAndButton = document.getElementById("date-and-button");
@@ -23,10 +12,9 @@ var layer1 = [logo];
 var layer2 = [rocket];
 var layer3 = [planet1];
 
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function () {
     var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-    console.log("yea: "+vw);
-    if (!(vw <= 670)){
+    if (!(vw <= 670)) {
         let value = window.scrollY;
         // console.log("yea "+stars[0].style.top);
         // stars[0].style.top = value+"px";
@@ -44,8 +32,50 @@ window.addEventListener('scroll', function(){
             item.style.bottom = value * 0.03 * 0.5 + -3 + '%';
         });
 
-        console.log(value);
         // bg.style.bottom = value + "px";
     }
 })
 
+
+
+// counter code
+const counters = document.querySelectorAll('.counter');
+
+// Where el is the DOM element you'd like to test for visibility
+// function isHidden(el) {
+//     return (el.offsetParent === null)
+// }
+
+const updateCounts = (speed) => {
+    var i = 1;
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            console.log({ iamspeed: count })
+
+            // Lower inc to slow and higher to slow
+            var inc = target / speed;
+            if (i == 2) {
+                console.log("yeeeeeeeeeeeeeeeeee")
+                inc = target / 1;
+            }
+
+            // console.log(inc);
+            // console.log(count);
+
+            // Check if target is reached
+            if (count < target) {
+                // Add inc to count and output in counter
+                counter.innerText = Math.round(count + inc);
+                // Call function every ms
+                setTimeout(updateCount, 10);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCount();
+        i++;
+    });
+}

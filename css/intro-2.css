@@ -1,0 +1,85 @@
+.c1 {
+    color: #82AAFF;
+}
+
+.c2 {
+    color: #E8C1F4;
+}
+
+.c3 {
+    color: #8872AD;
+}
+
+.c4 {
+    color: #CC6686;
+}
+
+.intro-2 {
+    height: 80vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.intro-2-container {
+    width: fit-content;
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .intro-2-container {
+        max-width: 80%;
+    }
+}
+
+.intro-2-prompt {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.intro-2-description {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.prizes,
+.workshops,
+.particpants {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.prizes-text,
+.workshops-text,
+.participants-text {
+    font-size: 7rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.stats-symbol {
+    vertical-align: super;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.stats-title {
+    font-size: 1.5rem;
+}

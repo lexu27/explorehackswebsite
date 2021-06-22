@@ -12,9 +12,9 @@ var layer1 = [logo];
 var layer2 = [rocket];
 var layer3 = [planet1];
 
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function () {
     var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-    if (!(vw <= 670)){
+    if (!(vw <= 670)) {
         let value = window.scrollY;
         // console.log("yea "+stars[0].style.top);
         // stars[0].style.top = value+"px";
@@ -52,11 +52,11 @@ const updateCounts = (speed) => {
         const updateCount = () => {
             const target = +counter.getAttribute('data-target');
             const count = +counter.innerText;
-            console.log({iamspeed: count})
+            console.log({ iamspeed: count })
 
             // Lower inc to slow and higher to slow
             var inc = target / speed;
-            if (i==2){
+            if (i == 2) {
                 console.log("yeeeeeeeeeeeeeeeeee")
                 inc = target / 1;
             }

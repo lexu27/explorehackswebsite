@@ -30,7 +30,7 @@
 
     <!-- custom font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="icon" type = "image/x-icon" href = "img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -43,22 +43,44 @@
 
 <body>
 
+    <!-- Loading Screen Div -->
+    <div class="loading-screen">
+        <div class="preloader">
+
+            <div class="preloader__wrapper">
+
+                <div class="preloader__dots">
+                    <span class="preloader__dot"></span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     <script>
-        (function() {
-            var qs, js, q, s, d = document,
-                gi = d.getElementById,
-                ce = d.createElement,
-                gt = d.getElementsByTagName,
-                id = "typef_orm_share",
-                b = "https://embed.typeform.com/";
-            if (!gi.call(d, id)) {
-                js = ce.call(d, "script");
-                js.id = id;
-                js.src = b + "embed.js";
-                q = gt.call(d, "script")[0];
-                q.parentNode.insertBefore(js, q)
-            }
-        })()
+        let loadingWrapper = document.querySelector('.loading-screen')
+        window.addEventListener('load', () => {
+            loadingWrapper.style.display = 'none'
+        })
+    </script>
+
+    <script>
+            (function () {
+                var qs, js, q, s, d = document,
+                    gi = d.getElementById,
+                    ce = d.createElement,
+                    gt = d.getElementsByTagName,
+                    id = "typef_orm_share",
+                    b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                    js = ce.call(d, "script");
+                    js.id = id;
+                    js.src = b + "embed.js";
+                    q = gt.call(d, "script")[0];
+                    q.parentNode.insertBefore(js, q)
+                }
+            })()
     </script>
 
     <style>
@@ -66,11 +88,11 @@
             scroll-behavior: smooth;
             margin: 0;
         }
-        
+
         body {
             margin: 0;
         }
-        
+
         .vertical-center {
             margin: 0;
             position: absolute;
@@ -89,8 +111,10 @@
         <div class="date-and-button" id="date-and-button">
             <div class="intro-date" id="intro-date">July 23rd-25th</div>
             <div>
-                <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" id="intro-button" type="button" id="signUpButton" href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet"
-                data-mode="popup" data-size="100" target="_blank">Interested?</a>
+                <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" id="intro-button"
+                    type="button" id="signUpButton"
+                    href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet" data-mode="popup"
+                    data-size="100" target="_blank">Interested?</a>
             </div>
         </div>
 
@@ -108,8 +132,11 @@
                 </h1>
             </div>
 
-            <p class="intro-2-description" data-aos="fade-up" style = "font-size: medium; line-height: 2;">
-                Explore Hacks is a 3-day hackathon that aims to grant both experienced and beginner student programmers the chance to explore the process of ideation to product execution. Participants will gain the opportunity to learn through a variety of workshops and mini-events, allowing them to traverse the different fields of Computer Science. Best of all, Explore Hacks is 100% free!
+            <p class="intro-2-description" data-aos="fade-up" style="font-size: medium; line-height: 2;">
+                Explore Hacks is a 3-day hackathon that aims to grant both experienced and beginner student programmers
+                the chance to explore the process of ideation to product execution. Participants will gain the
+                opportunity to learn through a variety of workshops and mini-events, allowing them to traverse the
+                different fields of Computer Science. Best of all, Explore Hacks is 100% free!
             </p>
 
             <!-- <span class="stats-symbol">$</span> -->
@@ -135,23 +162,29 @@
 
     <section class="intro-3 gray-section">
         <div class="intro-3-container">
-            <div class="intro-3-title" data-aos="fade-up">Have the opportunity to innovate by participating in Explore Hacks</div>
-            <p style = "font-size: medium; line-height: 2;" class="intro-3-description" data-aos="fade-up">By attending Explore Hacks, you will not only gain the chance learn more, but also have the chance to improve your programming knowledge to solve real life problems. Whether you're a beginner or master at coding, as long as you're interested
-                in an exciting and complementary learning experience to your coding journey, Explore Hacks is right for you!
+            <div class="intro-3-title" data-aos="fade-up">Have the opportunity to innovate by participating in Explore
+                Hacks</div>
+            <p style="font-size: medium; line-height: 2;" class="intro-3-description" data-aos="fade-up">By attending
+                Explore Hacks, you will not only gain the chance learn more, but also have the chance to improve your
+                programming knowledge to solve real life problems. Whether you're a beginner or master at coding, as
+                long as you're interested
+                in an exciting and complementary learning experience to your coding journey, Explore Hacks is right for
+                you!
             </p>
-            <div style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
+            <div
+                style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
                 <div style="padding: 10px; max-width: 420px;" data-aos="fade-right">
                     <img src="img/opportunities/1.png">
                 </div>
-                <div style="padding: 10px; max-width: 420px;" data-aos = "fade-up">
+                <div style="padding: 10px; max-width: 420px;" data-aos="fade-up">
                     <img src="img/opportunities/2.png">
                 </div>
             </div>
             <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-left: auto; margin-right: auto">
-                <div style="padding: 10px; max-width: 420px;" data-aos = "fade-down">
+                <div style="padding: 10px; max-width: 420px;" data-aos="fade-down">
                     <img src="img/opportunities/3.png">
                 </div>
-                <div style="padding: 10px; max-width: 420px;" data-aos = "fade-left">
+                <div style="padding: 10px; max-width: 420px;" data-aos="fade-left">
                     <img src="img/opportunities/4.png">
                 </div>
 
@@ -165,68 +198,75 @@
 
             <div class="faq" data-aos="fade-down-right">
                 <div class="faq-question">What is a hackathon?</div>
-                <div class="faq-answer" >A hackathon is best described as an “invention marathon”. Anyone who has an interest in technology attends a hackathon
-                to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. You don’t
-                have to be a programmer and you certainly don’t have to be majoring in Computer Science. - MLH</div>
-            </div> 
+                <div class="faq-answer">A hackathon is best described as an “invention marathon”. Anyone who has an
+                    interest in technology attends a hackathon
+                    to learn, build & share their creations over the course of a weekend in a relaxed and welcoming
+                    atmosphere. You don’t
+                    have to be a programmer and you certainly don’t have to be majoring in Computer Science. - MLH</div>
+            </div>
 
 
             <div class="faq" data-aos="fade-down">
                 <div class="faq-question">What do I need to submit?</div>
-                <div class="faq-answer">You will need to submit a 5 minute video that pitches the impact of your project's integration within the market of your
-                choice, along with a demo.</div>
+                <div class="faq-answer">You will need to submit a 5 minute video that pitches the impact of your
+                    project's integration within the market of your
+                    choice, along with a demo.</div>
             </div>
 
 
             <div class="faq" data-aos="fade-down-left">
                 <div class="faq-question">How are projects judged?</div>
-                <div class="faq-answer">Projects are judged based on 4 criterias: Feasibility, Impact, Uniqueness, and Creativity.</div>
+                <div class="faq-answer">Projects are judged based on 4 criterias: Feasibility, Impact, Uniqueness, and
+                    Creativity.</div>
             </div>
 
         </div>
 
 
         <div class="faqs-container">
-        
+
             <div class="faq" data-aos="fade-right">
                 <div class="faq-question">Am I eligible to participate?</div>
-                <div class="faq-answer">Anyone who is a high school student is eligible to participate. The only prerequisite for Explore Hacks is a longing to
-                learn! You do not need to know how to code to join!</div>
+                <div class="faq-answer">Anyone who is a high school student is eligible to participate. The only
+                    prerequisite for Explore Hacks is a longing to
+                    learn! You do not need to know how to code to join!</div>
             </div>
-        
-        
+
+
             <div class="faq" data-aos="fade-up">
                 <div class="faq-question">Do I need a team to participate?</div>
-                <div class="faq-answer">You may have teams of up to 4 people. You do not need to sign up with a team.</div>
+                <div class="faq-answer">You may have teams of up to 4 people. You do not need to sign up with a team.
+                </div>
             </div>
-        
-        
+
+
             <div class="faq" data-aos="fade-left">
                 <div class="faq-question">Do I need to pay to register?</div>
                 <div class="faq-answer">Nope! Explore Hacks is completely free.</div>
             </div>
-        
+
         </div>
 
         <div class="faqs-container">
-        
+
             <div class="faq" data-aos="fade-up-right">
                 <div class="faq-question">When and where is the hackathon?</div>
-                <div class="faq-answer">The hackathon takes place from July 23, 2021 - July 25, 2021. The hackathon will be hosted completely online!</div>
+                <div class="faq-answer">The hackathon takes place from July 23, 2021 - July 25, 2021. The hackathon will
+                    be hosted completely online!</div>
             </div>
-        
-        
+
+
             <div class="faq" data-aos="fade-up">
                 <div class="faq-question">What if I want to use hardware for my project?</div>
                 <div class="faq-answer">You can. But we won’t be able to provide you with any parts.</div>
             </div>
-        
-        
+
+
             <div class="faq" data-aos="fade-up-left">
                 <div class="faq-question">What do I do if I have a question, not on this list?</div>
                 <div class="faq-answer">You can email us at support@explorehacks.org</div>
             </div>
-        
+
         </div>
     </section>
 
@@ -237,8 +277,11 @@
     <section class="videoWrapper gray-section">
         <!-- Copy & Pasted from YouTube -->
         <!-- 560 x 315 -->
-        
-        <iframe id="video" data-aos = "zoom-out" src="https://www.youtube.com/embed/Ow6y97oQWOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe id="video" data-aos="zoom-out" src="https://www.youtube.com/embed/Ow6y97oQWOg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
     </section>
 
@@ -366,7 +409,7 @@
         var saturation = hslColors[i][1];
         var value = hslColors[i][2];
         var count = 0;
-        $('.schedule-item-workshop').each(function() {
+        $('.schedule-item-workshop').each(function () {
             count++;
             if (count > hslColors[i][3]) {
                 i++;
@@ -389,10 +432,10 @@
     </script>
 
     <section class="gray-section">
-        <div class="team-title" data-aos = "zoom-out">Meet the Team</div>
-        <div class="team-subtitle" data-aos = "zoom-out">Co-Founders</div>
+        <div class="team-title" data-aos="zoom-out">Meet the Team</div>
+        <div class="team-subtitle" data-aos="zoom-out">Co-Founders</div>
         <div class="team-co-founders">
-            <div class="team-co-founder" data-aos = "zoom-out">
+            <div class="team-co-founder" data-aos="zoom-out">
                 <a><img src="img/team/Leo.jpg" class="team-img img-fluid border-radius-0" alt=""></a>
                 <div style="text-align:center;" class="">
                     <h3 class="team-text">Leo Xu</h3>
@@ -400,7 +443,7 @@
                 </div>
             </div>
 
-            <div class="team-co-founder" data-aos = "zoom-out">
+            <div class="team-co-founder" data-aos="zoom-out">
                 <img src="img/team/Danny.jpg" class="team-img img-fluid border-radius-0" alt="">
                 <div style="text-align:center;" class="">
                     <h3 class="team-text">Dhanish Natarajan</h3>
@@ -409,9 +452,9 @@
             </div>
 
         </div>
-        <div class="team-subtitle" data-aos = "zoom-out">Lead Organizers</div>
+        <div class="team-subtitle" data-aos="zoom-out">Lead Organizers</div>
         <div class="team-lead-organizers">
-            <div class="team-lead-organizer" data-aos = "zoom-in">
+            <div class="team-lead-organizer" data-aos="zoom-in">
                 <a><img src="img/team/Niranjan.jpg" class="team-img img-fluid border-radius-0" alt=""></a>
                 <div style="text-align:center;" class="">
                     <h3 class="team-text">Niranjan Mathiranjan</h3>
@@ -419,7 +462,7 @@
                 </div>
             </div>
 
-            <div class="team-lead-organizer" data-aos = "zoom-in">
+            <div class="team-lead-organizer" data-aos="zoom-in">
                 <img src="img/team/David.jpg" class="team-img img-fluid border-radius-0" alt="">
                 <div style="text-align:center;" class="">
                     <h3 class="team-text">David Phillips</h3>
@@ -427,7 +470,7 @@
                 </div>
             </div>
 
-            <div class="team-lead-organizer" data-aos = "zoom-in">
+            <div class="team-lead-organizer" data-aos="zoom-in">
                 <img src="img/team/Sanved.jpg" class="team-img img-fluid border-radius-0" alt="">
                 <div style="text-align:center;" class="">
                     <h3 class="team-text">Sanved Doshi</h3>
@@ -435,7 +478,7 @@
                 </div>
             </div>
 
-            <div class="team-lead-organizer" data-aos = "zoom-in">
+            <div class="team-lead-organizer" data-aos="zoom-in">
                 <img src="img/team/Grace.png" class="team-img img-fluid border-radius-0" alt="">
                 <div style="text-align:center;" class="">
                     <h3 class="team-text">Grace Jin</h3>
@@ -449,34 +492,45 @@
 
     <section class="sponsors">
         <h2 class="sponsors-title" data-aos="fade-up">SPONSORS</h2>
-        <p class="sponsors-subtitle" style="color: #969696">Thank you to all our sponsors for supporting Explore Hacks!</p>
+        <p class="sponsors-subtitle" style="color: #969696">Thank you to all our sponsors for supporting Explore Hacks!
+        </p>
         <div class="image-grid" data-aos="fade-left">
             <div class="silver-item">
-                <a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image" src="img/sponsors/crimson.png" style="max-width:100%; max-height:100%;" alt="Crimson Education" /></a>
+                <a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image"
+                        src="img/sponsors/crimson.png" style="max-width:100%; max-height:100%;"
+                        alt="Crimson Education" /></a>
             </div>
         </div>
         <div class="image-grid" data-aos="fade-right">
             <div class="bronze-item">
-                <a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image" src="img/sponsors/echoar.png" style="max-width:100%; max-height:100%;" alt="echoAR" /></a>
+                <a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image"
+                        src="img/sponsors/echoar.png" style="max-width:100%; max-height:100%;" alt="echoAR" /></a>
             </div>
             <div class="bronze-item">
-                <a href="https://draftbit.com/" target="_blank"><img class="bronze-image" src="img/sponsors/draftbit.png" style="max-width:100%; max-height:100%;" alt="echoAR" /></a>
+                <a href="https://draftbit.com/" target="_blank"><img class="bronze-image"
+                        src="img/sponsors/draftbit.png" style="max-width:100%; max-height:100%;" alt="echoAR" /></a>
             </div>
             <div class="bronze-item">
-                <a href="https://replit.com/" target="_blank"><img class="bronze-image" src="img/sponsors/replit.svg" style="max-width:100%; max-height:100%;" alt="echoAR" /></a>
+                <a href="https://replit.com/" target="_blank"><img class="bronze-image" src="img/sponsors/replit.svg"
+                        style="max-width:100%; max-height:100%;" alt="echoAR" /></a>
             </div>
         </div>
     </section>
 
     <footer class="footer gray-section">
         <div class="smicons">
-            <a href="https://www.instagram.com/explore_hacks/" class="smicon"><img class="smimage" src="img/icons/black-instagram.svg"> <span>Instagram</span></a>
-            <a href="https://explorehacks.devpost.com/" class="smicon"><img class="smimage" src="img/icons/embed-code.svg"><span>Devpost</span></a>
-            <a href="https://discord.gg/WGqgdCwFb2" class="smicon"><img class="smimage" src="img/icons/Discord-Logo-Black.svg"><span>Discord</span></a>
-            <a href="https://www.linkedin.com/company/explore-hacks/about/" class="smicon"><img class="smimage" src="img/icons/linkedin-round-line.svg"><span>Linked In</span></a>
-            <a href="https://medium.com/@explorehacks" class="smicon"><img class="smimage" src="img/icons/Artboard 1.svg"><span>Linked In</span></a>
+            <a href="https://www.instagram.com/explore_hacks/" class="smicon"><img class="smimage"
+                    src="img/icons/black-instagram.svg"> <span>Instagram</span></a>
+            <a href="https://explorehacks.devpost.com/" class="smicon"><img class="smimage"
+                    src="img/icons/embed-code.svg"><span>Devpost</span></a>
+            <a href="https://discord.gg/WGqgdCwFb2" class="smicon"><img class="smimage"
+                    src="img/icons/Discord-Logo-Black.svg"><span>Discord</span></a>
+            <a href="https://www.linkedin.com/company/explore-hacks/about/" class="smicon"><img class="smimage"
+                    src="img/icons/linkedin-round-line.svg"><span>Linked In</span></a>
+            <a href="https://medium.com/@explorehacks" class="smicon"><img class="smimage"
+                    src="img/icons/Artboard 1.svg"><span>Linked In</span></a>
         </div>
-       
+
         <p class="footer-text">
             Questions? Contact us at support@explorehacks.org<br>
             Logo created by Anna Wang
@@ -489,12 +543,12 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-        offset: 200 
-      });
+        AOS.init({
+            offset: 200
+        });
     </script>
 </body>
-    <!-- dont move this away -->
-    <script src="js/number-animation.js"></script>
+<!-- dont move this away -->
+<script src="js/number-animation.js"></script>
 
 </html>

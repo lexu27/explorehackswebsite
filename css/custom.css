@@ -45,3 +45,120 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: #32558C;
 }
+
+/* Loading Screen CSS */
+.preloader {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:200;
+  background:#515781;
+}
+.preloader__wrapper {
+  margin:-50px 0 0 -50px;
+}
+.preloader__dots,
+.preloader__wrapper {
+  position:absolute;
+  top:50%;
+  left:50%;
+  background-color:transparent;
+}
+.preloader__wrapper {
+  width:100px;
+  height:100px;
+  overflow:hidden;
+  border-radius:100%;
+  -webkit-transform:translate3d(-50%,-50%,0);
+  transform:translate3d(-50%,-50%,0);
+}
+.preloader__dots {
+  display:block;
+  width:36px;
+  height:36px;
+  margin:-18px 0 0 -18px;
+  animation:1s linear infinite rotate;
+}
+.preloader__dot,
+.preloader__dot:after,
+.preloader__dot:before {
+  position:absolute;
+  width:10px;
+  height:10px;
+  border-radius:100%;
+  background-color:#fff;
+}
+.preloader__dot {
+  left:0;
+  bottom:0
+}
+.preloader__dot:after,
+.preloader__dot:before {
+  content:'';
+  display:block;
+}
+.preloader__dot:after {
+  top:-25px;
+  right:0;
+  animation:1s linear infinite down;
+}
+.preloader__dot:before {
+  right:-25px;
+  bottom:0;
+}
+
+@keyframes rotate {
+  0% {
+    transform:rotate(0);
+    -webkit-transform:rotate(0deg);
+  }
+  100%,50% {
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+  }
+}
+
+@-webkit-keyframes  rotate {
+  0% {
+    transform:rotate(0);
+    -webkit-transform:rotate(90deg);
+  }
+  100%,50% {
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  50% {
+    transform: translate3d(0,0,0)  scaleX(1);
+  }
+  75% {
+    transform: translate3d(0,0,0) scaleX(1.3)
+  }
+  100% {
+    transform: translate3d(25px,0,0) scaleX(1.3);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  50% {
+    transform: translate3d(0,0,0)  scaleX(1);
+  }
+  75% {
+    transform: translate3d(0,0,0) scaleX(1.3);
+  }
+  100% {
+    transform: translate3d(25px,0,0) scaleX(1.3);
+  }
+}
+
+

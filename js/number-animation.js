@@ -7,7 +7,6 @@ function isElementInViewport (el) {
 
     var rect = el.getBoundingClientRect();
     const data = {bottom: rect.bottom, right: rect.right, screenHeight: $(window).height(), screenWidth: $(window).width()}
-    console.log(data)
 
     return (
         rect.top >= 0 &&

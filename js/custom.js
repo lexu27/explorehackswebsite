@@ -16,7 +16,6 @@ window.addEventListener('scroll', function () {
     var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     if (!(vw <= 670)) {
         let value = window.scrollY;
-        // console.log("yea "+stars[0].style.top);
         // stars[0].style.top = value+"px";
 
         dateAndButton.style.top = value * 0.25 * -0.5 + 50 + '%';
@@ -52,17 +51,13 @@ const updateCounts = (speed) => {
         const updateCount = () => {
             const target = +counter.getAttribute('data-target');
             const count = +counter.innerText;
-            console.log({ iamspeed: count })
 
             // Lower inc to slow and higher to slow
             var inc = target / speed;
             if (i == 2) {
-                console.log("yeeeeeeeeeeeeeeeeee")
                 inc = target / 1;
             }
 
-            // console.log(inc);
-            // console.log(count);
 
             // Check if target is reached
             if (count < target) {

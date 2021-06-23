@@ -43,25 +43,21 @@
 <body>
 
 <!--     Loading Screen Div-->
-    <div class="loading-screen">
-        <div class="preloader">
+    <div class="holder">
 
-            <div class="preloader__wrapper">
-
-                <div class="preloader__dots">
-                    <span class="preloader__dot"></span>
-                </div>
-
-            </div>
-
+        <div class="preloader__dots">
+            <span class="preloader__dot"></span>
         </div>
+
     </div>
 <!--    JS to load preloader until website loads-->
     <script>
-        let loadingWrapper = document.querySelector('.loading-screen')
+        let loadingWrapper = document.querySelector('.holder')
+        let dots = document.querySelector('.preloader__dots')
         window.addEventListener('load', function() {
+          dots.style.animation = "fadeOut 1s";
           loadingWrapper.style.animation = "fadeOut 1s";
-          loadingWrapper.style.display = "none";
+          setTimeout(() => loadingWrapper.style.display = "none", 1000);
         })
     </script>
 

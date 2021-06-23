@@ -47,35 +47,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Loading Screen CSS */
-.preloader {
-  position:fixed;
-  top:0;
-  left:50%;
-  right:50%;
-
-  bottom:0;
-  z-index:200;
+.holder {
+  z-index:1000;
   background:#021c33;
+  width:100vw;
+  height:100vh;
+  position:fixed;
 }
 
-.preloader__wrapper {
-  margin:-50px 0 0 -50px;
-}
-.preloader__dots,
-.preloader__wrapper {
+.preloader__dots {
   position:absolute;
   top:50%;
-  left:80%;
+  left:50%;
   background-color:transparent;
 }
-.preloader__wrapper {
-  width:100px;
-  height:100px;
-  overflow:hidden;
-  border-radius:100%;
-  -webkit-transform:translate3d(-50%,-50%,0);
-  transform:translate3d(-50%,-50%,0);
-}
+
 .preloader__dots {
   display:block;
   width:36px;
@@ -164,14 +150,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-.fade-out {
-    animation: fadeOut ease 8s;
-    -webkit-animation: fadeOut ease 8s;
-    -moz-animation: fadeOut ease 8s;
-    -o-animation: fadeOut ease 8s;
-    -ms-animation: fadeOut ease 8s;
-}@keyframes fadeOut {
+@keyframes fadeOut {
      0% {
          opacity:1;
      }
@@ -179,39 +158,3 @@ body::-webkit-scrollbar-thumb {
          opacity:0;
      }
  }
-
-@-moz-keyframes fadeOut {
-    0% {
-        opacity:1;
-    }
-    100% {
-        opacity:0;
-    }
-}
-
-@-webkit-keyframes fadeOut {
-    0% {
-        opacity:1;
-    }
-    100% {
-        opacity:0;
-    }
-}
-
-@-o-keyframes fadeOut {
-    0% {
-        opacity:1;
-    }
-    100% {
-        opacity:0;
-    }
-}
-
-@-ms-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}

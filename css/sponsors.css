@@ -7,7 +7,7 @@
     .image-grid {
         display: flex;
         flex-wrap: wrap;
-        margin: 30px auto 0;
+        margin: 50px auto 0;
         justify-content: center;
         column-gap: 20px;
     }
@@ -25,7 +25,6 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        bottom: 50%;
     }
     @media only screen and (min-width: 0px) {
         .bronze-item {
@@ -66,11 +65,10 @@
     .silver-image {
         width: auto;
         height: auto;
-        margin: 0 auto;
-        position: relative;
+        margin: auto;
+        /* position: relative;
         top: 50%;
-        transform: translateY(-50%);
-        bottom: 50%;
+        transform: translateY(-50%); */
     }
     @media only screen and (min-width: 0px) {
         .silver-item {

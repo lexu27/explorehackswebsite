@@ -1,13 +1,13 @@
-  .sponsors {
+  .partners {
         background-color: white;
-        padding-bottom: 3rem;
+        padding-bottom: 5rem;
     }
 
 
-    .image-grid {
+    .image-grid2 {
         display: flex;
         flex-wrap: wrap;
-        margin: 50px auto 0;
+        margin: 10px auto 0;
         justify-content: center;
         column-gap: 20px;
     }
@@ -94,18 +94,18 @@
     }
 
 
-    .sponsors-title {
+    .partners-title {
         color: black;
         font-size: 3.3rem;
         font-weight: bold;
-        padding-top: 5rem;
+        padding-top: 1rem;
         vertical-align:middle;
         align-self: center;
         text-align: center;
         margin-bottom: 1rem;
     }
 
-    .sponsors-subtitle {
+    .partners-subtitle {
         margin-top: 0;
         font-size: 1.5rem;
         font-weight: bold;

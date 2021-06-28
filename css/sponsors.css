@@ -6,6 +6,7 @@
 
     .image-grid {
         display: flex;
+        align-items: center;
         flex-wrap: wrap;
         margin: 50px auto 0;
         justify-content: center;
@@ -23,8 +24,11 @@
         height: auto;
         margin: 0 auto;
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        /* top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%); */
+        -webkit-align-self: center;
+        align-self: center;
     }
     @media only screen and (min-width: 0px) {
         .bronze-item {
@@ -65,10 +69,13 @@
     .silver-image {
         width: auto;
         height: auto;
-        margin: auto;
-        /* position: relative;
-        top: 50%;
+        margin: 0 auto;
+        position: relative;
+        /* top: 50%;
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%); */
+        -webkit-align-self: center;
+        align-self: center;
     }
     @media only screen and (min-width: 0px) {
         .silver-item {

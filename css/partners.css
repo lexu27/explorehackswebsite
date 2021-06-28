@@ -23,8 +23,10 @@
         height: auto;
         margin: 0 auto;
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        /* top: 50%;
+        transform: translateY(-50%); */
+        -webkit-align-self: center;
+        align-self: center;
     }
     @media only screen and (min-width: 0px) {
         .bronze-item {
@@ -69,6 +71,8 @@
         /* position: relative;
         top: 50%;
         transform: translateY(-50%); */
+        -webkit-align-self: center;
+        align-self: center;
     }
     @media only screen and (min-width: 0px) {
         .silver-item {

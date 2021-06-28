@@ -57,6 +57,7 @@
     background: linear-gradient(90deg, transparent 0%, gray 5%, gray 100%);
     animation: swipe 2.5s linear forwards;
 }
+
 .intro-rocket {
     margin: 0;
     height: 200vh;
@@ -346,9 +347,15 @@
 
 @keyframes swipe {
     0% {
-        left: 0%
+        left: 0%;
+        opacity: 1;
     }
+    99% {
+        left: 99%;
+        opacity: 1;
+      }
     100% {
-        left: 100%
+        left: 100%;
+        opacity: 0;
     }
 }

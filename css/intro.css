@@ -41,7 +41,6 @@
     justify-content: center;
     position: absolute;
     align-items: center;
-    gap: 20px 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -133,6 +132,15 @@
     }
 
 }
+@media only screen and (max-width: 790px) {
+    .intro-date {
+        margin-left: 40px;
+    }
+    #intro-button {
+        margin-top: 20px;
+    }
+
+}
 
 @media only screen and (max-width: 638px) {
     .intro-logo {
@@ -144,6 +152,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         animation: fadeIn3 1.3s !important;
+    }
+    .intro-date {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
     }
     .intro-rocket {
         margin: 0;
@@ -230,6 +242,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         animation: fadeIn6 1.3s !important;
+    }
+    .intro-date {
+        margin-left: 2px !important;
+        margin-right: 2px !important;
     }
     .intro-rocket {
         margin: 0;

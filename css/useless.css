@@ -114,7 +114,7 @@
 }
 
 @media screen and (max-width: 828px) {
-   
+
     .leader{
         max-width: 40% !important;
         margin-left: auto ;
@@ -157,7 +157,7 @@
         margin-right:auto;
     }
 @media screen and (max-width: 594px) {
-   
+
     .leader{
         max-width: 47% !important;
         margin-left: auto ;
@@ -414,9 +414,10 @@
 
 body {
     height: 100%;
-    width:100%;
+    width: 100%;
 }
-/* 
+
+/*
 .color-me{
     color:white  !important;
     font-family: "Open Sans", Arial, sans-serif;
@@ -449,7 +450,7 @@ li > .color-me::before
     transition: all 0.3s ease-in-out 0s;
 }
 
-#about { 
+#about {
     scroll-margin-top: 8.5rem;
   }
 
@@ -483,7 +484,7 @@ li > .color-me::before
         width: 70em !important;
     }
     #sign{
-        padding: 6px !important; 
+        padding: 6px !important;
     }
 }
 @media screen and (max-width: 1000px)
@@ -561,19 +562,13 @@ li > .color-me::before
 } */
 
 
-
-
-
-
-
-
-/* 
+/*
 .sponsor {
     height: 100%;
     width: 100%;
     object-fit: contain;
 } */
-/* 
+/*
 .hexagon-gallery {
     margin: auto;
     max-width: 1000px;
@@ -694,7 +689,7 @@ li > .color-me::before
 
 
 
-/* 
+/*
 .custom-circle-date {
     position: relative;
     width: 118px;
@@ -901,7 +896,7 @@ li > .color-me::before
     transform: scale(1.1);
 } */
 
-/* 
+/*
 .sponsor {
     height: 100%;
     width: 100%;

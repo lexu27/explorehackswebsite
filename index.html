@@ -4,20 +4,23 @@
 <head>
 
     <!-- Basic -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 
     <title>A Hackathon for Beginners | Explore Hacks</title>
-    <meta content="Explore Hacks is a free 3-day hackathon that aims to grant high school programmers the chance to explore the process of ideation to product execution." name="description">
+    <meta content="Explore Hacks is a free 3-day hackathon that aims to grant high school programmers the chance to explore the process of ideation to product execution."
+          name="description">
     <meta content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=yes" name="viewport">
 
-    <meta property="og:title" content="Explore Hacks" />
-    <meta property="og:description" content="Explore Hacks is a free 3-day hackathon for high schoolers. No coding experience is needed!">
-    <meta property="og:url" content="https://explorehacks.org" />
-    <meta property="og:image" content="https://media.discordapp.net/attachments/665358673392173056/857327677023191060/Add_a_subheading_3.png" />
+    <meta content="Explore Hacks" property="og:title"/>
+    <meta content="Explore Hacks is a free 3-day hackathon for high schoolers. No coding experience is needed!"
+          property="og:description">
+    <meta content="https://explorehacks.org" property="og:url"/>
+    <meta content="https://media.discordapp.net/attachments/665358673392173056/857327677023191060/Add_a_subheading_3.png"
+          property="og:image"/>
 
-    <meta name="robots" content="index, follow" />
+    <meta content="index, follow" name="robots"/>
 
-    <link href="https://explorehacks.org" rel = "canonical">
+    <link href="https://explorehacks.org" rel="canonical">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/intro.css" rel="stylesheet">
     <link href="css/intro-2.css" rel="stylesheet">
@@ -32,13 +35,10 @@
     <link href="css/footer.css" rel="stylesheet">
 
     <!-- custom font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -58,7 +58,7 @@
 <script>
     let loadingWrapper = document.querySelector('.holder')
     let dots = document.querySelector('.preloader__dots')
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         dots.style.animation = "fadeOut 1s";
         loadingWrapper.style.animation = "fadeOut 1s";
         setTimeout(() => loadingWrapper.style.display = "none", 1000);
@@ -101,27 +101,29 @@
         transform: translateY(-50%);
     }
 </style>
-<main role = "main">
-    <article itemscope itemtype = "https://schema.org/Hackathon">
+<main role="main">
+    <article itemscope itemtype="https://schema.org/Hackathon">
         <section class="intro">
-            <div class="intro-bg" id="intro-bg"> </div>
-            <img src="img/custom/Planet1.png" class="intro-planet1" id="intro-planet1" alt="Explore Hacks Banner">
-            <img src="img/custom/Planet2.png" class="intro-planet2" id="intro-planet2" alt="Explore Hacks Banner">
-            <img src="img/custom/RocketWithTrailLong.png" class="intro-rocket" id="intro-rocket" alt="Explore Hacks Banner">
-            <img itemprop = "name" src="img/icons/ExploreHacksLogo.png" class="intro-logo" id="intro-logo" alt="Explore Hacks Logo">
+            <div class="intro-bg" id="intro-bg"></div>
+            <img alt="Explore Hacks Banner" class="intro-planet1" id="intro-planet1" src="img/custom/Planet1.png">
+            <img alt="Explore Hacks Banner" class="intro-planet2" id="intro-planet2" src="img/custom/Planet2.png">
+            <img alt="Explore Hacks Banner" class="intro-rocket" id="intro-rocket"
+                 src="img/custom/RocketWithTrailLong.png">
+            <img alt="Explore Hacks Logo" class="intro-logo" id="intro-logo" itemprop="name"
+                 src="img/icons/ExploreHacksLogo.png">
             <div class="date-and-button" id="date-and-button">
-                <div itemprop = "startDate endDate" class="intro-date" id="intro-date" style = "margin-right: 20px;">July 23rd-25th</div>
+                <div class="intro-date" id="intro-date" itemprop="startDate endDate" style="margin-right: 20px;">July
+                    23rd-25th
+                </div>
                 <div>
-                    <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" id="intro-button"
-                    type="button" id="signUpButton"
-                    href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet" data-mode="popup"
-                    data-size="100" target="_blank"
-                    rel="noopener" >Interested?</a>
+                    <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" data-mode="popup"
+                       data-size="100" href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet"
+                       id="signUpButton" id="intro-button"
+                       rel="noopener" target="_blank"
+                       type="button">Interested?</a>
                 </div>
             </div>
-
         </section>
-
 
         <section class="intro-2 black-section">
             <div class="intro-2-container">
@@ -134,8 +136,11 @@
                     </h1>
                 </div>
 
-                <p itemprop = "about description isAccessibleForFree audience duration" class="intro-2-description" data-aos="fade-up" style="font-size: medium; line-height: 2;">
-                    Explore Hacks is a 3-day hackathon that aims to grant both experienced and beginner student programmers
+                <p class="intro-2-description" data-aos="fade-up"
+                   itemprop="about description isAccessibleForFree audience duration"
+                   style="font-size: medium; line-height: 2;">
+                    Explore Hacks is a 3-day hackathon that aims to grant both experienced and beginner student
+                    programmers
                     the chance to explore the process of ideation to product execution. Participants will gain the
                     opportunity to learn through a variety of workshops and mini-events, allowing them to traverse the
                     different fields of Computer Science. Best of all, Explore Hacks is 100% free!
@@ -143,53 +148,61 @@
 
                 <!-- <span class="stats-symbol">$</span> -->
                 <div class="stats" data-aos="flip-up">
-                    <div itemprop = "offers" class="prizes">
+                    <div class="prizes" itemprop="offers">
                         <p class="prizes-text counter" data-target="5000">0</p>
                         <p class="stats-title">In prizes</p>
                     </div>
 
-                    <div itemprop = "subEvent" class="workshops">
+                    <div class="workshops" itemprop="subEvent">
                         <p class="workshops-text counter" data-target="15">0</p>
                         <p class="stats-title">Mini Events</p>
                     </div>
 
                     <div class="particpants">
                         <p class="participants-text counter" data-target="400">0<span class="stats-symbol">+</span></p>
-                        <p itemprop = "attendee" class="stats-title">Participants from around the world</p>
+                        <p class="stats-title" itemprop="attendee">Participants from around the world</p>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section class="intro-3 gray-section">
             <div class="intro-3-container">
-                <div class="intro-3-title" data-aos="fade-up">Have the opportunity to innovate by participating in Explore
-                    Hacks</div>
-                <p itemprop = "description about potentialAction" style="font-size: medium; line-height: 2;" class="intro-3-description" data-aos="fade-up">By attending
-                    Explore Hacks, you will not only gain the chance learn more, but also have the chance to improve your
+                <div class="intro-3-title" data-aos="fade-up">Have the opportunity to innovate by participating in
+                    Explore
+                    Hacks
+                </div>
+                <p class="intro-3-description" data-aos="fade-up"
+                   itemprop="description about potentialAction" style="font-size: medium; line-height: 2;">By attending
+                    Explore Hacks, you will not only gain the chance learn more, but also have the chance to improve
+                    your
                     programming knowledge to solve real life problems. Whether you're a beginner or master at coding, as
                     long as you're interested
-                    in an exciting and complementary learning experience to your coding journey, Explore Hacks is right for
+                    in an exciting and complementary learning experience to your coding journey, Explore Hacks is right
+                    for
                     you!
                 </p>
                 <div
-                    style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
-                    <div style="padding: 10px; max-width: 420px;" data-aos="fade-right">
-                        <img itemprop = "potentialAction offers" src="img/opportunities/1.png" alt="Attend workshops in Explore Hacks">
+                        style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
+                    <div data-aos="fade-right" style="padding: 10px; max-width: 420px;">
+                        <img alt="Attend workshops in Explore Hacks" itemprop="potentialAction offers"
+                             src="img/opportunities/1.png">
                     </div>
-                    <div style="padding: 10px; max-width: 420px;" data-aos="fade-up">
-                        <img itemprop = "potentialAction offers" src="img/opportunities/2.png" alt="Participate in Speaker Events">
+                    <div data-aos="fade-up" style="padding: 10px; max-width: 420px;">
+                        <img alt="Participate in Speaker Events" itemprop="potentialAction offers"
+                             src="img/opportunities/2.png">
                     </div>
                 </div>
                 <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-left: auto; margin-right: auto">
-                    <div style="padding: 10px; max-width: 420px;" data-aos="fade-down">
-                        <img itemprop = "potentialAction offers" src="img/opportunities/3.png" alt="Collaborate with each other in Explore Hacks">
+                    <div data-aos="fade-down" style="padding: 10px; max-width: 420px;">
+                        <img alt="Collaborate with each other in Explore Hacks" itemprop="potentialAction offers"
+                             src="img/opportunities/3.png">
                     </div>
-                    <div style="padding: 10px; max-width: 420px;" data-aos="fade-left">
-                        <img itemprop = "potentialAction offers" src="img/opportunities/4.png" alt="Make an impact on the future by attending Explore Hacks">
+                    <div data-aos="fade-left" style="padding: 10px; max-width: 420px;">
+                        <img alt="Make an impact on the future by attending Explore Hacks"
+                             itemprop="potentialAction offers"
+                             src="img/opportunities/4.png">
                     </div>
-
                 </div>
             </div>
         </section>
@@ -198,412 +211,391 @@
             <div class="faqs-title">FAQs</div>
             <div class="faqs-container">
 
-                <div itemprop = "about" class="faq" data-aos="fade-down-right">
+                <div class="faq" data-aos="fade-down-right" itemprop="about">
                     <div class="faq-question">What is a hackathon?</div>
                     <div class="faq-answer">A hackathon is best described as an “invention marathon”. Anyone who has an
                         interest in technology attends a hackathon
                         to learn, build & share their creations over the course of a weekend in a relaxed and welcoming
                         atmosphere. You don’t
-                        have to be a programmer and you certainly don’t have to be majoring in Computer Science. - MLH</div>
-                </div>
-
-
-                <div itemprop = "about" class="faq" data-aos="fade-down">
-                    <div class="faq-question">What do I need to submit?</div>
-                    <div class="faq-answer">You will need to submit a 5 minute video that pitches the impact of your
-                        project's integration within the market of your
-                        choice, along with a demo.</div>
-                </div>
-
-
-                <div itemprop = "about" class="faq" data-aos="fade-down-left">
-                    <div class="faq-question">How are projects judged?</div>
-                    <div class="faq-answer">Projects are judged based on 4 criterias: Feasibility, Impact, Uniqueness, and
-                        Creativity.</div>
-                </div>
-
-            </div>
-
-
-            <div class="faqs-container">
-
-                <div itemprop = "about audience" class="faq" data-aos="fade-right">
-                    <div class="faq-question">Am I eligible to participate?</div>
-                    <div class="faq-answer">Anyone who is a high school student is eligible to participate. The only
-                        prerequisite for Explore Hacks is a longing to
-                        learn! You do not need to know how to code to join!</div>
-                </div>
-
-
-                <div itemprop = "about" class="faq" data-aos="fade-up">
-                    <div class="faq-question">Do I need a team to participate?</div>
-                    <div class="faq-answer">You may have teams of up to 4 people. You do not need to sign up with a team.
+                        have to be a programmer and you certainly don’t have to be majoring in Computer Science. - MLH
                     </div>
                 </div>
 
+                <div class="faq" data-aos="fade-down" itemprop="about">
+                    <div class="faq-question">What do I need to submit?</div>
+                    <div class="faq-answer">You will need to submit a 5 minute video that pitches the impact of your
+                        project's integration within the market of your
+                        choice, along with a demo.
+                    </div>
+                </div>
 
-                <div itemprop = "about isAccessibleForFree" class="faq" data-aos="fade-left">
+                <div class="faq" data-aos="fade-down-left" itemprop="about">
+                    <div class="faq-question">How are projects judged?</div>
+                    <div class="faq-answer">Projects are judged based on 4 criterias: Feasibility, Impact, Uniqueness,
+                        and
+                        Creativity.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faqs-container">
+
+                <div class="faq" data-aos="fade-right" itemprop="about audience">
+                    <div class="faq-question">Am I eligible to participate?</div>
+                    <div class="faq-answer">Anyone who is a high school student is eligible to participate. The only
+                        prerequisite for Explore Hacks is a longing to
+                        learn! You do not need to know how to code to join!
+                    </div>
+                </div>
+
+                <div class="faq" data-aos="fade-up" itemprop="about">
+                    <div class="faq-question">Do I need a team to participate?</div>
+                    <div class="faq-answer">You may have teams of up to 4 people. You do not need to sign up with a
+                        team.
+                    </div>
+                </div>
+
+                <div class="faq" data-aos="fade-left" itemprop="about isAccessibleForFree">
                     <div class="faq-question">Do I need to pay to register?</div>
                     <div class="faq-answer">Nope! Explore Hacks is completely free.</div>
                 </div>
             </div>
 
-        </div>
+            <div class="faqs-container">
 
-        <div class="faqs-container">
+                <div class="faq" data-aos="fade-up-right" itemprop="location">
+                    <div class="faq-question">When and where is the hackathon?</div>
+                    <div class="faq-answer">The hackathon takes place from July 23, 2021 - July 25, 2021. The hackathon
+                        will
+                        be hosted completely online!
+                    </div>
+                </div>
 
-            <div itemprop = "location" class="faq" data-aos="fade-up-right">
-                <div class="faq-question">When and where is the hackathon?</div>
-                <div class="faq-answer">The hackathon takes place from July 23, 2021 - July 25, 2021. The hackathon will
-                    be hosted completely online!</div>
+                <div class="faq" data-aos="fade-up" itemprop="about">
+                    <div class="faq-question">What if I want to use hardware for my project?</div>
+                    <div class="faq-answer">You can. But we won’t be able to provide you with any parts.</div>
+                </div>
+
+                <div class="faq" data-aos="fade-up-left" itemprop="about">
+                    <div class="faq-question">What do I do if I have a question, not on this list?</div>
+                    <div class="faq-answer">You can email us at support@explorehacks.org</div>
+                </div>
             </div>
+        </section>
 
+        <section class="videoWrapper gray-section">
+            <!-- Copy & Pasted from YouTube -->
+            <!-- 560 x 315 -->
 
-            <div itemprop = "about" class="faq" data-aos="fade-up">
-                <div class="faq-question">What if I want to use hardware for my project?</div>
-                <div class="faq-answer">You can. But we won’t be able to provide you with any parts.</div>
-            </div>
+            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen data-aos="zoom-out"
+                    frameborder="0" id="video"
+                    src="https://www.youtube.com/embed/Ow6y97oQWOg"
+                    title="YouTube video player"></iframe>
 
-
-            <div itemprop = "about" class="faq" data-aos="fade-up-left">
-                <div class="faq-question">What do I do if I have a question, not on this list?</div>
-                <div class="faq-answer">You can email us at support@explorehacks.org</div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- <section class="video-section gray-section" id = "video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ow6y97oQWOg" title="YouTube video player"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section> -->
-    <section class="videoWrapper gray-section">
-        <!-- Copy & Pasted from YouTube -->
-        <!-- 560 x 315 -->
-
-        <iframe id="video" data-aos="zoom-out" src="https://www.youtube.com/embed/Ow6y97oQWOg"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-    </section>
-    <section class="black-section">
-        <div class="team-title" data-aos="zoom-out">Speakers</div>
-            <div itemprop = "event speaker" data-aos="zoom-out">
-                <img src="img/speakers/Aman.jpg" class="team-img img-fluid border-radius-0 speaker-img" alt="Event Speaker in Explore Hacks">
-                <div style="text-align:center;" class="">
+        </section>
+        <section class="black-section">
+            <div class="team-title" data-aos="zoom-out">Speakers</div>
+            <div data-aos="zoom-out" itemprop="event speaker">
+                <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 speaker-img"
+                     src="img/speakers/Aman.jpg">
+                <div class="" style="text-align:center;">
                     <h3 class="team-text">Aman Mittal</h3>
-                    <h3 class="team-text" style="margin-bottom: 0; padding-bottom: 5%;">Developer Advocate @ Draftbit</h3>
+                    <h3 class="team-text" style="margin-bottom: 0; padding-bottom: 5%;">Developer Advocate @
+                        Draftbit</h3>
                 </div>
-                </div>
-    </section>
+            </div>
+        </section>
 
-    <section class="gray-section" id="schedule">
-        <div itemprop = "eventSchedule" class="schedule-title">Schedule (All Times In PDT)</div>
-        <div itemprop = "eventSchedule" class="schedule">
-            <div class="schedule-day" data-aos="fade-left">
+        <section class="gray-section" id="schedule">
+            <div class="schedule-title" itemprop="eventSchedule">Schedule (All Times In PDT)</div>
+            <div class="schedule" itemprop="eventSchedule">
+                <div class="schedule-day" data-aos="fade-left">
 
-                <h2 itemprop = "startDate" class="schedule-date" data-aos="fade-left">July 23rd</h2>
+                    <h2 class="schedule-date" data-aos="fade-left" itemprop="startDate">July 23rd</h2>
 
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-                        <p itemprop = "about subEvent" class="schedule-item-heading">Opening Ceremony</p>
-                        <p itemprop = "startDate endDate" class="schedule-item-time">9:00 AM - 9:45 AM</p>
-                        <img>
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Opening Ceremony</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">9:00 AM - 9:45 AM</p>
+                    </div>
 
-                </div>
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Team Formation</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">9:45 AM - 10:10 AM</p>
+                    </div>
 
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-                        <p itemprop = "about subEvent" class="schedule-item-heading">Team Formation</p>
-                        <p itemprop = "startDate endDate" class="schedule-item-time">9:45 AM - 10:10 AM</p>
-
-
-                </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left" id = "UI">
-                        <p itemprop = "about subEvent" class="schedule-item-heading">Building Attractive UIs Workshop</p>
-
-                        <p itemprop = "startDate endDate" class="schedule-item-time">11:00 AM - 12:00 PM</p>
-                        <div style = "display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
-                            <img src = "./img/speakers/Aman.jpg" class="speaker" style = "width: 8rem; height:auto; margin-right: 10px !important; flex-wrap: wrap;">
-                            <p class="schedule-item-time" style = "font-size: medium;margin-right: 3px;">Aman Mittal</p>
+                    <div class="schedule-item-workshop" data-aos="fade-left" id="UI" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Building Attractive UIs Workshop</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">11:00 AM - 12:00 PM</p>
+                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                            <img class="speaker" src="./img/speakers/Aman.jpg"
+                                 style="width: 8rem; height:auto; margin-right: 10px !important; flex-wrap: wrap;" alt="Explore Hacks Speaker Aman">
+                            <p class="schedule-item-time" style="font-size: medium;margin-right: 3px;">Aman Mittal</p>
                             <span class="schedule-item-time hyphen">-</span>
-                            <p class="schedule-item-time summary" style = "font-size: medium;margin-left: 3px">Developer Advocate </p>
-                            <img src = "./img/sponsors/draftbit.png" style = "width: 10rem; height:auto; margin-left: 10px !important; flex-wrap: wrap;">
+                            <p class="schedule-item-time summary" style="font-size: medium;margin-left: 3px">Developer
+                                Advocate </p>
+                            <img src="./img/sponsors/draftbit.png"
+                                 style="width: 10rem; height:auto; margin-left: 10px !important; flex-wrap: wrap;" alt="draftbit-logo">
                         </div>
+                    </div>
+
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Workshop/Speaker Event</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">12:30 PM - 1:30 PM</p>
+                    </div>
+
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Workshop/Speaker Event</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">2:00 PM - 3:00 PM</p>
+                    </div>
+
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Entrepreneurship Workshop</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">4:00 PM - 5:00 PM</p>
+                    </div>
+
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Workshop/Speaker Event</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">5:30 PM - 6:30 PM</p>
+                    </div>
+
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Workshop/Speaker Event</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">7:00 PM - 8:00 PM</p>
+                    </div>
+
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Game Night 🎮</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">8:30 PM - 9:30 PM</p>
+                    </div>
                 </div>
 
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
+                <div class="schedule-day" data-aos="fade-down">
+                    <h2 class="schedule-date" data-aos="fade-down" itemprop="startDate">July 24th</h2>
 
-                        <p itemprop = "about subEvent" class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Workshop/Speaker Event</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">9:00 AM - 10:00 AM</p>
+                    </div>
 
+                    <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Workshop/Speaker Event</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">11:00 AM - 12:00 PM</p>
+                    </div>
 
-                        <p itemprop = "startDate endDate" class="schedule-item-time">12:30 PM - 1:30 PM</p>
+                    <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Workshop/Speaker Event</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">1:00 PM - 2:00 PM</p>
+                    </div>
 
+                    <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Workshop/Speaker Event</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">3:00 PM - 4:00 PM</p>
+                    </div>
+
+                    <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Game Night</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">8:00 PM - 9:00 PM</p>
+                    </div>
                 </div>
 
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
+                <div class="schedule-day" data-aos="fade-left">
+                    <h2 class="schedule-date" data-aos="fade-left" itemprop="startDate">July 25th</h2>
 
-                        <p itemprop = "about subEvent" class="schedule-item-heading">Workshop/Speaker Event</p>
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Submissions</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">9:00 AM - 11:00 AM</p>
+                    </div>
 
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Judging</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">11:00 AM - 3:00 PM</p>
+                    </div>
 
-                        <p itemprop = "startDate endDate" class="schedule-item-time">2:00 PM - 3:00 PM</p>
-
+                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                        <p class="schedule-item-heading" itemprop="about subEvent">Closing Ceremony</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">3:00 PM - 4:00 PM</p>
+                    </div>
                 </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-
-                        <p itemprop = "about subEvent" class="schedule-item-heading">Entrepreneurship Workshop</p>
-
-
-                        <p itemprop = "startDate endDate" class="schedule-item-time">4:00 PM - 5:00 PM</p>
-
-                </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-
-                        <p itemprop = "about subEvent" class="schedule-item-heading">Workshop/Speaker Event</p>
-
-
-                        <p itemprop = "startDate endDate" class="schedule-item-time">5:30 PM - 6:30 PM</p>
-
-                    <!-- <div>
-                        <img src = "img/sponsors/draftbit.png" style="max-height:auto">
-                    </div> -->
-
-                </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-                    <p itemprop = "about subEvent" class="schedule-item-heading">Workshop/Speaker Event</p>
-                    <p itemprop = "startDate endDate" class="schedule-item-time">7:00 PM - 8:00 PM</p>
-                </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-                    <p itemprop = "about subEvent" class="schedule-item-heading">Game Night 🎮</p>
-                    <p itemprop = "startDate endDate" class="schedule-item-time">8:30 PM - 9:30 PM</p>
-                </div>
-
             </div>
+        </section>
 
-
-            <div class="schedule-day" data-aos="fade-down">
-
-                <h2 itemprop = "startDate" class="schedule-date" data-aos="fade-down">July 24th</h2>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-down">
-                    <p itemprop = "about subEvent" class="schedule-item-heading">Workshop/Speaker Event</p>
-                    <p itemprop = "startDate endDate" class="schedule-item-time">9:00 AM - 10:00 AM</p>
-                </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-down">
-                    <p itemprop = "about subEvent" class="schedule-item-heading">Workshop/Speaker Event</p>
-                    <p itemprop = "startDate endDate" class="schedule-item-time">11:00 AM - 12:00 PM</p>
-                </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-down">
-                    <p itemprop = "about subEvent" class="schedule-item-heading">Workshop/Speaker Event</p>
-                    <p itemprop = "startDate endDate" class="schedule-item-time">1:00 PM - 2:00 PM</p>
-                </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-down">
-                    <p itemprop = "about subEvent" class="schedule-item-heading">Workshop/Speaker Event</p>
-                    <p itemprop = "startDate endDate" class="schedule-item-time">3:00 PM - 4:00 PM</p>
-                </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-down">
-                    <p itemprop = "about subEvent" class="schedule-item-heading">Game Night</p>
-                    <p itemprop = "startDate endDate" class="schedule-item-time">8:00 PM - 9:00 PM</p>
-                </div>
-
-            </div>
-
-            <div class="schedule-day" data-aos="fade-left">
-
-                <h2 itemprop = "startDate" class="schedule-date" data-aos="fade-left">July 25th</h2>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-                    <p itemprop = "about subEvent" class="schedule-item-heading">Submissions</p>
-                    <p itemprop = "startDate endDate" class="schedule-item-time">9:00 AM - 11:00 AM</p>
-                </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-                    <p itemprop = "about subEvent" class="schedule-item-heading">Judging</p>
-                    <p itemprop = "startDate endDate" class="schedule-item-time">11:00 AM - 3:00 PM</p>
-                </div>
-
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-                    <p itemprop = "about subEvent" class="schedule-item-heading">Closing Ceremony</p>
-                    <p itemprop = "startDate endDate" class="schedule-item-time">3:00 PM - 4:00 PM</p>
-                </div>
-
-            </div>
-
-
-
-        </div>
-    </section>
-
-    <script>
-        var hslColors = [
-            [231, 40, 15, 9],
-            [231, 40, 15, 5],
-            [231, 40, 15, 3]
-        ]
-        var i = 0;
-        var hue = hslColors[i][0];
-        var saturation = hslColors[i][1];
-        var value = hslColors[i][2];
-        var count = 0;
-        $('.schedule-item-workshop').each(function () {
-            count++;
-            if (count > hslColors[i][3]) {
-                i++;
-                hue = hslColors[i][0];
-                saturation = hslColors[i][1];
-                value = hslColors[i][2];
-                count = 1;
-            }
-            value += 5;
-
-            //   var hue = Math.floor(Math.random() * 360) + 1;
-
-            var hsvText = "hsl(" + hue + "," + saturation + "%," + value + "%)";
-
-            $(this).css({
-                "background-color": hsvText
+        <script>
+            var hslColors = [
+                [231, 40, 15, 9],
+                [231, 40, 15, 5],
+                [231, 40, 15, 3]
+            ]
+            var i = 0;
+            var hue = hslColors[i][0];
+            var saturation = hslColors[i][1];
+            var value = hslColors[i][2];
+            var count = 0;
+            $('.schedule-item-workshop').each(function () {
+                count++;
+                if (count > hslColors[i][3]) {
+                    i++;
+                    hue = hslColors[i][0];
+                    saturation = hslColors[i][1];
+                    value = hslColors[i][2];
+                    count = 1;
+                }
+                value += 5;
+                var hsvText = "hsl(" + hue + "," + saturation + "%," + value + "%)";
+                $(this).css({
+                    "background-color": hsvText
+                });
             });
-        });
-    </script>
+        </script>
 
-
-    <section class="black-section">
-        <div class="team-title" data-aos="zoom-out">Meet the Team</div>
-        <div class="team-subtitle" data-aos="zoom-out">Co-Founders</div>
-        <div class="team-co-founders">
-            <div itemprop = "director organizer" class="team-co-founder" data-aos="zoom-out">
-                <img src="img/team/Leo.jpg" class="team-img img-fluid border-radius-0" alt="Program Lead of Explore Hacks">
-                <div style="text-align:center;" class="">
-                    <h3 class="team-text">Leo Xu</h3>
-                    <h3 class="team-text">Program Lead</h3>
+        <section class="black-section">
+            <div class="team-title" data-aos="zoom-out">Meet the Team</div>
+            <div class="team-subtitle" data-aos="zoom-out">Co-Founders</div>
+            <div class="team-co-founders">
+                <div class="team-co-founder" data-aos="zoom-out" itemprop="director organizer">
+                    <img alt="Program Lead of Explore Hacks" class="team-img img-fluid border-radius-0"
+                         src="img/team/Leo.jpg">
+                    <div class="" style="text-align:center;">
+                        <h3 class="team-text">Leo Xu</h3>
+                        <h3 class="team-text">Program Lead</h3>
+                    </div>
+                </div>
+                <div class="team-co-founder" data-aos="zoom-out" itemprop="director organizer">
+                    <img alt="General Manager of Explore Hacks" class="team-img img-fluid border-radius-0"
+                         src="img/team/Danny.jpg">
+                    <div class="" style="text-align:center;">
+                        <h3 class="team-text">Dhanish Natarajan</h3>
+                        <h3 class="team-text">General Manager</h3>
+                    </div>
                 </div>
             </div>
 
-            <div itemprop = "director organizer" class="team-co-founder" data-aos="zoom-out">
-                <img src="img/team/Danny.jpg" class="team-img img-fluid border-radius-0" alt="General Manager of Explore Hacks">
-                <div style="text-align:center;" class="">
-                    <h3 class="team-text">Dhanish Natarajan</h3>
-                    <h3 class="team-text">General Manager</h3>
+            <div class="team-subtitle" data-aos="zoom-out">Lead Organizers</div>
+            <div class="team-lead-organizers">
+                <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
+                    <img alt="Website Lead of Explore Hacks" class="team-img img-fluid border-radius-0"
+                         src="img/team/Niranjan.jpg">
+                    <div class="" style="text-align:center;">
+                        <h3 class="team-text">Niranjan Mathiranjan</h3>
+                        <h3 class="team-text">Website Lead</h3>
+                    </div>
+                </div>
+
+                <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
+                    <img alt="UI Lead of Explore Hacks" class="team-img img-fluid border-radius-0"
+                         src="img/team/David.jpg">
+                    <div class="" style="text-align:center;">
+                        <h3 class="team-text">David Phillips</h3>
+                        <h3 class="team-text">UI Lead</h3>
+                    </div>
+                </div>
+
+                <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
+                    <img alt="Marketing Lead of Explore Hacks" class="team-img img-fluid border-radius-0"
+                         src="img/team/Sanved.jpg">
+                    <div class="" style="text-align:center;">
+                        <h3 class="team-text">Sanved Doshi</h3>
+                        <h3 class="team-text">Marketing Lead</h3>
+                    </div>
+                </div>
+
+                <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
+                    <img alt="Graphics Designer For Explore Hacks" class="team-img img-fluid border-radius-0"
+                         src="img/team/Grace.png">
+                    <div class="" style="text-align:center;">
+                        <h3 class="team-text">Grace Jin</h3>
+                        <h3 class="team-text">Graphics Designer</h3>
+                    </div>
+                </div>
+<!--                 <div class="team-lead-organizer" data-aos="zoom-in">
+                    <img src="img/team/" class="team-img img-fluid border-radius-0" alt="Kaustubh-Khulbe-Img">
+                    <div style="text-align:center;" class="">
+                        <h3 class="team-text">Kaustubh Khulbe</h3>
+                        <h3 class="team-text">Content Developer</h3>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+
+        <section class="sponsors">
+            <h2 class="sponsors-title" data-aos="fade-up">Sponsors</h2>
+            <p class="sponsors-subtitle" data-aos="fade-up" style="color: black">Thank you to all our sponsors for
+                supporting Explore Hacks!
+            </p>
+            <div class="image-grid" data-aos="fade-left" itemprop="sponsor funder">
+                <div class="silver-item">
+                    <a href="https://www.crimsoneducation.org/us/" target="_blank"><img alt="Crimson Education"
+                                                                                        class="silver-image"
+                                                                                        src="img/sponsors/crimson.png"
+                                                                                        style="max-width:100%; max-height:100%;"/></a>
                 </div>
             </div>
-
-        </div>
-        <div class="team-subtitle" data-aos="zoom-out">Lead Organizers</div>
-        <div class="team-lead-organizers">
-            <div itemprop = "organizer" class="team-lead-organizer" data-aos="zoom-in">
-                <img src="img/team/Niranjan.jpg" class="team-img img-fluid border-radius-0" alt="Website Lead of Explore Hacks">
-                <div style="text-align:center;" class="">
-                    <h3 class="team-text">Niranjan Mathiranjan</h3>
-                    <h3 class="team-text">Website Lead</h3>
+            <div class="image-grid" data-aos="fade-right">
+                <div class="bronze-item" itemprop="sponsor funder">
+                    <a href="https://www.echoar.xyz/" target="_blank"><img alt="echoAR"
+                                                                           class="bronze-image"
+                                                                           src="img/sponsors/echoar.png"
+                                                                           style="max-width:100%; max-height:100%;"/></a>
+                </div>
+                <div class="bronze-item" itemprop="sponsor funder">
+                    <a href="https://draftbit.com/" target="_blank"><img alt="draftbit"
+                                                                         class="bronze-image"
+                                                                         src="img/sponsors/draftbit.png"
+                                                                         style="max-width:100%; max-height:100%;"/></a>
+                </div>
+                <div class="bronze-item" itemprop="sponsor funder">
+                    <a href="https://replit.com/" target="_blank"><img alt="replit"
+                                                                       class="bronze-image"
+                                                                       src="img/sponsors/replit.svg"
+                                                                       style="max-width:100%; max-height:100%;"/></a>
                 </div>
             </div>
+        </section>
 
-            <div itemprop = "organizer" class="team-lead-organizer" data-aos="zoom-in">
-                <img src="img/team/David.jpg" class="team-img img-fluid border-radius-0" alt="UI Lead of Explore Hacks">
-                <div style="text-align:center;" class="">
-                    <h3 class="team-text">David Phillips</h3>
-                    <h3 class="team-text">UI Lead</h3>
+        <!-- this is actually partners section haha-->
+        <section class="partners">
+            <h2 class="partners-title" data-aos="fade-up">Partners</h2>
+            <div class="image-grid2" data-aos="fade-right">
+                <div class="bronze-item" itemprop="sponsor funder">
+                    <a href="https://discord.gg/KDkKKBDHkM" target="_blank"><img alt="Bay Area Hackathons"
+                                                                                 class="bronze-image"
+                                                                                 src="img/partners/bahacks.png"
+                                                                                 style="max-width:93%; max-height:93%;"/></a>
                 </div>
             </div>
-
-            <div itemprop = "organizer" class="team-lead-organizer" data-aos="zoom-in">
-                <img src="img/team/Sanved.jpg" class="team-img img-fluid border-radius-0" alt="Marketing Lead of Explore Hacks">
-                <div style="text-align:center;" class="">
-                    <h3 class="team-text">Sanved Doshi</h3>
-                    <h3 class="team-text">Marketing Lead</h3>
-                </div>
-            </div>
-
-            <div itemprop = "organizer" class="team-lead-organizer" data-aos="zoom-in">
-                <img src="img/team/Grace.png" class="team-img img-fluid border-radius-0" alt="Graphics Designer For Explore Hacks">
-                <div style="text-align:center;" class="">
-                    <h3 class="team-text">Grace Jin</h3>
-                    <h3 class="team-text">Graphics Designer</h3>
-                </div>
-            </div>
-            <!-- <div class="team-lead-organizer" data-aos="zoom-in">
-                <img src="img/team/Kaustubh.png" class="team-img img-fluid border-radius-0" alt="Kaustubh-Khulbe-Img">
-                <div style="text-align:center;" class="">
-                    <h3 class="team-text">Kaustubh Khulbe</h3>
-                    <h3 class="team-text">Content Developer</h3>
-                </div>
-            </div> -->
-
-        </div>
-
-    </section>
-
-    <section class="sponsors">
-        <h2 class="sponsors-title" data-aos="fade-up">Sponsors</h2>
-        <p class="sponsors-subtitle" data-aos="fade-up" style="color: black">Thank you to all our sponsors for supporting Explore Hacks!
-        </p>
-        <div itemprop = "sponsor funder" class="image-grid" data-aos="fade-left">
-            <div class="silver-item">
-                <a href="https://www.crimsoneducation.org/us/" target="_blank"><img class="silver-image"
-                                                                                    src="img/sponsors/crimson.png" style="max-width:100%; max-height:100%;"
-                                                                                    alt="Crimson Education" /></a>
-            </div>
-        </div>
-        <div class="image-grid" data-aos="fade-right">
-            <div itemprop = "sponsor funder" class="bronze-item">
-                <a href="https://www.echoar.xyz/" target="_blank"><img class="bronze-image"
-                                                                    src="img/sponsors/echoar.png" style="max-width:100%; max-height:100%;" alt="echoAR" /></a>
-            </div>
-            <div itemprop = "sponsor funder" class="bronze-item">
-                <a href="https://draftbit.com/" target="_blank"><img class="bronze-image"
-                                                                    src="img/sponsors/draftbit.png" style="max-width:100%; max-height:100%;" alt="draftbit" /></a>
-            </div>
-            <div itemprop = "sponsor funder" class="bronze-item">
-                <a href="https://replit.com/" target="_blank"><img class="bronze-image" src="img/sponsors/replit.svg"
-                                                                style="max-width:100%; max-height:100%;" alt="replit" /></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- this is actually partners section haha-->
-    <section class="partners">
-        <h2 class="partners-title" data-aos="fade-up">Partners</h2>
-        <div class="image-grid2" data-aos="fade-right">
-            <div itemprop="sponsor funder" class="bronze-item">
-                <a target="_blank" href = "https://discord.gg/KDkKKBDHkM"><img class="bronze-image" src="img/partners/bahacks.png"
-                        style="max-width:93%; max-height:93%;" alt="Bay Area Hackathons" /></a>
-            </div>
-        </div>
-    </section>
-</article>
+        </section>
+    </article>
 
     <footer class="footer gray-section">
         <div class="smicons">
-            <a href="https://www.instagram.com/explore_hacks/" class="smicon" target="_blank"><img class="smimage"
-                                                                                src="img/icons/black-instagram.svg" alt="Explore Hacks' Instagram"> <span>Instagram</span></a>
-            <a href="https://explorehacks.devpost.com/" class="smicon" target="_blank"><img class="smimage"
-                                                                            src="img/icons/embed-code.svg" alt="Explore Hacks' Devpost"><span>Devpost</span></a>
-            <a href="https://discord.gg/WGqgdCwFb2" class="smicon" target="_blank"><img class="smimage"
-                                                                        src="img/icons/Discord-Logo-Black.svg" alt="Explore Hacks' Discord Server"><span>Discord</span></a>
-            <a href="https://www.linkedin.com/company/explore-hacks/about/" class="smicon" target="_blank"><img class="smimage"
-                                                                                                src="img/icons/linkedin-round-line.svg" alt="Explore Hacks' LinkedIn"><span>LinkedIn</span></a>
-            <a href="https://medium.com/@explorehacks" class="smicon" target="_blank"><img class="smimage"
-                                                                        src="img/icons/Artboard 1.svg" alt="Explore Hacks' Medium"><span> Medium </span></a>
+            <a class="smicon" href="https://www.instagram.com/explore_hacks/" target="_blank"><img
+                    alt="Explore Hacks' Instagram"
+                    class="smimage"
+                    src="img/icons/black-instagram.svg">
+                <span>Instagram</span></a>
+            <a class="smicon" href="https://explorehacks.devpost.com/" target="_blank"><img alt="Explore Hacks' Devpost"
+                                                                                            class="smimage"
+                                                                                            src="img/icons/embed-code.svg"><span>Devpost</span></a>
+            <a class="smicon" href="https://discord.gg/WGqgdCwFb2" target="_blank"><img
+                    alt="Explore Hacks' Discord Server"
+                    class="smimage"
+                    src="img/icons/Discord-Logo-Black.svg"><span>Discord</span></a>
+            <a class="smicon" href="https://www.linkedin.com/company/explore-hacks/about/" target="_blank"><img
+                    alt="Explore Hacks' LinkedIn"
+                    class="smimage" src="img/icons/linkedin-round-line.svg"><span>LinkedIn</span></a>
+            <a class="smicon" href="https://medium.com/@explorehacks" target="_blank"><img alt="Explore Hacks' Medium"
+                                                                                           class="smimage"
+                                                                                           src="img/icons/Artboard 1.svg"><span> Medium </span></a>
         </div>
-
         <p class="footer-text">
             Questions? Contact us at support@explorehacks.org<br>
             Logo created by Anna Wang
         </p>
+    </footer>
 </main>
 
-    <!-- Theme Custom -->
-    <script src="js/custom.js"></script>
-
-</footer>
+<!-- Theme Custom -->
+<script src="js/custom.js"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -614,6 +606,4 @@
 </body>
 <!-- dont move this away -->
 <script src="js/number-animation.js"></script>
-
 </html>
-

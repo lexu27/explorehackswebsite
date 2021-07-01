@@ -1,149 +1,163 @@
-  .team-co-founders {
-        display: flex;
-        flex-direction: row;
-        padding-left: 18%;
-        padding-right: 18%;
-        padding-bottom: 1em;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+.team-co-founders {
+    display: flex;
+    flex-direction: row;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 1em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.team-lead-organizers {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1482px) {
+    .hyphen {
+        display: none;
     }
 
-    .team-lead-organizers {
-        display: flex;
-        flex-direction: row;
+    .summary {
+        margin-left: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 1046px) {
+    .summary {
+        margin-top: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .summary {
+        margin-top: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .summary {
+        margin-top: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .team-co-founders {
         padding-left: 10%;
         padding-right: 10%;
-        padding-bottom: 1em;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .schedule-day {
+        flex-basis: 100%;
     }
 
-    @media only screen and (max-width: 1482px) {
-        .hyphen {
-            display: none;
-        }
-        .summary {
-            margin-left: 0px !important;
-        }
-    }
-    @media only screen and (max-width: 1046px){
-        .summary {
-            margin-top: 0px !important;
-        }
-    }
-    @media only screen and (max-width: 888px){
-        .summary {
-            margin-top: 16px !important;
-        }
-    }
-    @media only screen and (max-width: 735px){
-        .summary {
-            margin-top: 0px !important;
-        }
-    }
-    @media only screen and (max-width: 960px){
-        .team-co-founders {
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-    }
-    @media only screen and (max-width: 624px){
-        .schedule-day {
-            flex-basis: 100%;
-        }
-        .hyphen {
-            display: block;
-        }
-        .summary {
-            margin-top: 16px !important;
-        }
-        .summary {
-            margin-left: 3px !important;
-        }
+    .hyphen {
+        display: block;
     }
 
-    @media only screen and (max-width: 542px){
-        .hyphen {
-            display: none;
-        }
-        .summary {
-            margin-top: 16px !important;
-        }
-        .summary {
-            margin-left: 0px !important;
-        }
-    }
-    @media only screen and (max-width: 420px){
-        .summary {
-            margin-top: 0px !important;
-        }
-    }
-    @media only screen and (max-width: 550px){
-        .team-co-founders {
-            padding-left: 10%;
-            padding-right: 10%;
-        }
+    .summary {
+        margin-top: 16px !important;
     }
 
-    .team-co-founder {
-        padding:1em;
-        max-width: 45%;
-        max-height: 45%;
-        min-width: 300px;
-        min-height: 333px;
+    .summary {
+        margin-left: 3px !important;
+    }
+}
+
+@media only screen and (max-width: 542px) {
+    .hyphen {
+        display: none;
     }
 
-
-    .team-lead-organizer {
-        padding:1em;
-        max-width: 30%;
-        max-height: 30%;
-        min-width: 300px;
-        min-height: 333px;
+    .summary {
+        margin-top: 16px !important;
     }
 
-    .team-text {
-        font-weight: bold;
-        text-transform: none;
-        color: white;
-        font-size: 2.52rem;
+    .summary {
+        margin-left: 0px !important;
     }
+}
 
-    .team-img {
-        border-radius: 50% !important;
-        padding-bottom: 1em !important;
+@media only screen and (max-width: 420px) {
+    .summary {
+        margin-top: 0px !important;
     }
+}
 
-    .speaker {
-        border-radius: 50% !important;
+@media only screen and (max-width: 550px) {
+    .team-co-founders {
+        padding-left: 10%;
+        padding-right: 10%;
     }
+}
 
-    .team-title {
-        font-size: 3.5rem;
-        font-weight: bold;
-        margin-bottom: 30px;
-        padding-top: 60px;
-        text-align: center;
-    }
+.team-co-founder {
+    padding: 1em;
+    max-width: 45%;
+    max-height: 45%;
+    min-width: 300px;
+    min-height: 333px;
+}
 
-    .team-subtitle {
-        font-size: 3rem;
-        font-weight: bold;
-        margin-bottom: 50px;
-        padding-top: 30px;
-        text-align: center;
-    }
-    /*Sticking this here as it doesn't make sense to create a new file*/
+
+.team-lead-organizer {
+    padding: 1em;
+    max-width: 30%;
+    max-height: 30%;
+    min-width: 300px;
+    min-height: 333px;
+}
+
+.team-text {
+    font-weight: bold;
+    text-transform: none;
+    color: white;
+    font-size: 2.52rem;
+}
+
+.team-img {
+    border-radius: 50% !important;
+    padding-bottom: 1em !important;
+}
+
+.speaker {
+    border-radius: 50% !important;
+}
+
+.team-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.team-subtitle {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+/*Sticking this here as it doesn't make sense to create a new file*/
 .speaker-img {
     margin: auto;
     width: 15%;
     height: 15%;
 }
 
-  .speaker-title {
-      font-size: 3.5rem;
-      font-weight: bold;
-      margin-bottom: 30px;
-      padding-top: 60px;
-      text-align: center;
-  }
+.speaker-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-function isElementInViewport (el) {
+function isElementInViewport(el) {
 
     // Special bonus for those using jQuery
     if (typeof jQuery === "function" && el instanceof jQuery) {
@@ -6,7 +6,12 @@ function isElementInViewport (el) {
     }
 
     var rect = el.getBoundingClientRect();
-    const data = {bottom: rect.bottom, right: rect.right, screenHeight: $(window).height(), screenWidth: $(window).width()}
+    const data = {
+        bottom: rect.bottom,
+        right: rect.right,
+        screenHeight: $(window).height(),
+        screenWidth: $(window).width()
+    }
 
     return (
         rect.top >= 0 &&
@@ -28,7 +33,7 @@ function onVisibilityChange(el, callback) {
     }
 }
 
-var handler = onVisibilityChange(counters[0], function() {
+var handler = onVisibilityChange(counters[0], function () {
     /* Your code go here */
     const speed = 300;
     updateCounts(speed);

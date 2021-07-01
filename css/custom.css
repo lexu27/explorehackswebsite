@@ -1,6 +1,5 @@
 
-html,body
-{
+html, body {
     width: 100%;
     overflow-x: hidden !important;
 }
@@ -11,6 +10,7 @@ html,body
     font-size: 10px;
 
 }
+
 h1 {
     line-height: 4.4rem;
 }
@@ -48,113 +48,118 @@ body::-webkit-scrollbar-thumb {
 
 /* Loading Screen CSS */
 .holder {
-  z-index:1000;
-  background:#021c33;
-  width:100vw;
-  height:100vh;
-  position:fixed;
+    z-index: 1000;
+    background: #021c33;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
 }
 
 .preloader__dots {
-  position:absolute;
-  top:50%;
-  left:50%;
-  background-color:transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
 }
 
 .preloader__dots {
-  display:block;
-  width:36px;
-  height:36px;
-  margin:-18px 0 0 -18px;
-  animation:1s linear infinite rotate;
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: -18px 0 0 -18px;
+    animation: 1s linear infinite rotate;
 }
+
 .preloader__dot,
 .preloader__dot:after,
 .preloader__dot:before {
-  position:absolute;
-  width:10px;
-  height:10px;
-  border-radius:100%;
-  background-color:#fff;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fff;
 }
+
 .preloader__dot {
-  left:0;
-  bottom:0
+    left: 0;
+    bottom: 0
 }
+
 .preloader__dot:after,
 .preloader__dot:before {
-  content:'';
-  display:block;
+    content: '';
+    display: block;
 }
+
 .preloader__dot:after {
-  top:-25px;
-  right:0;
-  animation:1s linear infinite down;
+    top: -25px;
+    right: 0;
+    animation: 1s linear infinite down;
 }
+
 .preloader__dot:before {
-  right:-25px;
-  bottom:0;
+    right: -25px;
+    bottom: 0;
 }
 
 @keyframes rotate {
-  0% {
-    transform:rotate(0);
-    -webkit-transform:rotate(0deg);
-  }
-  100%,50% {
-    transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-  }
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0deg);
+    }
+    100%, 50% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
 }
 
-@-webkit-keyframes  rotate {
-  0% {
-    transform:rotate(0);
-    -webkit-transform:rotate(90deg);
-  }
-  100%,50% {
-    transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-  }
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(90deg);
+    }
+    100%, 50% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
 }
 
 @keyframes down {
-  0% {
-    transform: translate3d(0,0,0);
-  }
-  50% {
-    transform: translate3d(0,0,0)  scaleX(1);
-  }
-  75% {
-    transform: translate3d(0,0,0) scaleX(1.3)
-  }
-  100% {
-    transform: translate3d(25px,0,0) scaleX(1.3);
-  }
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 0, 0) scaleX(1);
+    }
+    75% {
+        transform: translate3d(0, 0, 0) scaleX(1.3)
+    }
+    100% {
+        transform: translate3d(25px, 0, 0) scaleX(1.3);
+    }
 }
 
 @-webkit-keyframes down {
-  0% {
-    transform: translate3d(0,0,0);
-  }
-  50% {
-    transform: translate3d(0,0,0)  scaleX(1);
-  }
-  75% {
-    transform: translate3d(0,0,0) scaleX(1.3);
-  }
-  100% {
-    transform: translate3d(25px,0,0) scaleX(1.3);
-  }
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 0, 0) scaleX(1);
+    }
+    75% {
+        transform: translate3d(0, 0, 0) scaleX(1.3);
+    }
+    100% {
+        transform: translate3d(25px, 0, 0) scaleX(1.3);
+    }
 }
 
 
 @keyframes fadeOut {
-     0% {
-         opacity:1;
-     }
-     100% {
-         opacity:0;
-     }
- }
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -36,7 +36,6 @@ window.addEventListener('scroll', function () {
 })
 
 
-
 // counter code
 const counters = document.querySelectorAll('.counter');
 

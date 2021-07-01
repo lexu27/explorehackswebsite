@@ -1,131 +1,133 @@
-        .schedule {
-            display: flex;
-            flex-direction: row;
-            padding-left: 5em;
-            padding-right: 5em;
-            padding-bottom: 5em;
-            flex-wrap: wrap;
-            justify-content: center;
+.schedule {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
+    flex-wrap: wrap;
+    justify-content: center;
 
-        }
-        
-        .schedule-title {
-            font-size: 2.7rem;
-            font-weight: bold;
-            margin-bottom: 3rem;
-            padding-top: 5rem;
-            vertical-align:middle;
-            align-self: center;
-            text-align: center;
-        }
+}
 
-        .schedule-day {
-            display: flex;
-            background-color: #3949AB;
-            height: max-content;
-            flex: 1;
-            margin: 2em;
-            padding: 3em;
-            flex-direction: column;
-            flex-grow: 0.5;
-        }
-        .schedule-date{
-            display: flex;
-            color: white;
-            font-size: 2em;
-        }
+.schedule-title {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+    vertical-align: middle;
+    align-self: center;
+    text-align: center;
+}
 
-        .schedule-item {
-            display: flex;
-            background-color: hsl(231, 100%, 20%);;
-            min-height: 4em;
-            margin: 1em;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            padding: 1em;
-            flex-direction: row;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        .schedule-item-main {
-            display: flex;
-            background-color: hsl(231, 100%, 0%);;
-            min-height: 4em;
-            margin: 1em;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            padding: 1em;
-            flex-direction: row;
-            justify-content: center;
-            flex-shrink: 0;
-        }
+.schedule-day {
+    display: flex;
+    background-color: #3949AB;
+    height: max-content;
+    flex: 1;
+    margin: 2em;
+    padding: 3em;
+    flex-direction: column;
+    flex-grow: 0.5;
+}
 
-        .schedule-item-workshop {
-            
-            display: flex;
-            background-color: #001799;
-            min-height: 4em;
-            margin: 1em;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            padding: 1em;
-            flex-direction: column;
-            justify-content: center;
-            flex-wrap: wrap;
-            flex-shrink: 0;
-            /* gap: 70%; */
-            
-        }
+.schedule-date {
+    display: flex;
+    color: white;
+    font-size: 2em;
+}
 
-          .schedule-item-fun {
-            display: flex;
-             background-color: hsl(231, 100%, 30%);
-            
-            min-height: 4em;
-            margin: 1em;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            padding: 1em;
-            flex-direction: row;
-            justify-content: center;
-            flex-shrink: 0;
-        }
+.schedule-item {
+    display: flex;
+    background-color: hsl(231, 100%, 20%);;
+    min-height: 4em;
+    margin: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+}
 
-        /* @media only screen and (max-width: 1728px){
-            .schedule-item-workshop {
-                justify-content: space-around !important;
+.schedule-item-main {
+    display: flex;
+    background-color: hsl(231, 100%, 0%);;
+    min-height: 4em;
+    margin: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+}
 
-            }
-        } */
+.schedule-item-workshop {
 
-        @media only screen and (max-width: 960px){
-            .schedule-item{
-            min-width: 450px;
-            }
-        }
+    display: flex;
+    background-color: #001799;
+    min-height: 4em;
+    margin: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    /* gap: 70%; */
 
-        @media only screen and (max-width: 550px){
-            .schedule-item{
-            min-width: 350px;
-            }
-        }
+}
 
-        .dot {
-            height: 1em;
-            width: 1em;
-            background-color: #bbb;
-            border-radius: 50%;
-            text-align: center;
-            margin-left: 1em;
-            margin-right: 1em;
-        }
+.schedule-item-fun {
+    display: flex;
+    background-color: hsl(231, 100%, 30%);
 
-        .schedule-item-heading {
-            color: aliceblue;
-            font-size: 1.4rem;
-            text-align: center;
-            font-family: monospace;
-        }
+    min-height: 4em;
+    margin: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+}
 
-        .schedule-item-time {
-            color: aliceblue;
-            font-size: 1.4rem;
-            text-align: center;
-            flex-shrink: 0;
-        }
+/* @media only screen and (max-width: 1728px){
+    .schedule-item-workshop {
+        justify-content: space-around !important;
+
+    }
+} */
+
+@media only screen and (max-width: 960px) {
+    .schedule-item {
+        min-width: 450px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .schedule-item {
+        min-width: 350px;
+    }
+}
+
+.dot {
+    height: 1em;
+    width: 1em;
+    background-color: #bbb;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.schedule-item-heading {
+    color: aliceblue;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: monospace;
+}
+
+.schedule-item-time {
+    color: aliceblue;
+    font-size: 1.4rem;
+    text-align: center;
+    flex-shrink: 0;
+}

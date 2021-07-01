@@ -6,6 +6,7 @@
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
+
 .faqs-title {
     font-size: 2.7rem;
     font-weight: bold;
@@ -42,7 +43,7 @@
         flex-direction: column;
     }
 
-    .faq{
+    .faq {
         flex-basis: 100%;
     }
 }
@@ -55,8 +56,6 @@
     margin-right: 10px;
     margin-bottom: 10px;
 }
-
-
 
 
 .faq-question {

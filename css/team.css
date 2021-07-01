@@ -18,13 +18,66 @@
         flex-wrap: wrap;
     }
 
+    @media only screen and (max-width: 1482px) {
+        .hyphen {
+            display: none;
+        }
+        .summary {
+            margin-left: 0px !important;
+        }
+    }
+    @media only screen and (max-width: 1046px){
+        .summary {
+            margin-top: 0px !important;
+        }
+    }
+    @media only screen and (max-width: 888px){
+        .summary {
+            margin-top: 16px !important;
+        }
+    }
+    @media only screen and (max-width: 735px){
+        .summary {
+            margin-top: 0px !important;
+        }
+    }
     @media only screen and (max-width: 960px){
         .team-co-founders {
             padding-left: 10%;
             padding-right: 10%;
         }
     }
+    @media only screen and (max-width: 624px){
+        .schedule-day {
+            flex-basis: 100%;
+        }
+        .hyphen {
+            display: block;
+        }
+        .summary {
+            margin-top: 16px !important;
+        }
+        .summary {
+            margin-left: 3px !important;
+        }
+    }
 
+    @media only screen and (max-width: 542px){
+        .hyphen {
+            display: none;
+        }
+        .summary {
+            margin-top: 16px !important;
+        }
+        .summary {
+            margin-left: 0px !important;
+        }
+    }
+    @media only screen and (max-width: 420px){
+        .summary {
+            margin-top: 0px !important;
+        }
+    }
     @media only screen and (max-width: 550px){
         .team-co-founders {
             padding-left: 10%;
@@ -61,6 +114,9 @@
         padding-bottom: 1em !important;
     }
 
+    .speaker {
+        border-radius: 50% !important;
+    }
 
     .team-title {
         font-size: 3.5rem;

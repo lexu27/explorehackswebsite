@@ -66,9 +66,12 @@
             margin: 1em;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             padding: 1em;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
+            flex-wrap: wrap;
             flex-shrink: 0;
+            /* gap: 70%; */
+            
         }
 
           .schedule-item-fun {
@@ -83,6 +86,13 @@
             justify-content: center;
             flex-shrink: 0;
         }
+
+        /* @media only screen and (max-width: 1728px){
+            .schedule-item-workshop {
+                justify-content: space-around !important;
+
+            }
+        } */
 
         @media only screen and (max-width: 960px){
             .schedule-item{
@@ -107,18 +117,15 @@
         }
 
         .schedule-item-heading {
-            align-self: flex-start;
             color: aliceblue;
             font-size: 1.4rem;
-            flex: 2;
-            text-align: left;
+            text-align: center;
             font-family: monospace;
         }
 
         .schedule-item-time {
             color: aliceblue;
             font-size: 1.4rem;
-            flex: 1;
-            text-align: right;
+            text-align: center;
             flex-shrink: 0;
         }

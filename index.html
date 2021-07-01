@@ -30,6 +30,7 @@
     <link href="css/partners.css" rel="stylesheet">
     <link href="css/button.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
+    <link href="css/speakers.css" rel="stylesheet">
 
     <!-- custom font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -111,7 +112,7 @@
             <img itemprop = "name" src="img/icons/ExploreHacksLogo.png" class="intro-logo" id="intro-logo" alt="Explore Hacks Logo">
             <div class="date-and-button" id="date-and-button">
                 <div itemprop = "startDate endDate" class="intro-date" id="intro-date" style = "margin-right: 20px;">July 23rd-25th</div>
-                <div style = "">
+                <div>
                     <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" id="intro-button"
                     type="button" id="signUpButton"
                     href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet" data-mode="popup"
@@ -287,40 +288,50 @@
                 allowfullscreen></iframe>
 
     </section>
+    <section class="black-section">
+        <div class="team-title" data-aos="zoom-out">Speakers</div>
+            <div itemprop = "event speaker" class="team-co-founder" data-aos="zoom-out">
+                <img src="img/speakers/Aman.jpg" class="team-img img-fluid border-radius-0" alt="Event Speaker in Explore Hacks">
+                <div style="text-align:center;" class="">
+                    <h3 class="team-text">Aman</h3>
+                    <h3 class="team-text">Developer Advocate @ Draftbit</h3>
+                </div>
+                </div>
+    </section>
 
-
-    <section class="black-section" id="schedule">
-        <div itemprop = "eventSchedule" class="schedule-title">Schedule (All Times In PT)</div>
+    <section class="gray-section" id="schedule">
+        <div itemprop = "eventSchedule" class="schedule-title">Schedule (All Times In PDT)</div>
         <div itemprop = "eventSchedule" class="schedule">
             <div class="schedule-day" data-aos="fade-left">
 
                 <h2 itemprop = "startDate" class="schedule-date" data-aos="fade-left">July 23rd</h2>
 
                 <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-                        
                         <p itemprop = "about subEvent" class="schedule-item-heading">Opening Ceremony</p>
-                
                         <p itemprop = "startDate endDate" class="schedule-item-time">9:00 AM - 9:45 AM</p>
+                        <img>
                     
                 </div>
 
                 <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-                
                         <p itemprop = "about subEvent" class="schedule-item-heading">Team Formation</p>
-                    
-                
                         <p itemprop = "startDate endDate" class="schedule-item-time">9:45 AM - 10:10 AM</p>
+                        
                     
                 </div>
 
-                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
-                
+                <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left" id = "UI">
                         <p itemprop = "about subEvent" class="schedule-item-heading">Building Attractive UIs Workshop</p>
-                    
-                
+
                         <p itemprop = "startDate endDate" class="schedule-item-time">11:00 AM - 12:00 PM</p>
-                    
-                </div>
+                        <div style = "display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                            <img src = "./img/speakers/Aman.jpg" class="speaker" style = "width: 8rem; height:auto; margin-right: 10px !important; flex-wrap: wrap;">
+                            <p class="schedule-item-time" style = "font-size: medium;margin-right: 3px;">Aman Mittal</p>
+                            <span class="schedule-item-time hyphen">-</span>
+                            <p class="schedule-item-time summary" style = "font-size: medium;margin-left: 3px">Developer Advocate </p>
+                            <img src = "./img/sponsors/draftbit.png" style = "width: 10rem; height:auto; margin-left: 10px !important; flex-wrap: wrap;">
+                        </div>
+                </div> 
 
                 <div itemprop = "about subEvent" class="schedule-item-workshop" data-aos="fade-left">
                 
@@ -464,7 +475,8 @@
         });
     </script>
 
-    <section class="gray-section">
+
+    <section class="black-section">
         <div class="team-title" data-aos="zoom-out">Meet the Team</div>
         <div class="team-subtitle" data-aos="zoom-out">Co-Founders</div>
         <div class="team-co-founders">

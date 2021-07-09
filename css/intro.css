@@ -137,13 +137,27 @@
 }
 
 @media only screen and (max-width: 790px) {
+    .date-and-button {
+        margin-top: 12rem;
+    }
     .intro-date {
         margin-left: 20px;
+        margin-bottom: 10px;
     }
 
     #intro-button {
         margin-top: 20px !important;
     }
+
+}
+@media only screen and (max-width: 787px) {
+    .date-and-button {
+        margin-top: 14rem;
+    }
+    .intro-date {
+        margin-bottom: 20px;
+    }
+
 
 }
 

@@ -18,6 +18,8 @@
     flex-basis: 100%;
     padding: 10px;
     box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .bronze-image {
@@ -67,6 +69,8 @@
     flex-basis: 100%;
     padding: 10px;
     box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .silver-image {

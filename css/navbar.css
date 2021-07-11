@@ -1,0 +1,23 @@
+.main {
+}
+
+.navbar {
+    height: 5rem;
+    width: 100%;
+    background-color: #82AAFF;
+    position: fixed;
+    z-index: 190;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin-right: 10px;
+    margin-left: 10px;
+}

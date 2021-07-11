@@ -22,6 +22,9 @@ p {
 .gray-section {
     background-color: #181B1E;
 }
+.fa-cog {
+    color: black;
+}
 
 .black-section {
     background-color: #000000;

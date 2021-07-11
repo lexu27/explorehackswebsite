@@ -1,8 +1,8 @@
-/*Sticking this here as it doesn't make sense to create a new file*/
 .speaker-img {
     margin: auto;
-    width: 15%;
-    height: 15%;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50% !important;
 }
 
 .speaker-title {
@@ -13,7 +13,62 @@
     text-align: center;
 }
 
+
+.speaker-text {
+    font-weight: bold;
+    text-transform: none;
+    color: white;
+    font-size: 2.52rem;
+}
+
+.speaker-desc{
+    font-weight: normal;
+    text-transform: none;
+    color: white;
+    font-size: 2rem;
+}
 .speaker-container {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+@media only screen and (min-width: 0px) {
+    .speaker-img{
+        width: 15rem;
+        height: 15rem;
+    }
+    .speaker-container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .speaker-img{
+        width: 18rem;
+        height: 18rem;
+    }
+
+}
+
+/*
+@media only screen and (min-width: 960px) {
+    .speaker-img{
+        width: 18rem;
+        height: 18rem;
+    }
+}
+*/
+
+@media only screen and (min-width: 1280px) {
+    .speaker-img{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .speaker-img{
+        width: 25rem;
+        height: 25rem;
+    }
 }

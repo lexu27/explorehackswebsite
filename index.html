@@ -20,22 +20,22 @@
 
     <meta content="index, follow" name="robots"/>
 
-    <link href="https://explorehacks.org" rel="canonical">
+    <link href="css/button.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <link href="css/intro.css" rel="stylesheet">
+    <link href="css/faqs.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <link href="css/intro-2.css" rel="stylesheet">
     <link href="css/intro-3.css" rel="stylesheet">
-    <link href="css/faqs.css" rel="stylesheet">
+    <link href="css/intro.css" rel="stylesheet">
+    <link href="css/judge.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/partners.css" rel="stylesheet">
     <link href="css/schedule.css" rel="stylesheet">
+    <link href="css/speaker.css" rel="stylesheet">
+    <link href="css/sponsors.css" rel="stylesheet">
     <link href="css/team.css" rel="stylesheet">
     <link href="css/video.css" rel="stylesheet">
-    <link href="css/sponsors.css" rel="stylesheet">
-    <link href="css/partners.css" rel="stylesheet">
-    <link href="css/button.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
-    <link href="css/judge.css" rel="stylesheet">
-    <link href="css/speaker.css" rel="stylesheet">
-    <link href="css/navbar.css" rel="stylesheet">
+    <link href="https://explorehacks.org" rel="canonical">
 
     <!-- custom font -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -44,9 +44,7 @@
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://kit.fontawesome.com/192deae4bc.js" crossorigin="anonymous"></script>
 </head>
@@ -350,7 +348,7 @@
                     title="YouTube video player"></iframe>
 
         </section>
-        <section id="speaker" class="black-section">
+<!--        <section id="speaker" class="black-section">
             <div class="team-title" data-aos="zoom-out">Speakers / Mentors</div>
             <div data-aos="zoom-out" itemprop="event speaker" class="speaker-container">
                 <div>
@@ -418,7 +416,7 @@
                 </div>
             </div>
             <script></script>
-        </section>
+        </section>-->
 
         <section class="black-section" id="schedule" style="padding-top: 6rem">
             <div class="schedule-title" itemprop="eventSchedule">Schedule (All Times In PDT)</div>
@@ -550,15 +548,13 @@
 
         <section class="gray-section">
             <div class="team-title" data-aos="zoom-out">Speakers / Mentors</div>
-            <div data-aos="zoom-out" itemprop="event speaker" class="speaker-container">
-
-
+            <div data-aos="zoom-out" itemprop="event speaker" class="speaker-container" style="display: flex; flex: 1; justify-content: space-around">
                 <div>
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 speaker-img"
+                    <img alt="Event Speaker in Explore Hacks" class="speaker-img"
                          src="img/speakers/Aman.jpg">
                     <div style="text-align:center;">
-                        <h3 class="team-text">Aman Mittal</h3>
-                        <h3 class="team-text" style="margin-bottom: 0; padding-bottom: 5%; font-weight: 100;">Developer Advocate @
+                        <h3 class="speaker-text">Aman Mittal</h3>
+                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">Developer Advocate @
                             Draftbit</h3>
                     </div>
                 </div>
@@ -571,16 +567,17 @@
                     </div>
                 </div> -->
                 <div>
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 speaker-img"
+                    <img alt="Event Speaker in Explore Hacks" class="speaker-img"
                          src="img/speakers/Jamie.png">
                     <div style="text-align:center;">
-                        <h3 class="team-text">Aman Mittal</h3>
-                        <h3 class="team-text" style="margin-bottom: 0; padding-bottom: 5%; font-weight: 100;">CEO & Co-Founder of Crimson Education</h3>
+                        <h3 class="speaker-text">Aman Mittal</h3>
+                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; font-weight: 100;">CEO & Co-Founder of Crimson Education</h3>
                     </div>
                 </div>
             </div>
             <script></script>
         </section>
+
         <section class='black-section'>
             <div class='team-title' data-aos="zoom-out">Judges</div>
             <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;padding-bottom: 60px;" >
@@ -814,7 +811,7 @@
         offset: 200
     });
 </script>
-<script type="text/javascript">
+<!--<script type="text/javascript">
     $(document).ready(function(){
         $('.speaker-container').slick({
             // centerMode: true,
@@ -857,7 +854,7 @@
             ]
     });
     });
-</script>
+</script>-->
 </body>
 <!-- dont move this away -->
 <script src="js/number-animation.js"></script>

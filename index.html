@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <!-- Basic -->
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 
@@ -20,39 +19,38 @@
 
     <meta content="index, follow" name="robots"/>
 
-    <link href="https://explorehacks.org" rel="canonical">
+    <link href="css/button.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <link href="css/intro.css" rel="stylesheet">
+    <link href="css/faqs.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <link href="css/intro-2.css" rel="stylesheet">
     <link href="css/intro-3.css" rel="stylesheet">
-    <link href="css/faqs.css" rel="stylesheet">
+    <link href="css/intro.css" rel="stylesheet">
+    <link href="css/judge.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/partners.css" rel="stylesheet">
     <link href="css/schedule.css" rel="stylesheet">
+    <link href="css/speaker.css" rel="stylesheet">
+    <link href="css/sponsors.css" rel="stylesheet">
     <link href="css/team.css" rel="stylesheet">
     <link href="css/video.css" rel="stylesheet">
-    <link href="css/sponsors.css" rel="stylesheet">
-    <link href="css/partners.css" rel="stylesheet">
-    <link href="css/button.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
+    <link href="https://explorehacks.org" rel="canonical">
 
     <!-- custom font -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/192deae4bc.js"></script>
 </head>
 
 <body>
-
 <!--     Loading Screen Div-->
 <div class="holder">
-
     <div class="preloader__dots">
         <span class="preloader__dot"></span>
     </div>
-
 </div>
 <!--    JS to load preloader until website loads-->
 <script>
@@ -64,7 +62,17 @@
         setTimeout(() => loadingWrapper.style.display = "none", 1000);
     })
 </script>
-
+<!--<nav class="navbar">
+<ul class="navbar-nav">
+    <li class="nav-item"><a href="#signup">signup</a> </li>
+    <li class="nav-item"><a href="#faqs">faq</a></li>
+    <li class="nav-item"><a href="#speaker">Speaker / Mentor</a></li>
+    <li class="nav-item"><a href="#judges">Judges</a></li>
+    <li class="nav-item"><a href="#schedule">Schedule</a></li>
+    <li class="nav-item"><a href="#team">Team</a></li>
+    <li class="nav-item"><a href="#sponsor">Sponsors</a></li>
+</ul>
+</nav>-->
 <script>
     (function () {
         var qs, js, q, s, d = document,
@@ -101,9 +109,9 @@
         transform: translateY(-50%);
     }
 </style>
-<main role="main">
+<main class="main" role="main">
     <article itemscope itemtype="https://schema.org/Hackathon">
-        <section class="intro">
+        <section class="intro" id="signup">
             <div class="intro-bg" id="intro-bg"></div>
             <img alt="Explore Hacks Banner" class="intro-planet1" id="intro-planet1" src="img/custom/Planet1.png">
             <img alt="Explore Hacks Banner" class="intro-planet2" id="intro-planet2" src="img/custom/Planet2.png">
@@ -118,7 +126,7 @@
                 <div>
                     <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" data-mode="popup"
                        data-size="100" href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet"
-                       id="signUpButton" id="intro-button"
+                       id="intro-button"
                        rel="noopener" target="_blank"
                        type="button">Interested?</a>
                 </div>
@@ -127,63 +135,35 @@
 
         <section class="intro-2 black-section">
             <div class="intro-2-container">
-                <div class="intro-2-prompt" data-aos="fade-up" data-aos-offset="200">
-                    <h1> Create a project that
-                        <span class="c1">solves</span> a current issue in the
-                        <span class="c2">world</span> and has a lasting
-                        <span class="c3">impact</span> on a
-                        <span class="c4">market</span> of your choice in the future.
-                    </h1>
-                </div>
-
+                <div class="intro-3-title" data-aos="fade-up"> What is Explore Hacks and why should I join?</div>
                 <p class="intro-2-description" data-aos="fade-up"
                    itemprop="about description isAccessibleForFree audience duration"
                    style="font-size: medium; line-height: 2;">
                     Explore Hacks is a 3-day hackathon that aims to grant both experienced and beginner student
-                    programmers
-                    the chance to explore the process of ideation to product execution. Participants will gain the
+                    programmers the chance to explore the process of ideation to product execution. Participants will
+                    gain the
                     opportunity to learn through a variety of workshops and mini-events, allowing them to traverse the
                     different fields of Computer Science. Best of all, Explore Hacks is 100% free!
                 </p>
 
-                <!-- <span class="stats-symbol">$</span> -->
                 <div class="stats" data-aos="flip-up">
                     <div class="prizes" itemprop="offers">
-                        <p class="prizes-text counter" data-target="5000">0</p>
+                        <p class="prizes-text" data-target="5000"><span class="stats-symbol">$</span>7000<span
+                                class="stats-symbol">+</span></p>
                         <p class="stats-title">In prizes</p>
                     </div>
-
                     <div class="workshops" itemprop="subEvent">
-                        <p class="workshops-text counter" data-target="15">0</p>
+                        <p class="workshops-text" data-target="15">15<span class="stats-symbol">+</span></p>
                         <p class="stats-title">Mini Events</p>
                     </div>
 
                     <div class="particpants">
-                        <p class="participants-text counter" data-target="400">0<span class="stats-symbol">+</span></p>
+                        <p class="participants-text" data-target="400">400<span class="stats-symbol">+</span></p>
                         <p class="stats-title" itemprop="attendee">Participants from around the world</p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="intro-3 gray-section">
-            <div class="intro-3-container">
-                <div class="intro-3-title" data-aos="fade-up">Have the opportunity to innovate by participating in
-                    Explore
-                    Hacks
-                </div>
-                <p class="intro-3-description" data-aos="fade-up"
-                   itemprop="description about potentialAction" style="font-size: medium; line-height: 2;">By attending
-                    Explore Hacks, you will not only gain the chance learn more, but also have the chance to improve
-                    your
-                    programming knowledge to solve real life problems. Whether you're a beginner or master at coding, as
-                    long as you're interested
-                    in an exciting and complementary learning experience to your coding journey, Explore Hacks is right
-                    for
-                    you!
-                </p>
-                <div
-                        style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
+                <div style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
                     <div data-aos="fade-right" style="padding: 10px; max-width: 420px;">
                         <img alt="Attend workshops in Explore Hacks" itemprop="potentialAction offers"
                              src="img/opportunities/1.png">
@@ -207,10 +187,80 @@
             </div>
         </section>
 
-        <section class="faqs black-section">
+        <section class="intro-3 gray-section">
+            <div class="intro-3-container">
+                <div class="intro-3-title" data-aos="fade-up">What will I need to do?
+                </div>
+                <p class="intro-3-description" data-aos="fade-up"
+                   itemprop="description about potentialAction" style="font-size: medium; line-height: 2;">
+                    You will need to create a project and submit a 5-minute video that demos your project and pitches
+                    the impact its integration within the market of your
+                    choice. Upon submission, you must add a URL to your publicly visible code/repository. All
+                    submissions will be made through <a
+                        href="https://explorehacks.devpost.com/?ref_feature=challenge&ref_medium=discover"
+                        style="color: lightblue; text-decoration: none">Devpost.</a>
+                </p>
+
+
+                <p class="intro-3-description" data-aos="fade-up"
+                   itemprop="description about potentialAction" style="font-size: medium; line-height: 2;">
+                    Your project will be judged based on the following criteria, and a grading rubric will be given on the day of the event with futher details:
+                </p>
+
+                <div style="display:flex; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; padding: 20px; flex-wrap: wrap;">
+                    <div class="equal"
+                         data-aos="fade-right"
+                         itemprop="about"
+                         style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
+                        <i class="fas fa-balance-scale fa-7x space" style="color: #82AAFF"></i>
+                        <p style="color: #82AAFF; font-size: medium;">Feasibility</p>
+                    </div>
+
+                    <div class="equal"
+                         data-aos="fade-down"
+                         style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
+                        <i class="far fa-lightbulb fa-7x space" style="color: #8772AD"></i>
+                        <p style="color: #8772AD; font-size: medium;">Uniqueness</p>
+                    </div>
+
+                    <div class="equal"
+                         data-aos="fade-up"
+                         style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
+                        <i class="fas fa-cogs fa-7x space" style="color: #BC9EC7"></i>
+                        <p style="color: #BC9EC7; font-size: medium;">Implementation</p>
+                    </div>
+
+                    <div class="equal"
+                         data-aos="fade-left"
+                         style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
+                        <i class="fas fa-file-code fa-7x space" style="color: #CC6686"></i>
+                        <p style="color: #CC6686; font-size: medium;">Structure</p>
+                    </div>
+                </div>
+
+                <p class="intro-3-description" data-aos="fade-up" itemprop="description about potentialAction"
+                   style="font-size: medium; line-height: 2;">
+                    You may participate in a team with your friends (1 - 4 people per team).
+                </p>
+
+                <p class="intro-3-description" data-aos="fade-up"
+                   itemprop="description about potentialAction" style="font-size: medium; line-height: 2;">
+                    <b>Please note that the official prompt will be released one day prior to the start of the
+                        hackathon.</b>
+                </p>
+
+                <p class="intro-3-description" data-aos="fade-up" itemprop="description about potentialAction"
+                   style="font-size: medium; line-height: 2;">
+                    <b>Please be sure to stay active on our <a href="https://explorehacks.org/discord"
+                                                               style="color: lightblue; text-decoration: none;">Discord
+                        Server</a>, so that you don't miss out on any important announcements!</b>
+                </p>
+            </div>
+        </section>
+
+        <section class="faqs black-section" id="faqs">
             <div class="faqs-title">FAQs</div>
             <div class="faqs-container">
-
                 <div class="faq" data-aos="fade-down-right" itemprop="about">
                     <div class="faq-question">What is a hackathon?</div>
                     <div class="faq-answer">A hackathon is best described as an “invention marathon”. Anyone who has an
@@ -231,15 +281,12 @@
 
                 <div class="faq" data-aos="fade-down-left" itemprop="about">
                     <div class="faq-question">How are projects judged?</div>
-                    <div class="faq-answer">Projects are judged based on 4 criterias: Feasibility, Impact, Uniqueness,
-                        and
-                        Creativity.
+                    <div class="faq-answer">Projects are judged based on 4 criteria: Feasibility, Uniqueness, Implementation, and Structure
                     </div>
                 </div>
             </div>
 
             <div class="faqs-container">
-
                 <div class="faq" data-aos="fade-right" itemprop="about audience">
                     <div class="faq-question">Am I eligible to participate?</div>
                     <div class="faq-answer">Anyone who is a high school student is eligible to participate. The only
@@ -262,7 +309,6 @@
             </div>
 
             <div class="faqs-container">
-
                 <div class="faq" data-aos="fade-up-right" itemprop="location">
                     <div class="faq-question">When and where is the hackathon?</div>
                     <div class="faq-answer">The hackathon takes place from July 23, 2021 - July 25, 2021. The hackathon
@@ -278,7 +324,7 @@
 
                 <div class="faq" data-aos="fade-up-left" itemprop="about">
                     <div class="faq-question">What do I do if I have a question, not on this list?</div>
-                    <div class="faq-answer">You can email us at support@explorehacks.org</div>
+                    <div class="faq-answer">You can email us at <span><a style="color: white" href="mailto:support@explorehacks.org"> support@explorehacks.org</a></span></div>
                 </div>
             </div>
         </section>
@@ -286,28 +332,16 @@
         <section class="videoWrapper gray-section">
             <!-- Copy & Pasted from YouTube -->
             <!-- 560 x 315 -->
-
             <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen data-aos="zoom-out"
                     frameborder="0" id="video"
                     src="https://www.youtube.com/embed/Ow6y97oQWOg"
-                    title="YouTube video player"></iframe>
+                    title="YouTube video player">
+            </iframe>
 
         </section>
-        <section class="black-section">
-            <div class="team-title" data-aos="zoom-out">Speakers</div>
-            <div data-aos="zoom-out" itemprop="event speaker">
-                <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 speaker-img"
-                     src="img/speakers/Aman.jpg">
-                <div class="" style="text-align:center;">
-                    <h3 class="team-text">Aman Mittal</h3>
-                    <h3 class="team-text" style="margin-bottom: 0; padding-bottom: 5%;">Developer Advocate @
-                        Draftbit</h3>
-                </div>
-            </div>
-        </section>
 
-        <section class="gray-section" id="schedule">
+        <section class="black-section" id="schedule" style="padding-top: 6rem">
             <div class="schedule-title" itemprop="eventSchedule">Schedule (All Times In PDT)</div>
             <div class="schedule" itemprop="eventSchedule">
                 <div class="schedule-day" data-aos="fade-left">
@@ -327,15 +361,17 @@
                     <div class="schedule-item-workshop" data-aos="fade-left" id="UI" itemprop="about subEvent">
                         <p class="schedule-item-heading" itemprop="about subEvent">Building Attractive UIs Workshop</p>
                         <p class="schedule-item-time" itemprop="startDate endDate">11:00 AM - 12:00 PM</p>
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
-                            <img class="speaker" src="./img/speakers/Aman.jpg"
-                                 style="width: 8rem; height:auto; margin-right: 10px !important; flex-wrap: wrap;" alt="Explore Hacks Speaker Aman">
-                            <p class="schedule-item-time" style="font-size: medium;margin-right: 3px;">Aman Mittal</p>
-                            <span class="schedule-item-time hyphen">-</span>
-                            <p class="schedule-item-time summary" style="font-size: medium;margin-left: 3px">Developer
-                                Advocate </p>
-                            <img src="./img/sponsors/draftbit.png"
-                                 style="width: 10rem; height:auto; margin-left: 10px !important; flex-wrap: wrap;" alt="draftbit-logo">
+                        <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                            <img alt="Explore Hacks Speaker Aman" class="speaker"
+                                 src="./img/speakers/Aman.jpg" style="width: 8rem; height:auto; flex-wrap: wrap;">
+                        </div>
+
+                        <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
+                            <p class="schedule-item-time" style="font-size: medium;">Aman Mittal</p>
+                            <p class="schedule-item-time summary" style="font-size: medium; margin-top: 0 !important">
+                                Developer Advocate at Draftbit</p>
                         </div>
                     </div>
 
@@ -352,6 +388,17 @@
                     <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
                         <p class="schedule-item-heading" itemprop="about subEvent">Entrepreneurship Workshop</p>
                         <p class="schedule-item-time" itemprop="startDate endDate">4:00 PM - 5:00 PM</p>
+                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                            <img alt="Explore Hacks Speaker Aman" class="speaker"
+                                 src="./img/speakers/Jamie.png" style="width: 8rem; height:auto; flex-wrap: wrap;">
+                        </div>
+
+                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
+                            <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Jamie Beaton</p>
+                            <p class="schedule-item-time summary" style="font-size: medium; margin-top: 0 !important">
+                                CEO &
+                                Co-Founder of Crimson Education</p>
+                        </div>
                     </div>
 
                     <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
@@ -414,7 +461,7 @@
 
                     <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
                         <p class="schedule-item-heading" itemprop="about subEvent">Closing Ceremony</p>
-                        <p class="schedule-item-time" itemprop="startDate endDate">3:00 PM - 4:00 PM</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">8:00 PM - 9:00 PM</p>
                     </div>
                 </div>
             </div>
@@ -447,90 +494,171 @@
                 });
             });
         </script>
-
-        <section class="black-section">
+        <section class="gray-section" id="team" style="padding-top: 6rem">
             <div class="team-title" data-aos="zoom-out">Meet the Team</div>
-            <div class="team-subtitle" data-aos="zoom-out">Co-Founders</div>
-            <div class="team-co-founders">
-                <div class="team-co-founder" data-aos="zoom-out" itemprop="director organizer">
-                    <img alt="Program Lead of Explore Hacks" class="team-img img-fluid border-radius-0"
-                         src="img/team/Leo.jpg">
-                    <div class="" style="text-align:center;">
-                        <h3 class="team-text">Leo Xu</h3>
-                        <h3 class="team-text">Program Lead</h3>
+
+            <div class="team-title" data-aos="zoom-out">Speakers / Mentors</div>
+            <div class="speaker-container" data-aos="zoom-out" itemprop="event speaker"
+                 style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                <div class="team-container">
+                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/speakers/Aman.jpg">
+                    <div style="text-align:center;">
+                        <h3 class="speaker-text">Aman Mittal</h3>
+                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">Developer Advocate at
+                            <br>
+                            Draftbit</h3>
                     </div>
                 </div>
-                <div class="team-co-founder" data-aos="zoom-out" itemprop="director organizer">
-                    <img alt="General Manager of Explore Hacks" class="team-img img-fluid border-radius-0"
-                         src="img/team/Danny.jpg">
-                    <div class="" style="text-align:center;">
-                        <h3 class="team-text">Dhanish Natarajan</h3>
-                        <h3 class="team-text">General Manager</h3>
+                <div class="team-container">
+                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/speakers/Jamie.png">
+                    <div style="text-align:center;">
+                        <h3 class="speaker-text">Jamie Beaton</h3>
+                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">CEO & Co-Founder of <br>
+                            Crimson Education</h3>
+                    </div>
+                </div>
+                <div class="team-container">
+                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/speakers/noah.png">
+                    <div style="text-align:center;">
+                        <h3 class="speaker-text">Noah Anderson</h3>
+                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">CS Undergrad at Stanford <br>studying Computer Vision</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='team-title' data-aos="zoom-out">Judges</div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;padding-bottom: 60px;">
+                <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
+                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/judges/dmytro.jpg">
+                    <div style="text-align:center;">
+                        <h3 class="team-text">Dmytro Budym</h3>
+                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">Software Development
+                            Engineer in Test, airSlate</h3>
+                    </div>
+                </div>
+                <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
+                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/judges/Sergei.jpg">
+                    <div style="text-align:center;">
+                        <h3 class="team-text">Sergei Golitsyn</h3>
+                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">Senior Software Engineer
+                            at
+                            Zillion Whales</h3>
+                    </div>
+                </div>
+                <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
+                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/judges/Anh.jpeg">
+                    <div style="text-align:center;">
+                        <h3 class="team-text">Anh Khoa Tran</h3>
+                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">Founder of VSPACE
+                            Education</h3>
+                    </div>
+                </div>
+                <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
+                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/judges/Smaranjit.jpg">
+                    <div style="text-align:center;">
+                        <h3 class="team-text">Smaranjit Ghose</h3>
+                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">MS Data Science at
+                            Columbia
+                            University</h3>
                     </div>
                 </div>
             </div>
 
             <div class="team-subtitle" data-aos="zoom-out">Lead Organizers</div>
-            <div class="team-lead-organizers">
-                <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
-                    <img alt="Website Lead of Explore Hacks" class="team-img img-fluid border-radius-0"
-                         src="img/team/Niranjan.jpg">
+            <div class="team-co-founders">
+
+                <div class="team-co-founder"  data-aos="zoom-in" itemprop="director organizer">
+                    <img alt="Program Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/team/Leo.jpg">
                     <div class="" style="text-align:center;">
-                        <h3 class="team-text">Niranjan Mathiranjan</h3>
-                        <h3 class="team-text">Website Lead</h3>
+                        <h3 class="team-text">Leo Xu</h3>
+                        <h3 class="speaker-desc">Program Lead</h3>
+                    </div>
+                </div>
+
+                <div class="team-co-founder"  data-aos="zoom-in" itemprop="director organizer">
+                    <img alt="General Manager of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/team/Danny.jpg">
+                    <div class="" style="text-align:center;">
+                        <h3 class="team-text">Dhanish Natarajan</h3>
+                        <h3 class="speaker-desc">General Manager</h3>
                     </div>
                 </div>
 
                 <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
-                    <img alt="UI Lead of Explore Hacks" class="team-img img-fluid border-radius-0"
+                    <img alt="Website Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/team/Niranjan.jpg">
+                    <div class="" style="text-align:center;">
+                        <h3 class="team-text">Niranjan Mathirajan</h3>
+                        <h3 class="speaker-desc">Website Lead</h3>
+                    </div>
+                </div>
+
+                <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
+                    <img alt="UI Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
                          src="img/team/David.jpg">
                     <div class="" style="text-align:center;">
                         <h3 class="team-text">David Phillips</h3>
-                        <h3 class="team-text">UI Lead</h3>
+                        <h3 class="speaker-desc">UI Lead</h3>
                     </div>
                 </div>
 
                 <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
-                    <img alt="Marketing Lead of Explore Hacks" class="team-img img-fluid border-radius-0"
+                    <img alt="Marketing Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
                          src="img/team/Sanved.jpg">
                     <div class="" style="text-align:center;">
                         <h3 class="team-text">Sanved Doshi</h3>
-                        <h3 class="team-text">Marketing Lead</h3>
+                        <h3 class="speaker-desc">Marketing Lead</h3>
                     </div>
                 </div>
 
-                <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
-                    <img alt="Graphics Designer For Explore Hacks" class="team-img img-fluid border-radius-0"
-                         src="img/team/Grace.png">
+                <div class="team-lead-organizer" data-aos="zoom-in">
+                    <img alt="Kaustubh-Khulbe-Img" class="team-img img-fluid border-radius-0 judge-img"
+                         src="img/team/Kaustubh.png">
                     <div class="" style="text-align:center;">
-                        <h3 class="team-text">Grace Jin</h3>
-                        <h3 class="team-text">Graphics Designer</h3>
+                        <h3 class="team-text">Kaustubh Khulbe</h3>
+                        <h3 class="speaker-desc">Content Developer</h3>
                     </div>
                 </div>
-<!--                 <div class="team-lead-organizer" data-aos="zoom-in">
-                    <img src="img/team/" class="team-img img-fluid border-radius-0" alt="Kaustubh-Khulbe-Img">
-                    <div style="text-align:center;" class="">
-                        <h3 class="team-text">Kaustubh Khulbe</h3>
-                        <h3 class="team-text">Content Developer</h3>
-                    </div>
-                </div>-->
             </div>
         </section>
 
-        <section class="sponsors">
+        <section class="sponsors" id="sponsor">
             <h2 class="sponsors-title" data-aos="fade-up">Sponsors</h2>
             <p class="sponsors-subtitle" data-aos="fade-up" style="color: black">Thank you to all our sponsors for
                 supporting Explore Hacks!
             </p>
             <div class="image-grid" data-aos="fade-left" itemprop="sponsor funder">
                 <div class="silver-item">
+                    <a href="https://www.digitalocean.com/" target="_blank"><img alt="Digital Ocean"
+                                                                                 class="silver-image"
+                                                                                 src="img/sponsors/digitalocean.png"
+                                                                                 style="max-width:100%; max-height:100%;"/></a>
+                </div>
+                <div class="silver-item">
                     <a href="https://www.crimsoneducation.org/us/" target="_blank"><img alt="Crimson Education"
                                                                                         class="silver-image"
                                                                                         src="img/sponsors/crimson.png"
                                                                                         style="max-width:100%; max-height:100%;"/></a>
                 </div>
+                <div class="silver-item">
+                    <a href="https://www.inspiritai.com/" target="_blank"><img alt="InspiritAI" class="silver-image"
+                                                                               src="img/sponsors/inspiritai.png"
+                                                                               style="max-width:100%; max-height:100%;"/></a>
+                </div>
             </div>
             <div class="image-grid" data-aos="fade-right">
+                <div class="bronze-item" itemprop="sponsor funder">
+                    <a href="https://www.sketch.com/" target="_blank"><img alt="Sketch" class="bronze-image"
+                                                                           src="img/sponsors/sketch.png"
+                                                                           style="max-width:100%; max-height:100%;"/></a>
+                </div>
                 <div class="bronze-item" itemprop="sponsor funder">
                     <a href="https://www.echoar.xyz/" target="_blank"><img alt="echoAR"
                                                                            class="bronze-image"
@@ -538,15 +666,15 @@
                                                                            style="max-width:100%; max-height:100%;"/></a>
                 </div>
                 <div class="bronze-item" itemprop="sponsor funder">
-                    <a href="https://draftbit.com/" target="_blank"><img alt="draftbit"
+                    <a href="https://draftbit.com/" target="_blank"><img alt="Draftbit"
                                                                          class="bronze-image"
                                                                          src="img/sponsors/draftbit.png"
                                                                          style="max-width:100%; max-height:100%;"/></a>
                 </div>
                 <div class="bronze-item" itemprop="sponsor funder">
-                    <a href="https://replit.com/" target="_blank"><img alt="replit"
+                    <a href="https://replit.com/" target="_blank"><img alt="Replit"
                                                                        class="bronze-image"
-                                                                       src="img/sponsors/replit.svg"
+                                                                       src="img/sponsors/replit.png"
                                                                        style="max-width:100%; max-height:100%;"/></a>
                 </div>
             </div>
@@ -588,7 +716,7 @@
                                                                                            src="img/icons/Artboard 1.svg"><span> Medium </span></a>
         </div>
         <p class="footer-text">
-            Questions? Contact us at support@explorehacks.org<br>
+            Questions? Contact us at <a style="color: white" href="mailto:support@explorehacks.org">support@explorehacks.org</a><br>
             Logo created by Anna Wang
         </p>
     </footer>
@@ -596,13 +724,8 @@
 
 <!-- Theme Custom -->
 <script src="js/custom.js"></script>
-
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
-        offset: 200
-    });
-</script>
+<script>AOS.init({offset: 200});</script>
 </body>
 <!-- dont move this away -->
 <script src="js/number-animation.js"></script>

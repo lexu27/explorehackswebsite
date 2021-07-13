@@ -1,0 +1,12 @@
+.judge-img {
+    width: 23rem;
+    height: 23rem;
+    margin: auto;
+}
+
+.judge-container {
+	margin-top: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+	flex: 1;
+}

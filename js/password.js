@@ -1,4 +1,4 @@
-
+import {run} from "./magic.js"
 
 const password = [2];
 //const password = [2,3,1,0,2,1,3];
@@ -29,6 +29,7 @@ function validation(event) {
 		$(".main").remove();
 		$("body").css("height", "100%");
 		$("html").css("height", "100%");
+		run();
 
 	}
 

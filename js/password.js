@@ -1,0 +1,40 @@
+
+
+const password = [2];
+//const password = [2,3,1,0,2,1,3];
+var position = 0;
+
+//JQuery below
+
+$('#0').click(validation);
+
+$('#1').click(validation);
+
+$('#2').click(validation);
+
+$('#3').click(validation);
+
+
+function validation(event) {
+	console.log(event.target.id);
+	if (password[position] === parseInt(event.target.id))
+	{
+		position++;
+	}
+
+	if (position === password.length) 
+	{
+		$("#Totally_Not_Suspicious_Random_Canvas_😏🤫").css("display", "block");
+		$("#info").css("display", "block")
+		$(".main").remove();
+		$("body").css("height", "100%");
+		$("html").css("height", "100%");
+
+	}
+
+	if (password[position] !== parseInt(event.target.id)) {
+		position = 0;
+	}
+	console.log(position);
+
+}

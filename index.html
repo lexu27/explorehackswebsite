@@ -30,6 +30,7 @@
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/partners.css" rel="stylesheet">
     <link href="css/schedule.css" rel="stylesheet">
+    <link href="css/secret.css" rel="stylesheet">
     <link href="css/speaker.css" rel="stylesheet">
     <link href="css/sponsors.css" rel="stylesheet">
     <link href="css/team.css" rel="stylesheet">
@@ -46,69 +47,18 @@
 </head>
 
 <body>
+<canvas id = "Totally_Not_Suspicious_Random_Canvas_😏🤫"></canvas>
+<div id="info">
+    <div style = "height: 1800px !important">
+
+    </div>
+  </div>
 <!--     Loading Screen Div-->
 <div class="holder">
     <div class="preloader__dots">
         <span class="preloader__dot"></span>
     </div>
 </div>
-<!--    JS to load preloader until website loads-->
-<script>
-    let loadingWrapper = document.querySelector('.holder')
-    let dots = document.querySelector('.preloader__dots')
-    window.addEventListener('load', function () {
-        dots.style.animation = "fadeOut 1s";
-        loadingWrapper.style.animation = "fadeOut 1s";
-        setTimeout(() => loadingWrapper.style.display = "none", 1000);
-    })
-</script>
-<!--<nav class="navbar">
-<ul class="navbar-nav">
-    <li class="nav-item"><a href="#signup">signup</a> </li>
-    <li class="nav-item"><a href="#faqs">faq</a></li>
-    <li class="nav-item"><a href="#speaker">Speaker / Mentor</a></li>
-    <li class="nav-item"><a href="#judges">Judges</a></li>
-    <li class="nav-item"><a href="#schedule">Schedule</a></li>
-    <li class="nav-item"><a href="#team">Team</a></li>
-    <li class="nav-item"><a href="#sponsor">Sponsors</a></li>
-</ul>
-</nav>-->
-<script>
-    (function () {
-        var qs, js, q, s, d = document,
-            gi = d.getElementById,
-            ce = d.createElement,
-            gt = d.getElementsByTagName,
-            id = "typef_orm_share",
-            b = "https://embed.typeform.com/";
-        if (!gi.call(d, id)) {
-            js = ce.call(d, "script");
-            js.id = id;
-            js.src = b + "embed.js";
-            q = gt.call(d, "script")[0];
-            q.parentNode.insertBefore(js, q)
-        }
-    })()
-</script>
-
-<style>
-    html {
-        scroll-behavior: smooth;
-        margin: 0;
-    }
-
-    body {
-        margin: 0;
-    }
-
-    .vertical-center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-</style>
 <main class="main" role="main">
     <article itemscope itemtype="https://schema.org/Hackathon">
         <section class="intro" id="signup">
@@ -162,26 +112,27 @@
                         <p class="stats-title" itemprop="attendee">Participants from around the world</p>
                     </div>
                 </div>
-
-                <div style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
-                    <div data-aos="fade-right" style="padding: 10px; max-width: 420px;">
-                        <img alt="Attend workshops in Explore Hacks" itemprop="potentialAction offers"
-                             src="img/opportunities/1.png">
+                <div id = "PASSWORD">
+                    <div style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
+                        <div data-aos="fade-right" style="padding: 10px; max-width: 420px;">
+                            <img id = "0" alt="Attend workshops in Explore Hacks" itemprop="potentialAction offers"
+                                 src="img/opportunities/1.png">
+                        </div>
+                        <div data-aos="fade-up" style="padding: 10px; max-width: 420px;">
+                            <img id = "1" alt="Participate in Speaker Events" itemprop="potentialAction offers"
+                                 src="img/opportunities/2.png">
+                        </div>
                     </div>
-                    <div data-aos="fade-up" style="padding: 10px; max-width: 420px;">
-                        <img alt="Participate in Speaker Events" itemprop="potentialAction offers"
-                             src="img/opportunities/2.png">
-                    </div>
-                </div>
-                <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-left: auto; margin-right: auto">
-                    <div data-aos="fade-down" style="padding: 10px; max-width: 420px;">
-                        <img alt="Collaborate with each other in Explore Hacks" itemprop="potentialAction offers"
-                             src="img/opportunities/3.png">
-                    </div>
-                    <div data-aos="fade-left" style="padding: 10px; max-width: 420px;">
-                        <img alt="Make an impact on the future by attending Explore Hacks"
-                             itemprop="potentialAction offers"
-                             src="img/opportunities/4.png">
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-left: auto; margin-right: auto">
+                        <div data-aos="fade-down" style="padding: 10px; max-width: 420px;">
+                            <img id = "2" alt="Collaborate with each other in Explore Hacks" itemprop="potentialAction offers"
+                                 src="img/opportunities/3.png">
+                        </div>
+                        <div data-aos="fade-left" style="padding: 10px; max-width: 420px;">
+                            <img id = "3" alt="Make an impact on the future by attending Explore Hacks"
+                                 itemprop="potentialAction offers"
+                                 src="img/opportunities/4.png">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,6 +160,7 @@
 
                 <div style="display:flex; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; padding: 20px; flex-wrap: wrap;">
                     <div class="equal"
+                        
                          data-aos="fade-right"
                          itemprop="about"
                          style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
@@ -217,6 +169,7 @@
                     </div>
 
                     <div class="equal"
+                        
                          data-aos="fade-down"
                          style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
                         <i class="far fa-lightbulb fa-7x space" style="color: #8772AD"></i>
@@ -224,6 +177,7 @@
                     </div>
 
                     <div class="equal"
+                        
                          data-aos="fade-up"
                          style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
                         <i class="fas fa-cogs fa-7x space" style="color: #BC9EC7"></i>
@@ -231,6 +185,7 @@
                     </div>
 
                     <div class="equal"
+                            
                          data-aos="fade-left"
                          style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
                         <i class="fas fa-file-code fa-7x space" style="color: #CC6686"></i>
@@ -739,8 +694,72 @@
     </footer>
 </main>
 
+
+
+<!--    JS to load preloader until website loads-->
+<script>
+    let loadingWrapper = document.querySelector('.holder')
+    let dots = document.querySelector('.preloader__dots')
+    window.addEventListener('load', function () {
+        dots.style.animation = "fadeOut 1s";
+        loadingWrapper.style.animation = "fadeOut 1s";
+        setTimeout(() => loadingWrapper.style.display = "none", 1000);
+    })
+</script>
+<!--<nav class="navbar">
+<ul class="navbar-nav">
+    <li class="nav-item"><a href="#signup">signup</a> </li>
+    <li class="nav-item"><a href="#faqs">faq</a></li>
+    <li class="nav-item"><a href="#speaker">Speaker / Mentor</a></li>
+    <li class="nav-item"><a href="#judges">Judges</a></li>
+    <li class="nav-item"><a href="#schedule">Schedule</a></li>
+    <li class="nav-item"><a href="#team">Team</a></li>
+    <li class="nav-item"><a href="#sponsor">Sponsors</a></li>
+</ul>
+</nav>-->
+<script>
+    (function () {
+        var qs, js, q, s, d = document,
+            gi = d.getElementById,
+            ce = d.createElement,
+            gt = d.getElementsByTagName,
+            id = "typef_orm_share",
+            b = "https://embed.typeform.com/";
+        if (!gi.call(d, id)) {
+            js = ce.call(d, "script");
+            js.id = id;
+            js.src = b + "embed.js";
+            q = gt.call(d, "script")[0];
+            q.parentNode.insertBefore(js, q)
+        }
+    })()
+</script>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+</style>
+
+
 <!-- Theme Custom -->
 <script src="js/custom.js"></script>
+<script type = "module" src="js/magic.js"></script>
+<script src="js/password.js"></script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>AOS.init({offset: 200});</script>
 </body>

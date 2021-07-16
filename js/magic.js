@@ -1,5 +1,5 @@
 import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.130.1-bsY6rEPcA1ZYyZeKdbHd/mode=imports,min/optimized/three.js';
-function run(){
+export function run(){
 	const scene = new THREE.Scene();
 
 	const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -92,5 +92,4 @@ function run(){
 	
 	animate();
 }
-export default {run};
       

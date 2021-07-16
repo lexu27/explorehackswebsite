@@ -73,3 +73,4 @@ const updateCounts = (speed) => {
         i++;
     });
 }
+

@@ -1,4 +1,5 @@
 import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.130.1-bsY6rEPcA1ZYyZeKdbHd/mode=imports,min/optimized/three.js';
+import gsap from "../node_modules/gsap/index.js"
 export function run(){
 	const scene = new THREE.Scene();
 
@@ -47,6 +48,13 @@ export function run(){
 
 	const space = new THREE.TextureLoader().load('../img/three/space.jpeg');
 	scene.background = space;
+
+	const shape = new THREE.BoxGeometry( 1, 1, 1 );
+	const wrapper = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
+	const rocket = new THREE.Mesh( shape, wrapper );
+	scene.add( rocket );
+
+
 	const radius = 60;
 	function moveCamera()
 	{
@@ -64,7 +72,79 @@ export function run(){
 	document.body.onscroll = moveCamera;
 	moveCamera();
 
+	const createSmoke = (rocket) => {
+		let p = getParticle();
+		dropParticle(p);
+	};
+
+	const particleArray = []
+
+	class Particle {
+		constructor() {
+		  this.isFlying = false;
+	      
+		  var scale = 20 + Math.random() * 20;
+		  var nLines = 3 + Math.floor(Math.random() * 5);
+		  var nRows = 3 + Math.floor(Math.random() * 5);
+		  this.geometry = new THREE.SphereGeometry(scale, nLines, nRows);
+	      
+		  this.material = new THREE.MeshLambertMaterial({
+		    color: 0xe3e3e3,
+		    shading: THREE.FlatShading,
+		    transparent: true
+		  });
+	      
+		  this.mesh = new THREE.Mesh(this.geometry, this.material);
+		  recycleParticle(this);
+		}
+	      }
+
+	const getParticle = function() {
+		let p;
+		if(particleArray.length){
+			p = particleArray.pop();
+		} else {
+			p = new Particle();
+		}
+		return p;
+	}
+	const recycleParticle = (p) => {
+		p.mesh.rotation.x = Math.random() * Math.PI * 2;
+		p.mesh.rotation.y = Math.random() * Math.PI * 2;
+		p.mesh.rotation.z = Math.random() * Math.PI * 2;
+		particleArray.push(p);
+	}
+
+	const dropParticle = (p) => {
+		scene.add(p.mesh);
+		var s = Math.random(0.2) + 0.35;
+		p.mesh.scale.set(s * 0.02, s* 0.02, s*0.02);
+		p.mesh.position.y = -1;
+		p.mesh.material.opacity = 1;
+		gsap.to(p.mesh.position, {
+			duration: 1.5,
+			y: -10,
+			ease: "none",
+			onComplete : recycleParticle,
+			onCompleteParams : [p],
+		})
+		gsap.to(p.mesh.scale, {
+			x: s * 0.03,
+			y: s* 0.03,
+			z: s* 0.03,
+			ease: "power3.inOut"
+		})
+		gsap.to(p.mesh.material, {
+			duration: 1,
+			opacity: 0,
+			ease: "none"
+		})
+
+	}
+
+
 	function animate() {
+		createSmoke();
 		requestAnimationFrame(animate);
 		const canvas = renderer.domElement;
 		const width = canvas.clientWidth;

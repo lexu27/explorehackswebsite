@@ -14,21 +14,13 @@ export function run(){
 
 
 	renderer.setPixelRatio(window.devicePixelRatio);
-	camera.position.setZ(30);
-	camera.position.setX(-3);
+	camera.position.setZ(150);
+	camera.rotation.y += 40;
+
 
 	const controls = new OrbitControls(camera, renderer.domElement);
-	const axesHelper = new THREE.AxesHelper( 5 );
-	scene.add( axesHelper );
 	renderer.render(scene, camera);
 
-	// Torus
-
-	const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-	const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
-	const torus = new THREE.Mesh(geometry, material);
-
-	scene.add(torus);
 
 	const pointLight = new THREE.PointLight(0xffffff);
 	pointLight.position.set(5, 5, 5);
@@ -56,39 +48,40 @@ export function run(){
 	const r2 = 24;
 	scene.background = new THREE.Color(0x011C33);
 
-
-	class Rocket {
-		constructor(color) {
-			this.shape = new THREE.BoxGeometry( 1, 1, 10 );
-			this.wrapper = new THREE.MeshBasicMaterial( {color: color} );
-		    
-			this.rocket = new THREE.Mesh( this.shape, this.wrapper );
-
-
-		    
-		}
-	}
 	
 	let rocket1 = new THREE.Object3D();
 
-	const rocket2 = new Rocket();
-
-	scene.add( rocket2.rocket );
+	const rocket2 = new THREE.Object3D();
 
 	const loader = new GLTFLoader();
 	let child1;
 	let child2;
 
+	let disk;
+
+	loader.load( '../img/three/cock7.glb', function ( gltf ) {
+		disk = gltf.scene.children.find((child) => child.name === "exploreHacksLogo_v1");
+		disk.scale.set(0.18,0.18,0.18);
+		disk.position.set(0,0,0);
+		disk.rotation.x = Math.PI / 2;
+		disk.rotation.y = -Math.PI / 4;
+		disk.name = "disk";
+		scene.add(disk);
+
+	}, undefined, function ( error ) {
+
+		console.error( error );
+
+	} );
+
+
+
 	loader.load( '../img/three/shit.glb', function ( gltf ) {
-
 		child1 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
-		// child2 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
-
+		
 		child1.rotation.x = -Math.PI / 2;
-		// child2.rotation.x = -Math.PI / 2;
 
 		rocket1.add(child1);
-		// rocket2.add(child2);
 
 		scene.add(rocket1);
 
@@ -98,32 +91,35 @@ export function run(){
 
 	} );
 
+	loader.load( '../img/three/shit.glb', function ( gltf ) {
+		child2 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
+
+		child2.rotation.x = Math.PI / 2;
+
+		rocket2.add(child2);
+
+		scene.add(rocket2);
+
+	}, undefined, function ( error ) {
+
+		console.error( error );
+
+	} );
+
 	rocket1.scale.set(0.9,0.9,0.9);
-	// rocket2.scale.set(0.9,0.9,0.9);
+	rocket2.scale.set(0.9,0.9,0.9);
+
 
 
 
 	let height1 = 0.5;
 
-	let height2 = 5;
+	let height2 = 0.5;
+	
 	
 
-	const radius = 60;
-	function moveCamera()
-	{
-	const theta = document.body.getBoundingClientRect().top; 
+	const radius = 150;
 
-	camera.position.x = radius * Math.sin( theta * Math.PI / 360 );
-	camera.position.z = radius * Math.cos( theta * Math.PI / 360 );
-
-	camera.lookAt(torus.position)
-				
-	camera.updateMatrix();
-
-	}
-
-	document.body.onscroll = moveCamera;
-	moveCamera();
 
 	const createSmoke = (d, r) => {
 		let p = getParticle();
@@ -227,7 +223,7 @@ export function run(){
 	let velocity1 = new THREE.Vector3();
 	let velocity2 = new THREE.Vector3();
 	let delta1 = -Math.atan(height1 / r1);
-	let delta2 = -Math.atan(height2 / r2);
+	let delta2 = Math.atan(height2 / r2);
 
 
 	// const planet1Shape = new THREE.SphereGeometry(3, 24, 24);
@@ -241,17 +237,175 @@ export function run(){
 
 	// scene.add(planet1);
 
+	var text = new THREE.FontLoader();
+	text.load( 'Helvetica_Regular.typeface.json', function ( font ) {
+    
+	  var material = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0x555555, shininess: 30 } );
+	
+	  const geometry = new THREE.TextGeometry( 'You found the last Easter Egg!', {
+	    font: font,
+	    size: 8,
+	    height: 5,
+	  } );
+	
+	  var mesh = new THREE.Mesh( geometry, material );
+	  mesh.position.x = -75;
+	  mesh.position.y = 45;
+	  mesh.position.z = 0;
+	  scene.add(mesh);
+	
+	} );
+	text.load( 'Helvetica_Regular.typeface.json', function ( font ) {
+    
+		var material = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0x555555, shininess: 30 } );
+	      
+		const geometry = new THREE.TextGeometry( 'Hope you had fun!', {
+		  font: font,
+		  size: 8,
+		  height: 5,
+		} );
+	      
+		var mesh = new THREE.Mesh( geometry, material );
+		mesh.position.x = -45;
+		mesh.position.y = 35;
+		mesh.position.z = 0;
+		scene.add(mesh);
+	      
+	      } );
+
+	function isMobile() { 
+	// credit to Timothy Huang for this regex test: 
+	// https://dev.to/timhuang/a-simple-way-to-detect-if-browser-is-on-a-mobile-device-with-javascript-44j3
+	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+		return true
+	}
+	else{
+		return false
+	}
+	} 
+	function onClick(event)
+	{
+
+
+ 		if (isMobile())
+  		{
+    			raycaster.setFromCamera(finger, camera);
+  		} else{
+   			mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+  			mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+    			raycaster.setFromCamera(mouse, camera);
+  		}
+ 		let intersects = raycaster.intersectObjects(scene.children);
+  		if (intersects.length > 0)
+  		{
+    			selectedObject = intersects[0].object
+ 		}
+
+  console.log(selectedObject.name)
+  if ("button" === selectedObject.name && !clicked)
+  {
+    balloons.forEach(element => scene.remove(element))
+    strings.forEach(element => scene.remove(element))
+    balloons = []
+    strings = []
+
+    for (var i = 0; i < 20; i++) {
+      addBalloon(false, "commi.png")
+    }
+    commies = balloons.length;
+    audio.pause();
+    aud.play();
+    aud.addEventListener('ended', function() {
+      this.currentTime = 0;
+      this.play();
+    }, false);
+    
+    clicked = true;
+    var loader = new THREE.FontLoader();
+    loader.load( 'Helvetica_Regular.typeface.json', function ( font ) {
+
+      var material = new THREE.MeshPhongMaterial( { color: 0xff0000, specular: 0x555555, shininess: 30 } );
+    
+      const geometry = new THREE.TextGeometry( 'Pop The Commies!', {
+        font: font,
+        size: 8,
+        height: 5,
+      } );
+    
+      var mesh = new THREE.Mesh( geometry, material );
+      mesh.position.x = -50;
+      mesh.position.y = -10;
+      mesh.position.z = 0;
+      scene.add(mesh);
+      warning = mesh;
+    
+    } );
+  }
+
+  if (clicked)
+  {
+    var comm = false;
+    console.log(commies)
+    if (!america)
+    {
+      for (var i = 0; i < balloons.length; i++)
+      {
+        if (balloons[i].id === selectedObject.id)
+        {
+          comm = true;
+        }
+      }
+    }
+    if (comm)
+    {
+      scene.remove(selectedObject);
+      commies -= 1
+    }
+    if (commies <= 1 && !america)
+    {
+      aud.pause();
+      aud = new Audio("viet.mp3")
+      aud.play();
+      aud.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+      }, false);
+
+      balloons.forEach(element => scene.remove(element))
+      strings.forEach(element => scene.remove(element))
+      balloons = []
+      strings = []
+
+      scene.add(ball);
+      for (var i = 0; i < 50; i++)
+      {
+        addBalloon(false, "merica.jpeg")
+      }
+      america = true;
+      scene.remove(warning)
+
+      setTimeout(() => {
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }, 30000);
+
+
+    }
+  }
+}
+
 	function animate() {
 		requestAnimationFrame(animate);
 		const canvas = renderer.domElement;
 		const width = canvas.clientWidth;
 		const height = canvas.clientHeight;
 
-		torus.rotation.x += 0.01;
-		torus.rotation.y += 0.005;
-		torus.rotation.z += 0.01;
+		// if (child1) {
+		// 	child1.rotation.y += 0.05;
+		// }
+		// if (child2) {
+		// 	child2.rotation.y += 0.05;
+		// }
 
-		child1.rotation.y += 0.05;
 
 		let r1_pos = new THREE.Vector3(0, r1 * Math.sin(theta), r1 * Math.cos(theta))
 
@@ -280,12 +434,12 @@ export function run(){
 			THREE.MathUtils.degToRad(-45));
 			THREE.MathUtils.degToRad(0), 
 		r2_pos = r2_pos.applyEuler(r2_euler)
-		rocket2.rocket.position.copy(r2_pos)
+		rocket2.position.copy(r2_pos)
 		let r2_pos_2 = new THREE.Vector3(0, -r2 * Math.cos(-theta), r2 * Math.sin(-theta));
 		velocity2 = r2_pos_2.applyEuler(r2_euler);
 
 		let temp2 = new THREE.Vector3(0, 0, 0);
-		rocket2.rocket.lookAt(temp2.copy(rocket2.rocket.position).add(velocity2.normalize()));
+		rocket2.lookAt(temp2.copy(rocket2.position).add(velocity2.normalize()));
 		createSmoke("two", r2);
 
 

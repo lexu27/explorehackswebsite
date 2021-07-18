@@ -1,7 +1,6 @@
 {
   "name": "explorehackswebsite-master",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +15,7 @@
     "url": "https://github.com/Neragin/explorehackswebsite/issues"
   },
   "homepage": "https://github.com/Neragin/explorehackswebsite#readme",
+  "description": "",
   "dependencies": {
     "gsap": "^3.7.1",
     "three": "^0.130.1"

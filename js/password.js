@@ -36,6 +36,5 @@ function validation(event) {
 	if (password[position] !== parseInt(event.target.id)) {
 		position = 0;
 	}
-	console.log(position);
 
 }

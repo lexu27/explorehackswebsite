@@ -1,7 +1,7 @@
-import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.130.1-bsY6rEPcA1ZYyZeKdbHd/mode=imports,min/optimized/three.js';
-import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
-// import { GLTFLoader } from "https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js";
-import gsap from "../node_modules/gsap/index.js"
+import * as THREE from 'three';
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
+import gsap from "gsap"
 
 export function run(){
 	const scene = new THREE.Scene();
@@ -69,24 +69,43 @@ export function run(){
 		}
 	}
 	
-	const rocket1 = new Rocket("#00FF00");
-	scene.add( rocket1.rocket );
+	let rocket1 = new THREE.Object3D();
 
-	const rocket2 = new Rocket("#ff0000");
+	const rocket2 = new Rocket();
 
 	scene.add( rocket2.rocket );
 
-	// const loader = new THREE.GLTFLoader();
+	const loader = new GLTFLoader();
+	let child1;
+	let child2;
 
-	// loader.load( '../img/three/shit.glb', function ( gltf ) {
+	loader.load( '../img/three/shit.glb', function ( gltf ) {
 
-	// 	scene.add( gltf.scene );
+		child1 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
+		// child2 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
 
-	// }, undefined, function ( error ) {
+		child1.rotation.x = -Math.PI / 2;
+		// child2.rotation.x = -Math.PI / 2;
 
-	// 	console.error( error );
+		rocket1.add(child1);
+		// rocket2.add(child2);
 
-	// } );
+		scene.add(rocket1);
+
+	}, undefined, function ( error ) {
+
+		console.error( error );
+
+	} );
+
+	rocket1.scale.set(0.9,0.9,0.9);
+	// rocket2.scale.set(0.9,0.9,0.9);
+
+
+
+	let height1 = 0.5;
+
+	let height2 = 5;
 	
 
 	const radius = 60;
@@ -161,8 +180,8 @@ export function run(){
 			transformation = 45;
 
 		} else if (d === "two") {
-			var smokeVector = new THREE.Vector3(0, length * Math.sin(delta2),length * Math.cos(delta2))
-			var pre_smokeVector = new THREE.Vector3(0, length * Math.sin(delta2-0.01),length * Math.cos(delta2-0.01))
+			var smokeVector = new THREE.Vector3(0, length * Math.sin(-delta2),length * Math.cos(-delta2))
+			var pre_smokeVector = new THREE.Vector3(0, length * Math.sin(-delta2-0.01),length * Math.cos(-delta2-0.01))
 			delta2 += 0.02;
 			transformation = -45;
 		}
@@ -180,7 +199,7 @@ export function run(){
 
 
 		var s = Math.random(0.2) + 0.35;
-		p.mesh.scale.set(s * 0.006, s* 0.006, s*0.006);
+		p.mesh.scale.set(s * 0.01, s* 0.01, s*0.01);
 		p.mesh.material.opacity = 1;
 
 		gsap.to(p.mesh.position, {
@@ -207,8 +226,8 @@ export function run(){
 	}
 	let velocity1 = new THREE.Vector3();
 	let velocity2 = new THREE.Vector3();
-	let delta1 = -Math.atan(5 / r1);
-	let delta2 = -Math.atan(5 / r2);
+	let delta1 = -Math.atan(height1 / r1);
+	let delta2 = -Math.atan(height2 / r2);
 
 
 	// const planet1Shape = new THREE.SphereGeometry(3, 24, 24);
@@ -220,7 +239,7 @@ export function run(){
 	// planet1.position.z = -40;
 
 
-	scene.add(planet1);
+	// scene.add(planet1);
 
 	function animate() {
 		requestAnimationFrame(animate);
@@ -232,6 +251,8 @@ export function run(){
 		torus.rotation.y += 0.005;
 		torus.rotation.z += 0.01;
 
+		child1.rotation.y += 0.05;
+
 		let r1_pos = new THREE.Vector3(0, r1 * Math.sin(theta), r1 * Math.cos(theta))
 
 		const r1_euler = new THREE.Euler(
@@ -239,30 +260,32 @@ export function run(){
 			THREE.MathUtils.degToRad(45));
 			THREE.MathUtils.degToRad(0), 
 		r1_pos = r1_pos.applyEuler(r1_euler)
-		rocket1.rocket.position.copy(r1_pos)
+		rocket1.position.copy(r1_pos)
 
 		let r2_pos_1 = new THREE.Vector3(0, -r1 * Math.cos(theta), r1 * Math.sin(theta));
 		velocity1 = r2_pos_1.applyEuler(r1_euler);
-
+ 
 		let temp1 = new THREE.Vector3(0, 0, 0);
-		rocket1.rocket.lookAt(temp1.copy(rocket1.rocket.position).add(velocity1));
+		rocket1.lookAt(temp1.copy(rocket1.position).add(velocity1.normalize()));
+		
+
 		createSmoke("one", r1);
 
 
 
 
-		let r2_pos = new THREE.Vector3(0, r2 * Math.sin(theta), r2 * Math.cos(theta))
+		let r2_pos = new THREE.Vector3(0, r2 * Math.sin(-theta), r2 * Math.cos(-theta))
 		const r2_euler = new THREE.Euler(
 			THREE.MathUtils.degToRad(0),
 			THREE.MathUtils.degToRad(-45));
 			THREE.MathUtils.degToRad(0), 
 		r2_pos = r2_pos.applyEuler(r2_euler)
 		rocket2.rocket.position.copy(r2_pos)
-		let r2_pos_2 = new THREE.Vector3(0, -r2 * Math.cos(theta), r2 * Math.sin(theta));
+		let r2_pos_2 = new THREE.Vector3(0, -r2 * Math.cos(-theta), r2 * Math.sin(-theta));
 		velocity2 = r2_pos_2.applyEuler(r2_euler);
 
 		let temp2 = new THREE.Vector3(0, 0, 0);
-		rocket2.rocket.lookAt(temp1.copy(rocket2.rocket.position).add(velocity2));
+		rocket2.rocket.lookAt(temp2.copy(rocket2.rocket.position).add(velocity2.normalize()));
 		createSmoke("two", r2);
 
 

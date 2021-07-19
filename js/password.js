@@ -6,18 +6,17 @@ var position = 0;
 
 //JQuery below
 
-$('#0').click(validation);
+$('.0').click(validation);
 
-$('#1').click(validation);
+$('.1').click(validation);
 
-$('#2').click(validation);
+$('.2').click(validation);
 
-$('#3').click(validation);
+$('.3').click(validation);
 
 
 function validation(event) {
-	console.log(event.target.id);
-	if (password[position] === parseInt(event.target.id))
+	if (event.target.classList.contains(password[position].toString()))
 	{
 		position++;
 	}

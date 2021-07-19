@@ -65,7 +65,6 @@ export function run(){
 		disk.position.set(0,0,0);
 		disk.rotation.x = Math.PI / 2;
 		disk.rotation.y = -Math.PI / 4;
-		disk.name = "disk";
 		scene.add(disk);
 
 	}, undefined, function ( error ) {
@@ -245,7 +244,7 @@ export function run(){
 	  const geometry = new THREE.TextGeometry( 'You found the last Easter Egg!', {
 	    font: font,
 	    size: 8,
-	    height: 5,
+	    height: 3,
 	  } );
 	
 	  var mesh = new THREE.Mesh( geometry, material );
@@ -262,7 +261,7 @@ export function run(){
 		const geometry = new THREE.TextGeometry( 'Hope you had fun!', {
 		  font: font,
 		  size: 8,
-		  height: 5,
+		  height: 3,
 		} );
 	      
 		var mesh = new THREE.Mesh( geometry, material );
@@ -273,6 +272,12 @@ export function run(){
 	      
 	      } );
 
+	var raycaster = new THREE.Raycaster();
+	var mouse = new THREE.Vector2();
+	var finger = new THREE.Vector2();
+	var selectedObject;
+
+
 	function isMobile() { 
 	// credit to Timothy Huang for this regex test: 
 	// https://dev.to/timhuang/a-simple-way-to-detect-if-browser-is-on-a-mobile-device-with-javascript-44j3
@@ -282,7 +287,16 @@ export function run(){
 	else{
 		return false
 	}
+
 	} 
+	function touchReaction(event)
+	{
+		event.stopPropagation(); 
+ 		event.preventDefault();
+ 		console.log(event)
+  		finger.x = (event.changedTouches[0].clientX / window.innerWidth) * 2 - 1;
+  		finger.y = -(event.changedTouches[0].clientY / window.innerHeight) * 2 + 1;
+	}
 	function onClick(event)
 	{
 
@@ -296,102 +310,298 @@ export function run(){
     			raycaster.setFromCamera(mouse, camera);
   		}
  		let intersects = raycaster.intersectObjects(scene.children);
+		console.log(intersects);
   		if (intersects.length > 0)
   		{
     			selectedObject = intersects[0].object
  		}
 
-  console.log(selectedObject.name)
-  if ("button" === selectedObject.name && !clicked)
-  {
-    balloons.forEach(element => scene.remove(element))
-    strings.forEach(element => scene.remove(element))
-    balloons = []
-    strings = []
 
-    for (var i = 0; i < 20; i++) {
-      addBalloon(false, "commi.png")
-    }
-    commies = balloons.length;
-    audio.pause();
-    aud.play();
-    aud.addEventListener('ended', function() {
-      this.currentTime = 0;
-      this.play();
-    }, false);
+		if (disk.id === selectedObject.id)
+		{
+			
+			gsap.to(selectedObject.rotation, {
+				duration: 1,
+				x: selectedObject.rotation.x + 4 * Math.PI,
+				ease: "power3",
+				onComplete: () => {selectedObject = null}
+				}
+			)
+		}
+	}
+	
+
+	(function() {
     
-    clicked = true;
-    var loader = new THREE.FontLoader();
-    loader.load( 'Helvetica_Regular.typeface.json', function ( font ) {
-
-      var material = new THREE.MeshPhongMaterial( { color: 0xff0000, specular: 0x555555, shininess: 30 } );
-    
-      const geometry = new THREE.TextGeometry( 'Pop The Commies!', {
-        font: font,
-        size: 8,
-        height: 5,
-      } );
-    
-      var mesh = new THREE.Mesh( geometry, material );
-      mesh.position.x = -50;
-      mesh.position.y = -10;
-      mesh.position.z = 0;
-      scene.add(mesh);
-      warning = mesh;
-    
-    } );
-  }
-
-  if (clicked)
-  {
-    var comm = false;
-    console.log(commies)
-    if (!america)
-    {
-      for (var i = 0; i < balloons.length; i++)
-      {
-        if (balloons[i].id === selectedObject.id)
-        {
-          comm = true;
-        }
-      }
-    }
-    if (comm)
-    {
-      scene.remove(selectedObject);
-      commies -= 1
-    }
-    if (commies <= 1 && !america)
-    {
-      aud.pause();
-      aud = new Audio("viet.mp3")
-      aud.play();
-      aud.addEventListener('ended', function() {
-        this.currentTime = 0;
-        this.play();
-      }, false);
-
-      balloons.forEach(element => scene.remove(element))
-      strings.forEach(element => scene.remove(element))
-      balloons = []
-      strings = []
-
-      scene.add(ball);
-      for (var i = 0; i < 50; i++)
-      {
-        addBalloon(false, "merica.jpeg")
-      }
-      america = true;
-      scene.remove(warning)
-
-      setTimeout(() => {
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      }, 30000);
-
-
-    }
-  }
-}
+		var _w = window,
+		    _s = window.screen,
+		    _b = document.body,
+		    _d = document.documentElement;
+		
+		window.Utils = {
+		
+		    // screen info 
+		    screen: function() 
+		    {
+			var width  = Math.max( 0, _w.innerWidth || _d.clientWidth || _b.clientWidth || 0 );
+			var height = Math.max( 0, _w.innerHeight || _d.clientHeight || _b.clientHeight || 0 );
+			
+			return {
+			    width   : width, 
+			    height  : height, 
+			    centerx : width / 2, 
+			    centery : height / 2, 
+			    ratio   : width / height, 
+			};
+		    }, 
+		    // mouse info 
+		    mouse: function( e ) 
+		    {
+			var x = Math.max( 0, e.pageX || e.clientX || 0 ); 
+			var y = Math.max( 0, e.pageY || e.clientY || 0 );
+			var s = this.screen(); 
+			
+			return {
+			    x : x, 
+			    y : y, 
+			    centerx : ( x - s.centerx ), 
+			    centery : ( y - s.centery ), 
+			}; 
+		    }, 
+		}; 
+	    })();
+	    
+	    /**
+	     * Firework object
+	     */ 
+	    (function() {
+		
+		// constructor 
+		var Firework = function( scene ) 
+		{
+		    this.scene    = scene; 
+		    this.done     = false; 
+		    this.dest     = []; 
+		    this.colors   = []; 
+		    this.geometry = null;
+		    this.points   = null;
+		    this.material = new THREE.PointsMaterial({
+			size: 16,
+			color: 0xffffff,
+			opacity: 1,
+			vertexColors: true,
+			transparent: true,
+			depthTest: false,
+		    });
+		    this.launch(); 
+		}; 
+		
+		// prototype 
+		Firework.prototype = {
+		    constructor: Firework, 
+		    
+		    // reset 
+		    reset: function()
+		    {
+			this.scene.remove( this.points );  
+			this.dest     = []; 
+			this.colors   = []; 
+			this.geometry = null;
+			this.points   = null;
+		    }, 
+		    
+		    // launch
+		    launch: function() 
+		    {
+			var s = Utils.screen(); 
+			var x = THREE.MathUtils.randInt( -s.width, s.width ); 
+			var y = THREE.MathUtils.randInt( 100, 800 );
+			var z = THREE.MathUtils.randInt( -1000, -3000 ); 
+			
+			var from = new THREE.Vector3( x, -800, z ); 
+			var to   = new THREE.Vector3( x, y, z ); 
+			
+			var color = new THREE.Color();
+			color.setHSL( THREE.MathUtils.randFloat( 0.1, 0.9 ), 1, 0.9 );
+			this.colors.push( color ); 
+			
+			this.geometry = new THREE.BufferGeometry();
+			this.points = new THREE.Points( this.geometry, this.material );
+			
+			this.geometry.colors = this.colors;
+			this.geometry.setFromPoints( from ); 
+			this.dest.push( to ); 
+			this.colors.push( color ); 
+			this.scene.add( this.points );  
+		    }, 
+		
+		    // explode
+		    explode: function( vector ) 
+		    {
+			this.scene.remove( this.points );  
+			this.dest     = []; 
+			this.colors   = []; 
+			this.geometry = new THREE.BufferGeometry();
+			this.points   = new THREE.Points( this.geometry, this.material );
+			
+			for( var i = 0; i < 80; i++ )
+			{
+			    var color = new THREE.Color();
+			    color.setHSL( THREE.MathUtils.randFloat( 0.1, 0.9 ), 1, 0.5 );
+			    this.colors.push( color ); 
+			    
+			    var from = new THREE.Vector3( 
+				THREE.MathUtils.randInt( vector.x - 10, vector.x + 10 ), 
+				THREE.MathUtils.randInt( vector.y - 10, vector.y + 10 ), 
+				THREE.MathUtils.randInt( vector.z - 10, vector.z + 10 )
+			    ); 
+			    var to = new THREE.Vector3( 
+				THREE.MathUtils.randInt( vector.x - 1000, vector.x + 1000 ), 
+				THREE.MathUtils.randInt( vector.y - 1000, vector.y + 1000 ), 
+				THREE.MathUtils.randInt( vector.z - 1000, vector.z + 1000 )
+			    ); 
+			    this.geometry.setFromPoints( from ); 
+			    this.dest.push( to ); 
+			}
+			this.geometry.colors = this.colors;
+			this.scene.add( this.points );  
+		    }, 
+		    
+		    // update
+		    update: function() 
+		    {
+			// only if objects exist
+			if( this.points && this.geometry )
+			{
+			    var total = this.geometry.attributes.position.count; 
+	    
+			    // lerp particle positions 
+			    for( var i = 0; i < total; i++ )
+			    {
+				this.geometry.attributes.position[i].x += ( this.dest[i].x - this.geometry.attributes.position[i].x ) / 20;
+				this.geometry.attributes.position[i].y += ( this.dest[i].y - this.geometry.attributes.position[i].y ) / 20;
+				this.geometry.attributes.position[i].z += ( this.dest[i].z - this.geometry.attributes.position[i].z ) / 20;
+				this.geometry.verticesNeedUpdate = true;
+			    }
+			    // watch first particle for explosion 
+			    if( total === 1 ) 
+			    {
+				if( Math.ceil( this.geometry.attributes.position[0].y ) > ( this.dest[0].y - 20 ) )
+				{
+				    this.explode( this.geometry.attributes.position[0] ); 
+				    return; 
+				}
+			    }
+			    // fade out exploded particles 
+			    if( total > 1 ) 
+			    {
+				this.material.opacity -= 0.015; 
+				this.material.colorsNeedUpdate = true;
+			    }
+			    // remove, reset and stop animating 
+			    if( this.material.opacity <= 0 )
+			    {
+				this.reset(); 
+				this.done = true; 
+				return; 
+			    }
+			}
+		    }, 
+		}; 
+		
+		// export 
+		window.Firework = Firework;  
+	    })();
+	    
+	    /**
+	     * Stage setup 
+	     */
+	    (function() {
+		
+		var screen    = Utils.screen(), 
+		    renderer  = null, 
+		    camera    = null, 
+		    scene     = null, 
+		    to        = { px: 0, py: 0, pz: 500 }, 
+		    fireworks = []; 
+		
+		try {
+		    renderer = new THREE.WebGLRenderer( { alpha: true, antialias: true } ); 
+		    camera   = new THREE.PerspectiveCamera( 60, screen.ratio, 0.1, 20000 );
+		    scene    = new THREE.Scene();
+		}
+		catch( e ) {
+		    alert( "THREE.JS Error: " + e.toString() ); 
+		    return; 
+		} 
+		
+		// on screen resize 
+		function onResize( e ) 
+		{
+		    var s = Utils.screen();
+		    renderer.setSize( s.width, s.height );
+		    camera.aspect = s.ratio;
+		    camera.updateProjectionMatrix(); 
+		};
+		
+		// on mouse move
+		function onMouse( e ) 
+		{
+		    var mouse = Utils.mouse( e ); 
+		    to.px =  ( mouse.centerx * 0.95 );
+		    to.py = -( mouse.centery * 0.95 );
+		};
+		
+		// on click/tap 
+		function onPress( e ) 
+		{
+		    to.pz -= 1000; 
+		};
+		
+		// on click/tap release
+		function onRelease( e ) 
+		{
+		    to.pz += 1000; 
+		};
+		
+		
+		// animation loop 
+		function draw() 
+		{
+		    requestAnimationFrame( draw );
+		    
+		    // if( !document.hasFocus() ) return; 
+		    
+		    // add fireworks 
+		    if( THREE.MathUtils.randInt( 1, 20 ) === 10 )
+		    {
+			fireworks.push( new Firework( scene ) ); 
+		    }
+		    // update fireworks 
+		    for( var i = 0; i < fireworks.length; i++ )
+		    {
+			if( fireworks[ i ].done ) // cleanup 
+			{
+			    fireworks.splice( i, 1 ); 
+			    continue; 
+			}
+			fireworks[ i ].update();
+		    }
+		    
+		    // lerp camera position 
+		    camera.position.x += ( to.px - camera.position.x ) / 40;
+		    camera.position.y += ( to.py - camera.position.y ) / 40;
+		    camera.position.z += ( to.pz - camera.position.z ) / 40;
+		    
+		    // render 
+		    renderer.render( scene, camera );
+		};
+		
+		// run 
+		onResize();
+		draw(); 
+	    })(); 
+	    
 
 	function animate() {
 		requestAnimationFrame(animate);
@@ -399,12 +609,12 @@ export function run(){
 		const width = canvas.clientWidth;
 		const height = canvas.clientHeight;
 
-		// if (child1) {
-		// 	child1.rotation.y += 0.05;
-		// }
-		// if (child2) {
-		// 	child2.rotation.y += 0.05;
-		// }
+		if (child1) {
+			child1.rotation.y += 0.05;
+		}
+		if (child2) {
+			child2.rotation.y += 0.05;
+		}
 
 
 		let r1_pos = new THREE.Vector3(0, r1 * Math.sin(theta), r1 * Math.cos(theta))
@@ -459,7 +669,8 @@ export function run(){
 	
 
 	}
-	
+	window.addEventListener('click', onClick)
+	window.addEventListener('touchstart', touchReaction, false)
 	animate();
 }
       

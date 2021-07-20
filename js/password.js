@@ -1,6 +1,6 @@
 import {run} from "./magic.js"
 
-const password = [2,3,1,0,2,1,3];
+const password = [0,3,3,2,1,3,0];
 var position = 0;
 
 //JQuery below

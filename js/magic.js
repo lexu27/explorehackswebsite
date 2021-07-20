@@ -297,8 +297,16 @@ export function run(){
 	planet2.position.y = 4;
 	planet2.position.z = -30;
 
+	const planet3Shape = new THREE.SphereGeometry(8, 24, 24);
+	const Planete = new THREE.TextureLoader().load('../img/three/earth.jpg');
+	const planet3Material = new THREE.MeshStandardMaterial({ map: Planete});
+	const planet3 = new THREE.Mesh(planet3Shape, planet3Material);
+	planet3.position.x = 50;
+	planet3.position.y = -30;
+	planet3.position.z = 20;
 
-	scene.add(planet1, planet2);
+
+	scene.add(planet1, planet2, planet3);
 
 	var text = new THREE.FontLoader();
 	text.load( 'Helvetica_Regular.typeface.json', function ( font ) {
@@ -322,14 +330,14 @@ export function run(){
     
 		var material = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0x555555, shininess: 30 } );
 	      
-		const geometry = new THREE.TextGeometry( 'Hope you had fun!', {
+		const geometry = new THREE.TextGeometry( 'Hope you had fun! Click our logo below :)', {
 		  font: font,
 		  size: 8,
 		  height: 1,
 		} );
 	      
 		var mesh = new THREE.Mesh( geometry, material );
-		mesh.position.x = -45;
+		mesh.position.x = -103;
 		mesh.position.y = 35;
 		mesh.position.z = 0;
 		scene.add(mesh);
@@ -473,6 +481,10 @@ export function run(){
 	}
 	function animate() {
 		requestAnimationFrame(animate);
+		planet1.rotation.y = theta;
+		planet2.rotation.y = theta;
+		planet3.rotation.y = -theta;
+
 		const canvas = renderer.domElement;
 		const width = canvas.clientWidth;
 		const height = canvas.clientHeight;

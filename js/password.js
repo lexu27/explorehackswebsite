@@ -1,7 +1,7 @@
 import {run} from "./magic.js"
 
-const password = [0,3,3,2,1,3,0];
-var position = 0;
+var password = [0,3,3,2,1,3,0];
+const reset = [0,3,3,2,1,3,0];
 
 //JQuery below
 
@@ -15,12 +15,13 @@ $('.3').click(validation);
 
 
 function validation(event) {
-	if (event.target.classList.contains(password[position].toString()))
+
+	if (event.target.classList.contains(password[0].toString()))
 	{
-		position++;
+		password.splice(0, 1);
 	}
 
-	if (position === password.length) 
+	if (password.length === 0) 
 	{
 		$("#Totally_Not_Suspicious_Random_Canvas_😏🤫").css("display", "block");
 		$("#info").css("display", "block")
@@ -31,8 +32,8 @@ function validation(event) {
 
 	}
 
-	if (password[position] !== parseInt(event.target.id)) {
-		position = 0;
+	if (password[0] !== parseInt(event.target.id)) {
+		password = reset;
 	}
 
 }

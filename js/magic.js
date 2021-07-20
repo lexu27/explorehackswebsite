@@ -360,7 +360,7 @@ export function run(){
   		finger.x = (event.changedTouches[0].clientX / window.innerWidth) * 2 - 1;
   		finger.y = -(event.changedTouches[0].clientY / window.innerHeight) * 2 + 1;
 	}
-	let playing = false;
+	var audio = new Audio('./img/three/db.mp3');
 	function onClick(event)
 	{
 
@@ -397,14 +397,16 @@ export function run(){
 			let _2 = new Firework();
 			let _3 = new Firework();
 		}
-		if (!playing){
-			var audio = new Audio('./img/three/rocket.mp3');
+		// var audio = new Audio('./img/three/db.mp3');
+		// audio.play();
+		// audio.addEventListener('ended', function() {
+		// 	this.currentTime = 0;
+		// 	this.play();
+		// }, false);
+
+		if (audio.paused)
+		{
 			audio.play();
-			audio.addEventListener('ended', function() {
-				this.currentTime = 0;
-				this.play();
-			}, false);
-			playing = true;
 		}
 	}
 	var launch = (firework) => {

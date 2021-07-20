@@ -1,10 +1,8 @@
 import {run} from "./magic.js"
 import {run2} from "./paper.js"
 
-var password1 = [0];
-const reset1 = [0];
-// var password1 = [0,3,2,1,1,3];
-// const reset1 = [0,3,2,1,1,3];
+var password1 = [0,3,2,1,1,3];
+const reset1 = [0,3,2,1,1,3];
 
 
 var password2 = [0,3,3,2,1,3,0];

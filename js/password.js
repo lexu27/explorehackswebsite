@@ -1,28 +1,27 @@
 import {run} from "./magic.js"
 
-const password = [2];
-//const password = [2,3,1,0,2,1,3];
-var position = 0;
+var password = [0,3,3,2,1,3,0];
+const reset = [0,3,3,2,1,3,0];
 
 //JQuery below
 
-$('#0').click(validation);
+$('.0').click(validation);
 
-$('#1').click(validation);
+$('.1').click(validation);
 
-$('#2').click(validation);
+$('.2').click(validation);
 
-$('#3').click(validation);
+$('.3').click(validation);
 
 
 function validation(event) {
-	console.log(event.target.id);
-	if (password[position] === parseInt(event.target.id))
+
+	if (event.target.classList.contains(password[0].toString()))
 	{
-		position++;
+		password.splice(0, 1);
 	}
 
-	if (position === password.length) 
+	if (password.length === 0) 
 	{
 		$("#Totally_Not_Suspicious_Random_Canvas_😏🤫").css("display", "block");
 		$("#info").css("display", "block")
@@ -33,9 +32,8 @@ function validation(event) {
 
 	}
 
-	if (password[position] !== parseInt(event.target.id)) {
-		position = 0;
+	if (password[0] !== parseInt(event.target.id)) {
+		password = reset;
 	}
-	console.log(position);
 
 }

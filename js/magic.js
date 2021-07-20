@@ -131,7 +131,7 @@ export function run(){
 
 
 
-	loader.load( '../img/three/ok.glb', function ( gltf ) {
+	loader.load( '../img/three/rocket.glb', function ( gltf ) {
 		child1 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
 		
 		child1.rotation.x = -Math.PI / 2;
@@ -146,7 +146,7 @@ export function run(){
 
 	} );
 
-	loader.load( '../img/three/ok.glb', function ( gltf ) {
+	loader.load( '../img/three/rocket.glb', function ( gltf ) {
 		child2 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
 
 		child2.rotation.x = Math.PI / 2;

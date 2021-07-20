@@ -4,12 +4,54 @@ import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
 import gsap from "gsap"
 
 export function run(){
+	let colorsArray = [
+		"63b598", "ce7d78", "ea9e70", "a48a9e", "c6e1e8", "648177", "0d5ac1",
+		"f205e6", "1c0365", "14a9ad", "4ca2f9", "a4e43f", "d298e2", "6119d0",
+		"d2737d", "c0a43c", "f2510e", "651be6", "79806e", "61da5e", "cd2f00",
+		"9348af", "01ac53", "c5a4fb", "996635", "b11573", "4bb473", "75d89e",
+		"2f3f94", "2f7b99", "da967d", "34891f", "b0d87b", "ca4751", "7e50a8",
+		"c4d647", "e0eeb8", "11dec1", "289812", "566ca0", "ffdbe1", "2f1179",
+		"935b6d", "916988", "513d98", "aead3a", "9e6d71", "4b5bdc", "0cd36d",
+		"250662", "cb5bea", "228916", "ac3e1b", "df514a", "539397", "880977",
+		"f697c1", "ba96ce", "679c9d", "c6c42c", "5d2c52", "48b41b", "e1cf3b",
+		"5be4f0", "57c4d8", "a4d17a", "225b8", "be608b", "96b00c", "088baf",
+		"f158bf", "e145ba", "ee91e3", "05d371", "5426e0", "4834d0", "802234",
+		"6749e8", "0971f0", "8fb413", "b2b4f0", "c3c89d", "c9a941", "41d158",
+		"fb21a3", "51aed9", "5bb32d", "807fb", "21538e", "89d534", "d36647",
+		"7fb411", "0023b8", "3b8c2a", "986b53", "f50422", "983f7a", "ea24a3",
+		"79352c", "521250", "c79ed2", "d6dd92", "e33e52", "b2be57", "fa06ec",
+		"1bb699", "6b2e5f", "64820f", "1c271", "21538e", "89d534", "d36647",
+		"7fb411", "0023b8", "3b8c2a", "986b53", "f50422", "983f7a", "ea24a3",
+		"79352c", "521250", "c79ed2", "d6dd92", "e33e52", "b2be57", "fa06ec",
+		"1bb699", "6b2e5f", "64820f", "1c271", "9cb64a", "996c48", "9ab9b7",
+		"06e052", "e3a481", "0eb621", "fc458e", "b2db15", "aa226d", "792ed8",
+		"73872a", "520d3a", "cefcb8", "a5b3d9", "7d1d85", "c4fd57", "f1ae16",
+		"8fe22a", "ef6e3c", "243eeb", "1dc18", "dd93fd", "3f8473", "e7dbce",
+		"421f79", "7a3d93", "635f6d", "93f2d7", "9b5c2a", "15b9ee", "0f5997",
+		"409188", "911e20", "1350ce", "10e5b1", "fff4d7", "cb2582", "ce00be",
+		"32d5d6", "17232", "608572", "c79bc2", "00f87c", "77772a", "6995ba",
+		"fc6b57", "f07815", "8fd883", "060e27", "96e591", "21d52e", "d00043",
+		"b47162", "1ec227", "4f0f6f", "1d1d58", "947002", "bde052", "e08c56",
+		"28fcfd", "bb09b", "36486a", "d02e29", "1ae6db", "3e464c", "a84a8f",
+		"911e7e", "3f16d9", "0f525f", "ac7c0a", "b4c086", "c9d730", "30cc49",
+		"3d6751", "fb4c03", "640fc1", "62c03e", "d3493a", "88aa0b", "406df9",
+		"615af0", "4be47", "2a3434", "4a543f", "79bca0", "a8b8d4", "00efd4",
+		"7ad236", "7260d8", "1deaa7", "06f43a", "823c59", "e3d94c", "dc1c06",
+		"f53b2a", "b46238", "2dfff6", "a82b89", "1a8011", "436a9f", "1a806a",
+		"4cf09d", "c188a2", "67eb4b", "b308d3", "fc7e41", "af3101", "ff065",
+		"71b1f4", "a2f8a5", "e23dd0", "d3486d", "00f7f9", "474893", "3cec35",
+		"1c65cb", "5d1d0c", "2d7d2a", "ff3420", "5cdd87", "a259a4", "e4ac44",
+		"1bede6", "8798a4", "d7790f", "b2c24f", "de73c2", "d70a9c", "25b67",
+		"88e9b8", "c2b0e2", "86e98f", "ae90e2", "1a806b", "436a9e", "0ec0ff",
+		"f812b3", "b17fc9", "8d6c2f", "d3277a", "2ca1ae", "9685eb", "8a96c6",
+		"dba2e6", "76fc1b", "608fa4", "20f6ba", "07d7f6", "dce77a", "77ecca"]
+
 	const scene = new THREE.Scene();
 
 	var camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 1, 2000);
 
 	const renderer = new THREE.WebGLRenderer({
-	canvas: document.querySelector('#Totally_Not_Suspicious_Random_Canvas_😏🤫'),
+		canvas: document.querySelector('#Totally_Not_Suspicious_Random_Canvas_😏🤫'),
 	});
 
 
@@ -25,24 +67,38 @@ export function run(){
 	const pointLight = new THREE.PointLight(0xffffff);
 	pointLight.position.set(5, 5, 5);
 
+	const pointLight2 = new THREE.PointLight(0xffffff);
+	pointLight2.intensity = 0.5;
+	pointLight2.position.set(0, 0, 200);
+
+	const pointLight3 = new THREE.PointLight(0xffffff);
+	pointLight3.intensity = 0.3;
+	pointLight3.position.set(-5, -5, -5);
+
+	const pointLight4 = new THREE.PointLight(0xffffff);
+	pointLight4.intensity = 0.6;
+	pointLight4.position.set(0, 0, -200);
+
+
+
 	const ambientLight = new THREE.AmbientLight(0xffffff);
-	scene.add(pointLight, ambientLight);
+	scene.add(pointLight, pointLight2, ambientLight, pointLight3, pointLight4);
 
 
 	function addStar() {
-	const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-	const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
-	const star = new THREE.Mesh(geometry, material);
+		const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+		const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+		const star = new THREE.Mesh(geometry, material);
 
-	const [x, y, z] = Array(3)
-	.fill()
-	.map(() => THREE.MathUtils.randFloatSpread(100));
+		const [x, y, z] = Array(3)
+		.fill()
+		.map(() => THREE.MathUtils.randFloatSpread(1000));
 
-	star.position.set(x, y, z);
-	scene.add(star);
+		star.position.set(x, y, z);
+		scene.add(star);
 	}
 
-	Array(200).fill().forEach(addStar);
+	Array(1000).fill().forEach(addStar);
 
 	const r1 = 20;
 	const r2 = 24;
@@ -59,12 +115,12 @@ export function run(){
 
 	let disk;
 
-	loader.load( '../img/three/cock7.glb', function ( gltf ) {
+	loader.load( '../img/three/disk.glb', function ( gltf ) {
+		console.log(gltf.scene.children);
 		disk = gltf.scene.children.find((child) => child.name === "exploreHacksLogo_v1");
 		disk.scale.set(0.18,0.18,0.18);
 		disk.position.set(0,0,0);
 		disk.rotation.x = Math.PI / 2;
-		disk.rotation.y = -Math.PI / 4;
 		scene.add(disk);
 
 	}, undefined, function ( error ) {
@@ -75,7 +131,7 @@ export function run(){
 
 
 
-	loader.load( '../img/three/shit.glb', function ( gltf ) {
+	loader.load( '../img/three/ok.glb', function ( gltf ) {
 		child1 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
 		
 		child1.rotation.x = -Math.PI / 2;
@@ -90,7 +146,7 @@ export function run(){
 
 	} );
 
-	loader.load( '../img/three/shit.glb', function ( gltf ) {
+	loader.load( '../img/three/ok.glb', function ( gltf ) {
 		child2 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
 
 		child2.rotation.x = Math.PI / 2;
@@ -225,16 +281,24 @@ export function run(){
 	let delta2 = Math.atan(height2 / r2);
 
 
-	// const planet1Shape = new THREE.SphereGeometry(3, 24, 24);
-	// const bluePlanet = new THREE.TextureLoader().load('../img/custom/Planet1.png');
-	// const planet1Material = new THREE.MeshStandardMaterial({ map: bluePlanet});
-	// const planet1 = new THREE.Mesh(planet1Shape, planet1Material);
-	// planet1.position.x = -30;
-	// planet1.position.y = 4;
-	// planet1.position.z = -40;
+	const planet1Shape = new THREE.SphereGeometry(3, 24, 24);
+	const bluePlanet = new THREE.TextureLoader().load('../img/three/p1.png');
+	const planet1Material = new THREE.MeshStandardMaterial({ map: bluePlanet});
+	const planet1 = new THREE.Mesh(planet1Shape, planet1Material);
+	planet1.position.x = 30;
+	planet1.position.y = 4;
+	planet1.position.z = -40;
+
+	const planet2Shape = new THREE.SphereGeometry(8, 24, 24);
+	const Planet = new THREE.TextureLoader().load('../img/three/p2.png');
+	const planet2Material = new THREE.MeshStandardMaterial({ map: Planet});
+	const planet2 = new THREE.Mesh(planet2Shape, planet2Material);
+	planet2.position.x = -40;
+	planet2.position.y = 4;
+	planet2.position.z = -30;
 
 
-	// scene.add(planet1);
+	scene.add(planet1, planet2);
 
 	var text = new THREE.FontLoader();
 	text.load( 'Helvetica_Regular.typeface.json', function ( font ) {
@@ -244,7 +308,7 @@ export function run(){
 	  const geometry = new THREE.TextGeometry( 'You found the last Easter Egg!', {
 	    font: font,
 	    size: 8,
-	    height: 3,
+	    height: 1,
 	  } );
 	
 	  var mesh = new THREE.Mesh( geometry, material );
@@ -261,7 +325,7 @@ export function run(){
 		const geometry = new THREE.TextGeometry( 'Hope you had fun!', {
 		  font: font,
 		  size: 8,
-		  height: 3,
+		  height: 1,
 		} );
 	      
 		var mesh = new THREE.Mesh( geometry, material );
@@ -293,10 +357,10 @@ export function run(){
 	{
 		event.stopPropagation(); 
  		event.preventDefault();
- 		console.log(event)
   		finger.x = (event.changedTouches[0].clientX / window.innerWidth) * 2 - 1;
   		finger.y = -(event.changedTouches[0].clientY / window.innerHeight) * 2 + 1;
 	}
+	let playing = false;
 	function onClick(event)
 	{
 
@@ -310,7 +374,6 @@ export function run(){
     			raycaster.setFromCamera(mouse, camera);
   		}
  		let intersects = raycaster.intersectObjects(scene.children);
-		console.log(intersects);
   		if (intersects.length > 0)
   		{
     			selectedObject = intersects[0].object
@@ -327,287 +390,91 @@ export function run(){
 				onComplete: () => {selectedObject = null}
 				}
 			)
+			let color = `0x${colorsArray[Math.floor(Math.random() * colorsArray.length)]}`
+
+			ambientLight.color.setHex(color);
+			let _1 = new Firework();
+			let _2 = new Firework();
+			let _3 = new Firework();
+		}
+		if (!playing){
+			var audio = new Audio('./img/three/rocket.mp3');
+			audio.play();
+			audio.addEventListener('ended', function() {
+				this.currentTime = 0;
+				this.play();
+			}, false);
+			playing = true;
 		}
 	}
-	
+	var launch = (firework) => {
+		gsap.to(firework.firework.position, {
+			duration: 2,
+			y: firework.height,
+			ease: "power3",
+			onComplete : explode,
+			onCompleteParams: [firework]
 
-	(function() {
-    
-		var _w = window,
-		    _s = window.screen,
-		    _b = document.body,
-		    _d = document.documentElement;
-		
-		window.Utils = {
-		
-		    // screen info 
-		    screen: function() 
-		    {
-			var width  = Math.max( 0, _w.innerWidth || _d.clientWidth || _b.clientWidth || 0 );
-			var height = Math.max( 0, _w.innerHeight || _d.clientHeight || _b.clientHeight || 0 );
-			
-			return {
-			    width   : width, 
-			    height  : height, 
-			    centerx : width / 2, 
-			    centery : height / 2, 
-			    ratio   : width / height, 
-			};
-		    }, 
-		    // mouse info 
-		    mouse: function( e ) 
-		    {
-			var x = Math.max( 0, e.pageX || e.clientX || 0 ); 
-			var y = Math.max( 0, e.pageY || e.clientY || 0 );
-			var s = this.screen(); 
-			
-			return {
-			    x : x, 
-			    y : y, 
-			    centerx : ( x - s.centerx ), 
-			    centery : ( y - s.centery ), 
-			}; 
-		    }, 
-		}; 
-	    })();
-	    
-	    /**
-	     * Firework object
-	     */ 
-	    (function() {
-		
-		// constructor 
-		var Firework = function( scene ) 
+		})
+	} 
+
+	var explode = (firework) => {
+		remove(firework.firework, firework.geometry, firework.material);
+		for (let i = 0; i < firework.sub_particles; i++)
 		{
-		    this.scene    = scene; 
-		    this.done     = false; 
-		    this.dest     = []; 
-		    this.colors   = []; 
-		    this.geometry = null;
-		    this.points   = null;
-		    this.material = new THREE.PointsMaterial({
-			size: 16,
-			color: 0xffffff,
-			opacity: 1,
-			vertexColors: true,
-			transparent: true,
-			depthTest: false,
-		    });
-		    this.launch(); 
-		}; 
-		
-		// prototype 
-		Firework.prototype = {
-		    constructor: Firework, 
-		    
-		    // reset 
-		    reset: function()
-		    {
-			this.scene.remove( this.points );  
-			this.dest     = []; 
-			this.colors   = []; 
-			this.geometry = null;
-			this.points   = null;
-		    }, 
-		    
-		    // launch
-		    launch: function() 
-		    {
-			var s = Utils.screen(); 
-			var x = THREE.MathUtils.randInt( -s.width, s.width ); 
-			var y = THREE.MathUtils.randInt( 100, 800 );
-			var z = THREE.MathUtils.randInt( -1000, -3000 ); 
+			let particle_geo = new THREE.SphereGeometry( 0.3, 32, 32 );
+			let particle_mat = new THREE.MeshBasicMaterial( {color: firework.color} );
+			let particle = new THREE.Mesh(particle_geo, particle_mat);
+			particle.position.copy(firework.firework.position);
+			particle.material.opacity = 1;
+			scene.add(particle);
+
 			
-			var from = new THREE.Vector3( x, -800, z ); 
-			var to   = new THREE.Vector3( x, y, z ); 
+			gsap.to(particle.position, {
+				duration: 2,
+				x: firework.firework.position.x + 20 * Math.sin(Math.random() * Math.PI * 2) * Math.cos(Math.acos(2 * Math.random() - 1)),
+				y: firework.height + 20 * Math.sin(Math.random() * Math.PI * 2) * Math.cos(Math.acos(2 * Math.random() - 1)),
+				z: firework.firework.position.z + 20 * Math.cos(Math.acos(2 * Math.random() - 1)),
+				ease: "power3",
+				onComplete: remove,
+				onCompleteParams: [particle, particle_geo, particle_mat]
+			});
+
+
 			
-			var color = new THREE.Color();
-			color.setHSL( THREE.MathUtils.randFloat( 0.1, 0.9 ), 1, 0.9 );
-			this.colors.push( color ); 
-			
-			this.geometry = new THREE.BufferGeometry();
-			this.points = new THREE.Points( this.geometry, this.material );
-			
-			this.geometry.colors = this.colors;
-			this.geometry.setFromPoints( from ); 
-			this.dest.push( to ); 
-			this.colors.push( color ); 
-			this.scene.add( this.points );  
-		    }, 
-		
-		    // explode
-		    explode: function( vector ) 
-		    {
-			this.scene.remove( this.points );  
-			this.dest     = []; 
-			this.colors   = []; 
-			this.geometry = new THREE.BufferGeometry();
-			this.points   = new THREE.Points( this.geometry, this.material );
-			
-			for( var i = 0; i < 80; i++ )
-			{
-			    var color = new THREE.Color();
-			    color.setHSL( THREE.MathUtils.randFloat( 0.1, 0.9 ), 1, 0.5 );
-			    this.colors.push( color ); 
-			    
-			    var from = new THREE.Vector3( 
-				THREE.MathUtils.randInt( vector.x - 10, vector.x + 10 ), 
-				THREE.MathUtils.randInt( vector.y - 10, vector.y + 10 ), 
-				THREE.MathUtils.randInt( vector.z - 10, vector.z + 10 )
-			    ); 
-			    var to = new THREE.Vector3( 
-				THREE.MathUtils.randInt( vector.x - 1000, vector.x + 1000 ), 
-				THREE.MathUtils.randInt( vector.y - 1000, vector.y + 1000 ), 
-				THREE.MathUtils.randInt( vector.z - 1000, vector.z + 1000 )
-			    ); 
-			    this.geometry.setFromPoints( from ); 
-			    this.dest.push( to ); 
-			}
-			this.geometry.colors = this.colors;
-			this.scene.add( this.points );  
-		    }, 
-		    
-		    // update
-		    update: function() 
-		    {
-			// only if objects exist
-			if( this.points && this.geometry )
-			{
-			    var total = this.geometry.attributes.position.count; 
-	    
-			    // lerp particle positions 
-			    for( var i = 0; i < total; i++ )
-			    {
-				this.geometry.attributes.position[i].x += ( this.dest[i].x - this.geometry.attributes.position[i].x ) / 20;
-				this.geometry.attributes.position[i].y += ( this.dest[i].y - this.geometry.attributes.position[i].y ) / 20;
-				this.geometry.attributes.position[i].z += ( this.dest[i].z - this.geometry.attributes.position[i].z ) / 20;
-				this.geometry.verticesNeedUpdate = true;
-			    }
-			    // watch first particle for explosion 
-			    if( total === 1 ) 
-			    {
-				if( Math.ceil( this.geometry.attributes.position[0].y ) > ( this.dest[0].y - 20 ) )
-				{
-				    this.explode( this.geometry.attributes.position[0] ); 
-				    return; 
-				}
-			    }
-			    // fade out exploded particles 
-			    if( total > 1 ) 
-			    {
-				this.material.opacity -= 0.015; 
-				this.material.colorsNeedUpdate = true;
-			    }
-			    // remove, reset and stop animating 
-			    if( this.material.opacity <= 0 )
-			    {
-				this.reset(); 
-				this.done = true; 
-				return; 
-			    }
-			}
-		    }, 
-		}; 
-		
-		// export 
-		window.Firework = Firework;  
-	    })();
-	    
-	    /**
-	     * Stage setup 
-	     */
-	    (function() {
-		
-		var screen    = Utils.screen(), 
-		    renderer  = null, 
-		    camera    = null, 
-		    scene     = null, 
-		    to        = { px: 0, py: 0, pz: 500 }, 
-		    fireworks = []; 
-		
-		try {
-		    renderer = new THREE.WebGLRenderer( { alpha: true, antialias: true } ); 
-		    camera   = new THREE.PerspectiveCamera( 60, screen.ratio, 0.1, 20000 );
-		    scene    = new THREE.Scene();
 		}
-		catch( e ) {
-		    alert( "THREE.JS Error: " + e.toString() ); 
-		    return; 
-		} 
-		
-		// on screen resize 
-		function onResize( e ) 
-		{
-		    var s = Utils.screen();
-		    renderer.setSize( s.width, s.height );
-		    camera.aspect = s.ratio;
-		    camera.updateProjectionMatrix(); 
-		};
-		
-		// on mouse move
-		function onMouse( e ) 
-		{
-		    var mouse = Utils.mouse( e ); 
-		    to.px =  ( mouse.centerx * 0.95 );
-		    to.py = -( mouse.centery * 0.95 );
-		};
-		
-		// on click/tap 
-		function onPress( e ) 
-		{
-		    to.pz -= 1000; 
-		};
-		
-		// on click/tap release
-		function onRelease( e ) 
-		{
-		    to.pz += 1000; 
-		};
-		
-		
-		// animation loop 
-		function draw() 
-		{
-		    requestAnimationFrame( draw );
-		    
-		    // if( !document.hasFocus() ) return; 
-		    
-		    // add fireworks 
-		    if( THREE.MathUtils.randInt( 1, 20 ) === 10 )
-		    {
-			fireworks.push( new Firework( scene ) ); 
-		    }
-		    // update fireworks 
-		    for( var i = 0; i < fireworks.length; i++ )
-		    {
-			if( fireworks[ i ].done ) // cleanup 
-			{
-			    fireworks.splice( i, 1 ); 
-			    continue; 
-			}
-			fireworks[ i ].update();
-		    }
-		    
-		    // lerp camera position 
-		    camera.position.x += ( to.px - camera.position.x ) / 40;
-		    camera.position.y += ( to.py - camera.position.y ) / 40;
-		    camera.position.z += ( to.pz - camera.position.z ) / 40;
-		    
-		    // render 
-		    renderer.render( scene, camera );
-		};
-		
-		// run 
-		onResize();
-		draw(); 
-	    })(); 
-	    
+	}
 
+	class Firework {
+		constructor() {
+			this.geometry = new THREE.SphereGeometry( 0.3, 32, 32 );
+			this.sub_particles = 80;
+			this.color = new THREE.Color();
+			this.color.setHex(`0x${colorsArray[Math.floor(Math.random() * colorsArray.length)]}`);
+			this.material = new THREE.MeshBasicMaterial( {color: this.color} );
+			this.firework = new THREE.Mesh(this.geometry, this.material);
+			this.firework.position.setY(-200);
+			this.firework.position.setZ(THREE.MathUtils.randFloat(-20, -100));
+			this.firework.position.setX(THREE.MathUtils.randFloat(-100, 100));
+			this.height = THREE.MathUtils.randFloat(0, 50);
+
+			scene.add(this.firework);
+			launch(this);
+		}
+	}
+
+	var remove = (obj, geo, mat) => {
+		geo.dispose();
+		mat.dispose();
+		scene.remove(obj);
+		renderer.renderLists.dispose();
+	}
 	function animate() {
 		requestAnimationFrame(animate);
 		const canvas = renderer.domElement;
 		const width = canvas.clientWidth;
 		const height = canvas.clientHeight;
+
 
 		if (child1) {
 			child1.rotation.y += 0.05;

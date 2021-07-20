@@ -44,10 +44,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/192deae4bc.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-full.min.js"></script> -->
+    <!-- <script type="text/paperscript" canvas="canvas" src="js/paper.js"></script> -->
 </head>
 
 <body>
 <canvas id = "Totally_Not_Suspicious_Random_Canvas_😏🤫"></canvas>
+<canvas id="canvas" resize hidpi="off" style="background:black"></canvas>
 <div id="info">
     <div style = "height: 1800px !important">
 
@@ -117,22 +120,22 @@
                 </div>
                 <div>
                     <div style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
-                        <div data-aos="fade-right" style=" max-width: 420px;">
-                            <img alt="Attend workshops in Explore Hacks" itemprop="potentialAction offers"
+                        <div data-aos="fade-right" style=" max-width: 420px;" >
+                            <img id = "0" alt="Attend workshops in Explore Hacks" itemprop="potentialAction offers"
                                  src="img/opportunities/1.png">
                         </div>
                         <div data-aos="fade-up" style=" max-width: 420px;">
-                            <img alt="Participate in Speaker Events" itemprop="potentialAction offers"
+                            <img id = "1" alt="Participate in Speaker Events" itemprop="potentialAction offers"
                                  src="img/opportunities/2.png">
                         </div>
                     </div>
                     <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-left: auto; margin-right: auto">
                         <div data-aos="fade-down" style=" max-width: 420px;">
-                            <img alt="Collaborate with each other in Explore Hacks" itemprop="potentialAction offers"
+                            <img id = "2" alt="Collaborate with each other in Explore Hacks" itemprop="potentialAction offers"
                                  src="img/opportunities/3.png">
                         </div>
                         <div data-aos="fade-left" style=" max-width: 420px;">
-                            <img alt="Make an impact on the future by attending Explore Hacks"
+                            <img id = "3" alt="Make an impact on the future by attending Explore Hacks"
                                  itemprop="potentialAction offers"
                                  src="img/opportunities/4.png">
                         </div>
@@ -369,7 +372,7 @@
 
                     <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
                         <p class="schedule-item-heading" itemprop="about subEvent">Game Night 🎮</p>
-                        <p class="schedule-item-time" itemprop="startDate endDate">8:30 PM - 9:30 PM</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">8:30 PM - 9:00 PM</p>
                     </div>
                 </div>
 
@@ -409,7 +412,7 @@
 
                     <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
                         <p class="schedule-item-heading" itemprop="about subEvent">Game Night</p>
-                        <p class="schedule-item-time" itemprop="startDate endDate">8:00 PM - 9:00 PM</p>
+                        <p class="schedule-item-time" itemprop="startDate endDate">8:00 PM - 8:30 PM</p>
                     </div>
                 </div>
 
@@ -758,11 +761,10 @@
 
 
 <!-- Theme Custom -->
-<script src="js/custom.js"></script>
-<script src="js/paper.js"></script>
-<script type = "module" src="js/magic.js"></script>
-<script type = "module" src="js/password.js"></script>
 <script type = "module" src="main.js"></script>
+<script src="js/custom.js"></script>
+<!-- <script type = "module" src="js/magic.js"></script> -->
+<!-- <script type = "module" src="js/password.js"></script> -->
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>AOS.init({offset: 200});</script>

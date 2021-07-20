@@ -587,7 +587,6 @@ fabric.properties
 
 # Distribution / packaging
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/

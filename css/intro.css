@@ -86,6 +86,12 @@
     left: 16%;
 }
 
+.banner-container {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    margin-left: 90%;
+}
 
 @media only screen and (max-width: 1044px) {
     .intro-logo {
@@ -108,6 +114,10 @@
         bottom: -108%;
 
         overflow: hidden;
+    }
+
+    .banner-container {
+        margin-left: 85%;
     }
 }
 
@@ -133,6 +143,11 @@
 
         overflow: hidden;
     }
+
+    .banner-container {
+        margin-left: 80%;
+    }
+
 
 }
 
@@ -187,6 +202,10 @@
         bottom: -108%;
 
         overflow: hidden;
+    }
+
+    .banner-container {
+        margin-left: 75%;
     }
 }
 
@@ -255,6 +274,9 @@
         margin-top: 10rem !important;
     }
 
+    .banner-container {
+        margin-left: 65%;
+    }
 
 }
 

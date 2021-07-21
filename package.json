@@ -1,0 +1,29 @@
+{
+  "name": "explorehackswebsite-master",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "serve": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neragin/explorehackswebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neragin/explorehackswebsite/issues"
+  },
+  "homepage": "https://github.com/Neragin/explorehackswebsite#readme",
+  "description": "",
+  "dependencies": {
+    "gsap": "^3.7.1",
+    "paper": "^0.12.15",
+    "three": "^0.130.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

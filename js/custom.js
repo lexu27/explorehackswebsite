@@ -36,40 +36,41 @@ window.addEventListener('scroll', function () {
 })
 
 
-// counter code
-const counters = document.querySelectorAll('.counter');
+// // counter code
+// const counters = document.querySelectorAll('.counter');
 
-// Where el is the DOM element you'd like to test for visibility
-// function isHidden(el) {
-//     return (el.offsetParent === null)
+// // Where el is the DOM element you'd like to test for visibility
+// // function isHidden(el) {
+// //     return (el.offsetParent === null)
+// // }
+
+// const updateCounts = (speed) => {
+//     var i = 1;
+//     counters.forEach(counter => {
+//         const updateCount = () => {
+//             const target = +counter.getAttribute('data-target');
+//             const count = +counter.innerText;
+
+//             // Lower inc to slow and higher to slow
+//             var inc = target / speed;
+//             if (i == 2) {
+//                 inc = target / 1;
+//             }
+
+
+//             // Check if target is reached
+//             if (count < target) {
+//                 // Add inc to count and output in counter
+//                 counter.innerText = Math.round(count + inc);
+//                 // Call function every ms
+//                 setTimeout(updateCount, 10);
+//             } else {
+//                 counter.innerText = target;
+//             }
+//         };
+
+//         updateCount();
+//         i++;
+//     });
 // }
 
-const updateCounts = (speed) => {
-    var i = 1;
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
-
-            // Lower inc to slow and higher to slow
-            var inc = target / speed;
-            if (i == 2) {
-                inc = target / 1;
-            }
-
-
-            // Check if target is reached
-            if (count < target) {
-                // Add inc to count and output in counter
-                counter.innerText = Math.round(count + inc);
-                // Call function every ms
-                setTimeout(updateCount, 10);
-            } else {
-                counter.innerText = target;
-            }
-        };
-
-        updateCount();
-        i++;
-    });
-}

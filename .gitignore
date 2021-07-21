@@ -68,6 +68,9 @@ DerivedData/
 *.userosscache
 *.sln.docstates
 
+node_modules
+**/node_modules
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -329,7 +332,6 @@ FakesAssemblies/
 
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
-node_modules/
 
 # Visual Studio 6 build log
 *.plg
@@ -585,7 +587,6 @@ fabric.properties
 
 # Distribution / packaging
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/

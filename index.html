@@ -3,21 +3,23 @@
 
 <head>
     <!-- Basic -->
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
     <title>A Hackathon for Beginners | Explore Hacks</title>
-    <meta content="Explore Hacks is a free 3-day hackathon that aims to grant high school programmers the chance to explore the process of ideation to product execution."
-          name="description">
+    <meta
+        content="Explore Hacks is a free 3-day hackathon that aims to grant high school programmers the chance to explore the process of ideation to product execution."
+        name="description">
     <meta content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=yes" name="viewport">
 
-    <meta content="Explore Hacks" property="og:title"/>
+    <meta content="Explore Hacks" property="og:title" />
     <meta content="Explore Hacks is a free 3-day hackathon for high schoolers. No coding experience is needed!"
-          property="og:description">
-    <meta content="https://explorehacks.org" property="og:url"/>
-    <meta content="https://media.discordapp.net/attachments/665358673392173056/857327677023191060/Add_a_subheading_3.png"
-          property="og:image"/>
+        property="og:description">
+    <meta content="https://explorehacks.org" property="og:url" />
+    <meta
+        content="https://media.discordapp.net/attachments/665358673392173056/857327677023191060/Add_a_subheading_3.png"
+        property="og:image" />
 
-    <meta content="index, follow" name="robots"/>
+    <meta content="index, follow" name="robots" />
 
     <link href="css/button.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -39,8 +41,8 @@
 
     <!-- custom font -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/192deae4bc.js"></script>
@@ -49,780 +51,829 @@
 </head>
 
 <body>
-<canvas id = "Totally_Not_Suspicious_Random_Canvas_😏🤫"></canvas>
-<canvas id="canvas" resize hidpi="off" style="background:black"></canvas>
-<div id="info">
-    <div style="height: 1800px !important">
-    </div>
-</div>
-<!--     Loading Screen Div-->
-<div class="holder">
-    <div class="preloader__dots">
-        <span class="preloader__dot"></span>
-    </div>
-</div>
-
-<main class="main" role="main">
-    <article itemscope itemtype="https://schema.org/Hackathon">
-        <section class="intro" id="signup">
-            <div class="banner-container">
-                <div style="z-index: 550; position: absolute;">
-                    <a href="https://econhacks.org/"><img class="banner-logo" src="/img/custom/EconHacksLogoTransparent.png" alt="EconHacksLogo"></a>
-                    <p class="team-text banner-text" style="z-index: 550; position: relative; font-size: 1.25rem; text-align: center; margin-top: 0; margin-bottom: 0; margin-left: 0.5rem; margin-right: 0.5rem;">Supported by EconHacks</p>
-                </div>
-                <img style="z-index: 1; position: absolute;" src="./img/custom/banner.svg">
-            </div>
-            <div class="intro-bg" id="intro-bg"></div>
-            <img alt="Explore Hacks Banner" class="intro-planet1" id="intro-planet1" src="img/custom/Planet1.png">
-            <a href="https://www.youtube.com/watch?v=QtBDL8EiNZo">
-                <img alt="Explore Hacks Banner" class="intro-planet2" id="intro-planet2" src="img/custom/Planet2.png">
-            </a>
-            <img alt="Explore Hacks Banner" class="intro-rocket" id="intro-rocket"
-                 src="img/custom/RocketWithTrailLong.png">
-            <img alt="Explore Hacks Logo" class="intro-logo" id="intro-logo" itemprop="name"
-                 src="img/icons/ExploreHacksLogo.png">
-            <div class="date-and-button" id="date-and-button">
-                <div class="intro-date" id="intro-date" itemprop="startDate endDate" style="margin-right: 20px;">July
-                    23rd-25th
-                </div>
-                <div>
-                    <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" data-mode="popup"
-                       data-size="100" href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet"
-                       id="intro-button"
-                       rel="noopener" target="_blank"
-                       type="button">Interested?</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="intro-2 black-section">
-            <div class="intro-2-container">
-                <div class="intro-3-title" data-aos="fade-up"> What is Explore Hacks and why should I join?</div>
-                <p class="intro-2-description" data-aos="fade-up"
-                   itemprop="about description isAccessibleForFree audience duration"
-                   style="font-size: medium; line-height: 2;">
-                    Explore Hacks is a 3-day hackathon that aims to grant both experienced and beginner student
-                    programmers the chance to explore the process of ideation to product execution. Participants will
-                    gain the
-                    opportunity to learn through a variety of workshops and mini-events, allowing them to traverse the
-                    different fields of Computer Science. Best of all, Explore Hacks is 100% free!
-                </p>
-
-                <div class="stats" data-aos="flip-up">
-                    <div class="prizes" itemprop="offers">
-                        <p class="prizes-text" data-target="8000"><span class="stats-symbol">$</span>8000<span
-                                class="stats-symbol">+</span></p>
-                        <p class="stats-title">In prizes</p>
-                    </div>
-                    <div class="workshops" itemprop="subEvent">
-                        <p class="workshops-text" data-target="15">15<span class="stats-symbol">+</span></p>
-                        <p class="stats-title">Mini Events</p>
-                    </div>
-
-                    <div class="particpants">
-                        <p class="participants-text" data-target="400">400<span class="stats-symbol">+</span></p>
-                        <p class="stats-title" itemprop="attendee">Participants from around the world</p>
-                    </div>
-                </div>
-                <div>
-                    <div style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
-                        <div data-aos="fade-right" style=" max-width: 420px;" >
-                            <img id = "0" alt="Attend workshops in Explore Hacks" itemprop="potentialAction offers"
-                                 src="img/opportunities/1.png">
-                        </div>
-                        <div data-aos="fade-up" style=" max-width: 420px;">
-                            <img id = "1" alt="Participate in Speaker Events" itemprop="potentialAction offers"
-                                 src="img/opportunities/2.png">
-                        </div>
-                    </div>
-                    <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-left: auto; margin-right: auto">
-                        <div data-aos="fade-down" style=" max-width: 420px;">
-                            <img id = "2" alt="Collaborate with each other in Explore Hacks" itemprop="potentialAction offers"
-                                 src="img/opportunities/3.png">
-                        </div>
-                        <div data-aos="fade-left" style=" max-width: 420px;">
-                            <img id = "3" alt="Make an impact on the future by attending Explore Hacks"
-                                 itemprop="potentialAction offers"
-                                 src="img/opportunities/4.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="intro-3 gray-section">
-            <div class="intro-3-container">
-                <div class="intro-3-title" data-aos="fade-up">What will I need to do?
-                </div>
-                   <p class="intro-3-description" data-aos="fade-up"
-                itemprop="description about potentialAction" style="font-size: medium; line-height: 2;">
-                 <b>Address the Prompt: Create a project that solves a current issue in the world and has a lasting impact on a market of your choice in the future.</b>
-             </p> 
-                <p class="intro-3-description" data-aos="fade-up"
-                   itemprop="description about potentialAction" style="font-size: medium; line-height: 2;">
-                    You will need to create a project and submit a 5-minute video that demos your project and pitches
-                    the impact its integration within the market of your
-                    choice. Upon submission, you must add a URL to your publicly visible code/repository. All
-                    submissions will be made through <a
-                        href="https://explorehacks.devpost.com/?ref_feature=challenge&ref_medium=discover"
-                        style="color: lightblue; text-decoration: none">Devpost.</a>
-                </p>
-
-
-                <p class="intro-3-description" data-aos="fade-up"
-                   itemprop="description about potentialAction" style="font-size: medium; line-height: 2;">
-                    Your project will be judged based on the following criteria, with the grading rubric attached <a style="color: white;" href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">here</a>.</p>
-
-                <div style="display:flex; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; padding: 20px; flex-wrap: wrap;">
-                    <div class="equal 0"
-                         data-aos="fade-right"
-                         itemprop="about"
-                         style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
-                        <i class="fas fa-balance-scale fa-7x space 0" style="color: #82AAFF"></i>
-                        <p class="0" style="color: #82AAFF; font-size: medium;">Feasibility</p>
-                    </div>
-
-                    <div class="equal 1"
-                         data-aos="fade-down"
-                         style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
-                        <i class="far fa-lightbulb fa-7x space 1" style="color: #8772AD"></i>
-                        <p class="1" style="color: #8772AD; font-size: medium;">Uniqueness</p>
-                    </div>
-
-                    <div class="equal 2"
-
-                         data-aos="fade-up"
-                         style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
-                        <i class="fas fa-cogs fa-7x space 2" style="color: #BC9EC7"></i>
-                        <p class="2" style="color: #BC9EC7; font-size: medium;">Implementation</p>
-                    </div>
-
-                    <div class="equal 3"
-
-                         data-aos="fade-left"
-                         style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
-                        <i class="fas fa-file-code fa-7x space 3" style="color: #CC6686"></i>
-                        <p class="3" style="color: #CC6686; font-size: medium;">Structure</p>
-                    </div>
-                </div>
-
-                <p class="intro-3-description" data-aos="fade-up" itemprop="description about potentialAction"
-                   style="font-size: medium; line-height: 2;">
-                    You may participate in a team with your friends (1 - 4 people per team).
-                </p>
-
-                <p class="intro-3-description" data-aos="fade-up" itemprop="description about potentialAction"
-                   style="font-size: medium; line-height: 2;">
-                    <b>Please be sure to stay active on our <a href="https://explorehacks.org/discord"
-                                                               style="color: lightblue; text-decoration: none;">Discord
-                        Server</a>, so that you don't miss out on any important announcements!</b>
-                </p>
-            </div>
-        </section>
-
-        <section class="faqs black-section" id="faqs">
-            <div class="faqs-title">FAQs</div>
-            <div class="faqs-container">
-                <div class="faq" data-aos="fade-down-right" itemprop="about">
-                    <div class="faq-question">What is a hackathon?</div>
-                    <div class="faq-answer">A hackathon is best described as an “invention marathon”. Anyone who has an
-                        interest in technology attends a hackathon
-                        to learn, build & share their creations over the course of a weekend in a relaxed and welcoming
-                        atmosphere. You don’t
-                        have to be a programmer and you certainly don’t have to be majoring in Computer Science. - MLH
-                    </div>
-                </div>
-
-                <div class="faq" data-aos="fade-down" itemprop="about">
-                    <div class="faq-question">What do I need to submit?</div>
-                    <div class="faq-answer">You will need to submit a 5 minute video that pitches the impact of your
-                        project's integration within the market of your
-                        choice, along with a demo.
-                    </div>
-                </div>
-
-                <div class="faq" data-aos="fade-down-left" itemprop="about">
-                    <div class="faq-question">How are projects judged?</div>
-                    <div class="faq-answer">Projects are judged based on 4 criteria: Feasibility, Uniqueness,
-                        Implementation, and Structure.
-                    </div>
-                </div>
-            </div>
-
-            <div class="faqs-container">
-                <div class="faq" data-aos="fade-right" itemprop="about audience">
-                    <div class="faq-question">Am I eligible to participate?</div>
-                    <div class="faq-answer">Anyone who is a high school student is eligible to participate. The only
-                        prerequisite for Explore Hacks is a longing to
-                        learn! You do not need to know how to code to join!
-                    </div>
-                </div>
-
-                <div class="faq" data-aos="fade-up" itemprop="about">
-                    <div class="faq-question">Do I need a team to participate?</div>
-                    <div class="faq-answer">You may have teams of up to 4 people. You do not need to sign up with a
-                        team.
-                    </div>
-                </div>
-
-                <div class="faq" data-aos="fade-left" itemprop="about isAccessibleForFree">
-                    <div class="faq-question">Do I need to pay to register?</div>
-                    <div class="faq-answer">Nope! Explore Hacks is completely free.</div>
-                </div>
-            </div>
-
-            <div class="faqs-container">
-                <div class="faq" data-aos="fade-up-right" itemprop="location">
-                    <div class="faq-question">When and where is the hackathon?</div>
-                    <div class="faq-answer">The hackathon takes place from July 23, 2021 - July 25, 2021. The hackathon
-                        will be hosted completely online!
-                    </div>
-                </div>
-
-                <div class="faq" data-aos="fade-up" itemprop="about">
-                    <div class="faq-question">What if I want to use hardware for my project?</div>
-                    <div class="faq-answer">You can. But we won’t be able to provide you with any parts.</div>
-                </div>
-
-                <div class="faq" data-aos="fade-up-left" itemprop="about">
-                    <div class="faq-question">What do I do if I have a question, not on this list?</div>
-                    <div class="faq-answer">You can email us at <span><a href="mailto:support@explorehacks.org"
-                                                                         style="color: white"> support@explorehacks.org</a></span>.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="videoWrapper gray-section">
-            <!-- Copy & Pasted from YouTube -->
-            <!-- 560 x 315 -->
-            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen data-aos="zoom-out"
-                    frameborder="0" id="video"
-                    src="https://www.youtube.com/embed/Ow6y97oQWOg"
-                    title="YouTube video player">
-            </iframe>
-
-        </section>
-
-        <section class="black-section" id="schedule" style="padding-top: 6rem">
-            <div class="schedule-title" itemprop="eventSchedule">Schedule (All Times In PDT)</div>
-            <div class="schedule" itemprop="eventSchedule">
-                <div class="schedule-day" data-aos="fade-left">
-
-                    <h2 class="schedule-date" data-aos="fade-left" itemprop="startDate">July 23rd</h2>
-                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
-                    <a style="text-decoration: none; color: white;" href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Opening Ceremony</p>
-                        </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">9:00 AM - 9:45 AM</p>
-                    </div>
-                    </a>
-
-                    <a style="text-decoration: none; color: white;" href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">
-                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
-                    <a style="text-decoration: none; color: white;" href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Team Formation</p>
-                        </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">9:45 AM - 10:10 AM</p>
-                    </div>
-                    </a>
-
-                    <div class="schedule-item-workshop" data-aos="fade-left" id="UI" itemprop="about subEvent">
-                    <a style="text-decoration: none; color: white;" href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Building Attractive UIs Workshop</p>
-                        </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">11:00 AM - 12:00 PM</p>
-                        <div
-                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
-                            <img alt="Explore Hacks Speaker Aman Mittal" class="speaker"
-                                 src="./img/speakers/Aman.jpg" style="width: 8rem; height:auto; flex-wrap: wrap;">
-                        </div>
-
-                        <div
-                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
-                            <p class="schedule-item-time" style="font-size: medium;">Aman Mittal</p>
-                            <p class="schedule-item-time summary" style="font-size: medium; margin-top: 0 !important">
-                                Developer Advocate at Draftbit</p>
-                        </div>
-                    </div>
-                    </a>
-
-                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
-                    <a style="color: white; text-decoration: none;" href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Programming Fundamentals in
-                            Python</p>
-                            </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">12:30 PM - 1:30 PM</p>
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
-                            <img alt="Explore Hacks Speaker Leo Xu" class="speaker"
-                                 src="./img/icons/ExploreHacksMoon.png"
-                                 style="width: 8rem; height:auto; flex-wrap: wrap;">
-                        </div>
-
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
-                            <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Explore Hacks
-                                Team</p>
-                        </div>
-                    </div>
-                    </a>
-
-                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
-                    <a style="text-decoration: none; color: white;" href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Building a Cloud-Connected AR/VR App</p>
-                        </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">2:00 PM - 2:45 PM</p>
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
-                            <img alt="Explore Hacks Speaker Alon Grinshpoon" class="speaker"
-                                 src="./img/speakers/Alon.png" style="width: 8rem; height:auto; flex-wrap: wrap;">
-                        </div>
-
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
-                            <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Alon Grinshpoon</p>
-                            <p class="schedule-item-time summary" style="font-size: medium; margin-top: 0 !important">
-                                CEO & Founder of echoAR</p>
-                        </div>
-                    </div>
-                    </a>
-
-                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
-                    <a style="text-decoration: none; color: white;" href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
-                    <p class="schedule-item-heading" itemprop="about subEvent">Entrepreneurship Workshop</p>
-                    </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">4:00 PM - 5:00 PM</p>
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
-                            <img alt="Explore Hacks Speaker Jamie Beaton" class="speaker"
-                                 src="./img/speakers/Jamie.png" style="width: 8rem; height:auto; flex-wrap: wrap;">
-                        </div>
-
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
-                            <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Jamie Beaton</p>
-                            <p class="schedule-item-time summary" style="font-size: medium; margin-top: 0 !important">
-                                CEO &
-                                Co-Founder of Crimson Education</p>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
-                        <a style="text-decoration: none; color: white;" href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Techniques to Improve your Programming Skills</p>
-                        </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">5:30 PM - 6:30 PM</p>
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
-                            <img alt="Explore Hacks Speaker Jamie Beaton" class="speaker"
-                                 src="./img/speakers/codeone.png" style="width: 8rem; height:auto; flex-wrap: wrap;">
-                        </div>
-
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
-                            <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Niranjan Mathirajan & Dhanish Natarajan</p>
-                        </div>
-                    </div>
-
-                    
-                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
-                    <a style="text-decoration: none; color: white;" href="https://explorehacks.org/discord">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Game Night 🎮
-                        </p>
-                        </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">8:00 PM - 9:00 PM</p>
-                    </div>
-                </div>
-
-                <div class="schedule-day" data-aos="fade-down">
-                    <h2 class="schedule-date" data-aos="fade-down" itemprop="startDate">July 24th</h2>
-
-                    <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
-                    <a style="text-decoration: none; color: white;" href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Computer Vision Fundamentals</p>
-                        </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">9:00 AM - 10:00 AM</p>
-
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
-                            <img alt="Explore Hacks Speaker Noah Anderson" class="speaker"
-                                 src="./img/speakers/noah.png" style="width: 8rem; height:auto; flex-wrap: wrap;">
-                        </div>
-
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
-                            <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Noah
-                                Anderson</p>
-                            <p class="schedule-item-time summary" style="font-size: medium; margin-top: 0 !important">
-                                CS Undergrad at Stanford studying Computer Vision </p>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
-                    <a style="text-decoration: none; color: white;" href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Introduction to Database Design</p>
-                        </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">11:00 AM - 12:00 PM</p>
-
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
-                            <img alt="Explore Hacks Speaker Ani Ravi" class="speaker"
-                                 src="./img/speakers/ani.jpeg" style="width: 8rem; height:8rem; flex-wrap: wrap;">
-                        </div>
-
-                        <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
-                            <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Ani Ravi</p>
-                            <p class="schedule-item-time summary" style="font-size: medium; margin-top: 0 !important">
-                                Software Engineer at Zendoor </p>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
-                    <a style="text-decoration: none; color: white;" href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Game Night</p>
-                        </a>
-                        <p class="schedule-item-time" itemprop="startDate endDate">8:00 PM - 9:00 PM</p>
-                    </div>
-                </div>
-
-                <div class="schedule-day" data-aos="fade-left">
-                    <h2 class="schedule-date" data-aos="fade-left" itemprop="startDate">July 25th</h2>
-
-                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Submissions</p>
-                        <p class="schedule-item-time" itemprop="startDate endDate">9:00 AM - 11:00 AM</p>
-                    </div>
-
-                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Judging</p>
-                        <p class="schedule-item-time" itemprop="startDate endDate">11:00 AM - 3:00 PM</p>
-                    </div>
-
-                    <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
-                        <p class="schedule-item-heading" itemprop="about subEvent">Closing Ceremony</p>
-                        <p class="schedule-item-time" itemprop="startDate endDate">8:00 PM - 9:00 PM</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script>
-            var hslColors = [
-                [231, 40, 15, 8],
-                [231, 40, 15, 3],
-                [231, 40, 15, 3]
-            ]
-            var i = 0;
-            var hue = hslColors[i][0];
-            var saturation = hslColors[i][1];
-            var value = hslColors[i][2];
-            var count = 0;
-            $('.schedule-item-workshop').each(function () {
-                count++;
-                if (count > hslColors[i][3]) {
-                    i++;
-                    hue = hslColors[i][0];
-                    saturation = hslColors[i][1];
-                    value = hslColors[i][2];
-                    count = 1;
-                }
-                value += 5;
-                var hsvText = "hsl(" + hue + "," + saturation + "%," + value + "%)";
-                $(this).css({
-                    "background-color": hsvText
-                });
-            });
-        </script>
-        <section class="gray-section" id="team" style="padding-top: 6rem"> 
-
-            <div class="team-title" data-aos="zoom-out">Speakers / Mentors</div>
-            <div class="speaker-container" data-aos="zoom-out" itemprop="event speaker"
-                 style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
-                <div class="team-container" data-aos="zoom-out">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/speakers/Aman.jpg">
-                    <div style="text-align:center;">
-                        <h3 class="speaker-text">Aman Mittal</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">Developer Advocate at
-                            <br>
-                            Draftbit</h3>
-                    </div>
-                </div>
-                <div class="team-container" data-aos="zoom-out">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/speakers/Jamie.png">
-                    <div style="text-align:center;">
-                        <h3 class="speaker-text">Jamie Beaton</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">CEO & Co-Founder of <br>
-                            Crimson Education</h3>
-                    </div>
-                </div>
-                <div class="team-container" data-aos="zoom-out">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/speakers/Alon.png">
-                    <div style="text-align:center;">
-                        <h3 class="speaker-text">Alon Grinshpoon</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">CEO & Founder of <br>
-                            echoAR</h3>
-                    </div>
-                </div>
-                <div class="team-container" data-aos="zoom-out">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/speakers/tao.jpg">
-                    <div style="text-align:center;">
-                        <h3 class="speaker-text">Tao Xu</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">Member of Techinal Staff at <br>
-                            OpenAI</h3>
-                    </div>
-                </div>
-                <div class="team-container">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/speakers/noah.png">
-                    <div style="text-align:center;">
-                        <h3 class="speaker-text">Noah Anderson</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">CS Undergrad at Stanford
-                            <br>studying Computer Vision</h3>
-                    </div>
-                </div>
-                <div class="team-container" data-aos="zoom-out">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/speakers/roger.jpeg">
-                    <div style="text-align:center;">
-                        <h3 class="speaker-text">Roger Xu</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">Principal Engineer at
-                            <br>Apple</h3>
-                    </div>
-                </div>
-                <div class="team-container" data-aos="zoom-out">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/speakers/ani.jpeg">
-                    <div style="text-align:center;">
-                        <h3 class="speaker-text">Ani Ravi</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">Software Engineer at<br>
-                            Zendoor
-                    </div>
-                </div>
-            </div>
-            <div class='team-title' data-aos="zoom-out">Judges</div>
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;padding-bottom: 60px;">
-                <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/judges/dmytro.jpg">
-                    <div style="text-align:center;">
-                        <h3 class="team-text">Dmytro Budym</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">Software Development
-                            Engineer in Test, airSlate</h3>
-                    </div>
-                </div>
-                <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/judges/Sergei.jpg">
-                    <div style="text-align:center;">
-                        <h3 class="team-text">Sergei Golitsyn</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">Senior Software Engineer
-                            at
-                            Zillion Whales</h3>
-                    </div>
-                </div>
-                <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/judges/Anh.jpeg">
-                    <div style="text-align:center;">
-                        <h3 class="team-text">Anh Khoa Tran</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">Founder of VSPACE
-                            Education</h3>
-                    </div>
-                </div>
-                <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
-                    <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/judges/Smaranjit.jpg">
-                    <div style="text-align:center;">
-                        <h3 class="team-text">Smaranjit Ghose</h3>
-                        <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">MS Data Science at
-                            Columbia
-                            University</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-subtitle" data-aos="zoom-out">Lead Organizers</div>
-            <div class="team-co-founders">
-
-                <div class="team-co-founder" data-aos="zoom-in" itemprop="director organizer">
-                    <img alt="Program Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/team/Leo.jpg">
-                    <div class="" style="text-align:center;">
-                        <h3 class="team-text">Leo Xu</h3>
-                        <h3 class="speaker-desc">Program Lead</h3>
-                    </div>
-                </div>
-
-                <div class="team-co-founder" data-aos="zoom-in" itemprop="director organizer">
-                    <img alt="General Manager of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/team/Danny.jpg">
-                    <div class="" style="text-align:center;">
-                        <h3 class="team-text">Dhanish Natarajan</h3>
-                        <h3 class="speaker-desc">General Manager</h3>
-                    </div>
-                </div>
-
-                <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
-                    <img alt="Website Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/team/Niranjan.jpg">
-                    <div class="" style="text-align:center;">
-                        <h3 class="team-text">Niranjan Mathirajan</h3>
-                        <h3 class="speaker-desc">Website Lead</h3>
-                    </div>
-                </div>
-
-                <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
-                    <img alt="UI Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/team/David.jpg">
-                    <div class="" style="text-align:center;">
-                        <h3 class="team-text">David Phillips</h3>
-                        <h3 class="speaker-desc">UI Lead</h3>
-                    </div>
-                </div>
-
-                <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
-                    <img alt="Marketing Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/team/Sanved.jpg">
-                    <div class="" style="text-align:center;">
-                        <h3 class="team-text">Sanved Doshi</h3>
-                        <h3 class="speaker-desc">Marketing Lead</h3>
-                    </div>
-                </div>
-
-                <div class="team-lead-organizer" data-aos="zoom-in">
-                    <img alt="Kaustubh-Khulbe-Img" class="team-img img-fluid border-radius-0 judge-img"
-                         src="img/team/Kaustubh.png">
-                    <div class="" style="text-align:center;">
-                        <h3 class="team-text">Kaustubh Khulbe</h3>
-                        <h3 class="speaker-desc">Content Developer</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="team-subtitle" data-aos="zoom-out">Contributors</div>
-            <div class="team-co-founders" style="height: 10rem;flex: 1 1 0">
-                <h3 class="contributer-text" data-aos="zoom-out">Anna Wang</h3>
-                <h3 class="contributer-text" data-aos="zoom-out">Grace Jin</h3>
-            </div>
-        </section>
-
-        <section class="sponsors" id="sponsor">
-            <h2 class="sponsors-title" data-aos="fade-up">Sponsors</h2>
-            <p class="sponsors-subtitle" data-aos="fade-up" style="color: black">Thank you to all our sponsors for
-                supporting Explore Hacks!
-            </p>
-            <div class="image-grid" data-aos="fade-left" itemprop="sponsor funder">
-                <div class="silver-item">
-                    <a href="https://www.digitalocean.com/" target="_blank"><img alt="Digital Ocean"
-                                                                                 class="silver-image"
-                                                                                 src="img/sponsors/digitalocean.png"
-                                                                                 style="max-width:100%; max-height:100%;"/></a>
-                </div>
-                <div class="silver-item">
-                    <a href="https://www.crimsoneducation.org/us/" target="_blank"><img alt="Crimson Education"
-                                                                                        class="silver-image"
-                                                                                        src="img/sponsors/crimson.png"
-                                                                                        style="max-width:100%; max-height:100%;"/></a>
-                </div>
-                <div class="silver-item">
-                    <a href="https://www.inspiritai.com/" target="_blank"><img alt="InspiritAI" class="silver-image"
-                                                                               src="img/sponsors/inspiritai.png"
-                                                                               style="max-width:100%; max-height:100%;"/></a>
-                </div>
-
-                <div class="silver-item">
-                    <a href="https://stickermule.com" target="_blank"><img alt="Stickermule" class="silver-image"
-                                                                           src="img/sponsors/StickerMule.png"
-                                                                           style="max-width:100%; max-height:100%;"/></a>
-                </div>
-
-                <div class="silver-item">
-                    <a href="https://www.rstudio.com/" target="_blank"><img alt="RStudio" class="silver-image"
-                                                                               src="img/sponsors/RStudio.png"
-                                                                               style="max-width:100%; max-height:100%;"/></a>
-                </div>
-
-                <div class="silver-item">
-                    <a href="https://slingshotahead.com/" target="_blank"><img alt="Slingshot" class="silver-image"
-                                                                               src="img/sponsors/slingshot.png"
-                                                                               style="max-width:100%; max-height:100%;"/></a>
-                </div>
-
-            </div>
-            <div class="image-grid" data-aos="fade-right">
-                <div class="bronze-item" itemprop="sponsor funder">
-                    <a href="https://www.sketch.com/" target="_blank"><img alt="Sketch" class="bronze-image"
-                                                                           src="img/sponsors/sketch.png"
-                                                                           style="max-width:100%; max-height:100%;"/></a>
-                </div>
-                <div class="bronze-item" itemprop="sponsor funder">
-                    <a href="https://www.echoar.xyz/" target="_blank"><img alt="echoAR"
-                                                                           class="bronze-image"
-                                                                           src="img/sponsors/echoar.png"
-                                                                           style="max-width:100%; max-height:100%;"/></a>
-                </div>
-                <div class="bronze-item" itemprop="sponsor funder">
-                    <a href="https://draftbit.com/" target="_blank"><img alt="Draftbit"
-                                                                         class="bronze-image"
-                                                                         src="img/sponsors/draftbit.png"
-                                                                         style="max-width:100%; max-height:100%;"/></a>
-                </div>
-                <div class="bronze-item" itemprop="sponsor funder">
-                    <a href="https://replit.com/" target="_blank"><img alt="Replit"
-                                                                       class="bronze-image"
-                                                                       src="img/sponsors/replit.png"
-                                                                       style="max-width:100%; max-height:100%;"/></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- this is actually partners section haha-->
-        <section class="partners">
-            <h2 class="partners-title" data-aos="fade-up">Partners</h2>
-            <div class="image-grid2" data-aos="fade-right">
-                <div class="bronze-item" itemprop="sponsor funder">
-                    <a href="https://discord.gg/KDkKKBDHkM" target="_blank"><img alt="Bay Area Hackathons"
-                                                                                 class="bronze-image"
-                                                                                 src="img/partners/bahacks.png"
-                                                                                 style="max-width:93%; max-height:93%;"/></a>
-                </div>
-            </div>
-        </section>
-    </article>
-
-    <footer class="footer gray-section">
-        <div class="smicons">
-            <a class="smicon" href="https://www.instagram.com/explore_hacks/" target="_blank"><img
-                    alt="Explore Hacks' Instagram"
-                    class="smimage"
-                    src="img/icons/black-instagram.svg">
-                <span>Instagram</span></a>
-            <a class="smicon" href="https://explorehacks.devpost.com/" target="_blank"><img alt="Explore Hacks' Devpost"
-                                                                                            class="smimage"
-                                                                                            src="img/icons/embed-code.svg"><span>Devpost</span></a>
-            <a class="smicon" href="https://discord.gg/WGqgdCwFb2" target="_blank"><img
-                    alt="Explore Hacks' Discord Server"
-                    class="smimage"
-                    src="img/icons/Discord-Logo-Black.svg"><span>Discord</span></a>
-            <a class="smicon" href="https://www.linkedin.com/company/explore-hacks/about/" target="_blank"><img
-                    alt="Explore Hacks' LinkedIn"
-                    class="smimage" src="img/icons/linkedin-round-line.svg"><span>LinkedIn</span></a>
-            <a class="smicon" href="https://medium.com/@explorehacks" target="_blank"><img alt="Explore Hacks' Medium"
-                                                                                           class="smimage"
-                                                                                           src="img/icons/Artboard 1.svg"><span> Medium </span></a>
+    <canvas id="Totally_Not_Suspicious_Random_Canvas_😏🤫"></canvas>
+    <canvas id="canvas" resize hidpi="off" style="background:black"></canvas>
+    <div id="info">
+        <div style="height: 1800px !important">
         </div>
-        <p class="footer-text">
-            Questions? Contact us at <a href="mailto:support@explorehacks.org" style="color: white">support@explorehacks.org</a><br>
-        </p>
-    </footer>
-</main>
+    </div>
+    <!--     Loading Screen Div-->
+    <div class="holder">
+        <div class="preloader__dots">
+            <span class="preloader__dot"></span>
+        </div>
+    </div>
+
+    <main class="main" role="main">
+        <article itemscope itemtype="https://schema.org/Hackathon">
+            <section class="intro" id="signup">
+                <div class="banner-container">
+                    <div style="z-index: 550; position: absolute;">
+                        <a href="https://econhacks.org/"><img class="banner-logo"
+                                src="/img/custom/EconHacksLogoTransparent.png" alt="EconHacksLogo"></a>
+                        <p class="team-text banner-text"
+                            style="z-index: 550; position: relative; font-size: 1.25rem; text-align: center; margin-top: 0; margin-bottom: 0; margin-left: 0.5rem; margin-right: 0.5rem;">
+                            Supported by EconHacks</p>
+                    </div>
+                    <img style="z-index: 1; position: absolute;" src="./img/custom/banner.svg">
+                </div>
+                <div class="intro-bg" id="intro-bg"></div>
+                <img alt="Explore Hacks Banner" class="intro-planet1" id="intro-planet1" src="img/custom/Planet1.png">
+                <a href="https://www.youtube.com/watch?v=QtBDL8EiNZo">
+                    <img alt="Explore Hacks Banner" class="intro-planet2" id="intro-planet2"
+                        src="img/custom/Planet2.png">
+                </a>
+                <img alt="Explore Hacks Banner" class="intro-rocket" id="intro-rocket"
+                    src="img/custom/RocketWithTrailLong.png">
+                <img alt="Explore Hacks Logo" class="intro-logo" id="intro-logo" itemprop="name"
+                    src="img/icons/ExploreHacksLogo.png">
+                <div class="date-and-button" id="date-and-button">
+                    <div class="intro-date" id="intro-date" itemprop="startDate endDate" style="margin-right: 20px;">
+                        July
+                        23rd-25th
+                    </div>
+                    <div>
+                        <a class="btn btn-outline btn-xl btn-light typeform-share button intro-button" data-mode="popup"
+                            data-size="100" href="https://form.typeform.com/to/l0o6ccNW?typeform-medium=embed-snippet"
+                            id="intro-button" rel="noopener" target="_blank" type="button">Interested?</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="intro-2 black-section">
+                <div class="intro-2-container">
+                    <div class="intro-3-title" data-aos="fade-up"> What is Explore Hacks and why should I join?</div>
+                    <p class="intro-2-description" data-aos="fade-up"
+                        itemprop="about description isAccessibleForFree audience duration"
+                        style="font-size: medium; line-height: 2;">
+                        Explore Hacks is a 3-day hackathon that aims to grant both experienced and beginner student
+                        programmers the chance to explore the process of ideation to product execution. Participants
+                        will
+                        gain the
+                        opportunity to learn through a variety of workshops and mini-events, allowing them to traverse
+                        the
+                        different fields of Computer Science. Best of all, Explore Hacks is 100% free!
+                    </p>
+
+                    <div class="stats" data-aos="flip-up">
+                        <div class="prizes" itemprop="offers">
+                            <p class="prizes-text" data-target="8000"><span class="stats-symbol">$</span>8000<span
+                                    class="stats-symbol">+</span></p>
+                            <p class="stats-title">In prizes</p>
+                        </div>
+                        <div class="workshops" itemprop="subEvent">
+                            <p class="workshops-text" data-target="15">15<span class="stats-symbol">+</span></p>
+                            <p class="stats-title">Mini Events</p>
+                        </div>
+
+                        <div class="particpants">
+                            <p class="participants-text" data-target="400">400<span class="stats-symbol">+</span></p>
+                            <p class="stats-title" itemprop="attendee">Participants from around the world</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            style="display: flex; justify-content: center; align-items: space-between; flex-wrap: wrap;margin-left: auto; margin-right: auto">
+                            <div data-aos="fade-right" style=" max-width: 420px;">
+                                <img id="0" alt="Attend workshops in Explore Hacks" itemprop="potentialAction offers"
+                                    src="img/opportunities/1.png">
+                            </div>
+                            <div data-aos="fade-up" style=" max-width: 420px;">
+                                <img id="1" alt="Participate in Speaker Events" itemprop="potentialAction offers"
+                                    src="img/opportunities/2.png">
+                            </div>
+                        </div>
+                        <div
+                            style="display: flex; justify-content: center; flex-wrap: wrap; margin-left: auto; margin-right: auto">
+                            <div data-aos="fade-down" style=" max-width: 420px;">
+                                <img id="2" alt="Collaborate with each other in Explore Hacks"
+                                    itemprop="potentialAction offers" src="img/opportunities/3.png">
+                            </div>
+                            <div data-aos="fade-left" style=" max-width: 420px;">
+                                <img id="3" alt="Make an impact on the future by attending Explore Hacks"
+                                    itemprop="potentialAction offers" src="img/opportunities/4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="intro-3 gray-section">
+                <div class="intro-3-container">
+                    <div class="intro-3-title" data-aos="fade-up">What will I need to do?
+                    </div>
+                    <p class="intro-3-description" data-aos="fade-up" itemprop="description about potentialAction"
+                        style="font-size: medium; line-height: 2;">
+                        <b>Address the Prompt: Create a project that solves a current issue in the world and has a
+                            lasting impact on a market of your choice in the future.</b>
+                    </p>
+                    <p class="intro-3-description" data-aos="fade-up" itemprop="description about potentialAction"
+                        style="font-size: medium; line-height: 2;">
+                        You will need to create a project and submit a 5-minute video that demos your project and
+                        pitches
+                        the impact its integration within the market of your
+                        choice. Upon submission, you must add a URL to your publicly visible code/repository. All
+                        submissions will be made through <a
+                            href="https://explorehacks.devpost.com/?ref_feature=challenge&ref_medium=discover"
+                            style="color: lightblue; text-decoration: none">Devpost.</a>
+                    </p>
 
 
-<!--    JS to load preloader until website loads-->
-<script>
-    let loadingWrapper = document.querySelector('.holder')
-    let dots = document.querySelector('.preloader__dots')
-    window.addEventListener('load', function () {
-        dots.style.animation = "fadeOut 1s";
-        loadingWrapper.style.animation = "fadeOut 1s";
-        setTimeout(() => loadingWrapper.style.display = "none", 1000);
-    })
-</script>
-<!--<nav class="navbar">
+                    <p class="intro-3-description" data-aos="fade-up" itemprop="description about potentialAction"
+                        style="font-size: medium; line-height: 2;">
+                        Your project will be judged based on the following criteria, with the grading rubric attached <a
+                            style="color: white;"
+                            href="https://drive.google.com/file/d/10EB9JVfHhe5w7fgFgL_MkKNKDSuMaOmk/view?usp=sharing">here</a>.
+                    </p>
+
+                    <div
+                        style="display:flex; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; padding: 20px; flex-wrap: wrap;">
+                        <div class="equal 0" data-aos="fade-right" itemprop="about"
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
+                            <i class="fas fa-balance-scale fa-7x space 0" style="color: #82AAFF"></i>
+                            <p class="0" style="color: #82AAFF; font-size: medium;">Feasibility</p>
+                        </div>
+
+                        <div class="equal 1" data-aos="fade-down"
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
+                            <i class="far fa-lightbulb fa-7x space 1" style="color: #8772AD"></i>
+                            <p class="1" style="color: #8772AD; font-size: medium;">Uniqueness</p>
+                        </div>
+
+                        <div class="equal 2" data-aos="fade-up"
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
+                            <i class="fas fa-cogs fa-7x space 2" style="color: #BC9EC7"></i>
+                            <p class="2" style="color: #BC9EC7; font-size: medium;">Implementation</p>
+                        </div>
+
+                        <div class="equal 3" data-aos="fade-left"
+                            style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-left: 45px; padding-right: 45px;">
+                            <i class="fas fa-file-code fa-7x space 3" style="color: #CC6686"></i>
+                            <p class="3" style="color: #CC6686; font-size: medium;">Structure</p>
+                        </div>
+                    </div>
+
+                    <p class="intro-3-description" data-aos="fade-up" itemprop="description about potentialAction"
+                        style="font-size: medium; line-height: 2;">
+                        You may participate in a team with your friends (1 - 4 people per team).
+                    </p>
+
+                    <p class="intro-3-description" data-aos="fade-up" itemprop="description about potentialAction"
+                        style="font-size: medium; line-height: 2;">
+                        <b>Please be sure to stay active on our <a href="https://explorehacks.org/discord"
+                                style="color: lightblue; text-decoration: none;">Discord
+                                Server</a>, so that you don't miss out on any important announcements!</b>
+                    </p>
+                </div>
+            </section>
+
+            <section class="faqs black-section" id="faqs">
+                <div class="faqs-title">FAQs</div>
+                <div class="faqs-container">
+                    <div class="faq" data-aos="fade-down-right" itemprop="about">
+                        <div class="faq-question">What is a hackathon?</div>
+                        <div class="faq-answer">A hackathon is best described as an “invention marathon”. Anyone who has
+                            an
+                            interest in technology attends a hackathon
+                            to learn, build & share their creations over the course of a weekend in a relaxed and
+                            welcoming
+                            atmosphere. You don’t
+                            have to be a programmer and you certainly don’t have to be majoring in Computer Science. -
+                            MLH
+                        </div>
+                    </div>
+
+                    <div class="faq" data-aos="fade-down" itemprop="about">
+                        <div class="faq-question">What do I need to submit?</div>
+                        <div class="faq-answer">You will need to submit a 5 minute video that pitches the impact of your
+                            project's integration within the market of your
+                            choice, along with a demo.
+                        </div>
+                    </div>
+
+                    <div class="faq" data-aos="fade-down-left" itemprop="about">
+                        <div class="faq-question">How are projects judged?</div>
+                        <div class="faq-answer">Projects are judged based on 4 criteria: Feasibility, Uniqueness,
+                            Implementation, and Structure.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faqs-container">
+                    <div class="faq" data-aos="fade-right" itemprop="about audience">
+                        <div class="faq-question">Am I eligible to participate?</div>
+                        <div class="faq-answer">Anyone who is a high school student is eligible to participate. The only
+                            prerequisite for Explore Hacks is a longing to
+                            learn! You do not need to know how to code to join!
+                        </div>
+                    </div>
+
+                    <div class="faq" data-aos="fade-up" itemprop="about">
+                        <div class="faq-question">Do I need a team to participate?</div>
+                        <div class="faq-answer">You may have teams of up to 4 people. You do not need to sign up with a
+                            team.
+                        </div>
+                    </div>
+
+                    <div class="faq" data-aos="fade-left" itemprop="about isAccessibleForFree">
+                        <div class="faq-question">Do I need to pay to register?</div>
+                        <div class="faq-answer">Nope! Explore Hacks is completely free.</div>
+                    </div>
+                </div>
+
+                <div class="faqs-container">
+                    <div class="faq" data-aos="fade-up-right" itemprop="location">
+                        <div class="faq-question">When and where is the hackathon?</div>
+                        <div class="faq-answer">The hackathon takes place from July 23, 2021 - July 25, 2021. The
+                            hackathon
+                            will be hosted completely online!
+                        </div>
+                    </div>
+
+                    <div class="faq" data-aos="fade-up" itemprop="about">
+                        <div class="faq-question">What if I want to use hardware for my project?</div>
+                        <div class="faq-answer">You can. But we won’t be able to provide you with any parts.</div>
+                    </div>
+
+                    <div class="faq" data-aos="fade-up-left" itemprop="about">
+                        <div class="faq-question">What do I do if I have a question, not on this list?</div>
+                        <div class="faq-answer">You can email us at <span><a href="mailto:support@explorehacks.org"
+                                    style="color: white"> support@explorehacks.org</a></span>.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="videoWrapper gray-section">
+                <!-- Copy & Pasted from YouTube -->
+                <!-- 560 x 315 -->
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen data-aos="zoom-out" frameborder="0" id="video"
+                    src="https://www.youtube.com/embed/Ow6y97oQWOg" title="YouTube video player">
+                </iframe>
+
+            </section>
+
+            <section class="black-section" id="schedule" style="padding-top: 6rem">
+                <div class="schedule-title" itemprop="eventSchedule">Schedule (All Times In PDT)</div>
+                <div class="schedule" itemprop="eventSchedule">
+                    <div class="schedule-day" data-aos="fade-left">
+
+                        <h2 class="schedule-date" data-aos="fade-left" itemprop="startDate">July 23rd</h2>
+                        <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Opening Ceremony</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">9:00 AM - 9:45 AM</p>
+                        </div>
+                        </a>
+
+                        <a style="text-decoration: none; color: white;"
+                            href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                            <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                                <a style="text-decoration: none; color: white;"
+                                    href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                    <p class="schedule-item-heading" itemprop="about subEvent">Team Formation</p>
+                                </a>
+                                <p class="schedule-item-time" itemprop="startDate endDate">9:45 AM - 10:10 AM</p>
+                            </div>
+                        </a>
+
+                        <div class="schedule-item-workshop" data-aos="fade-left" id="UI" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Building Attractive UIs
+                                    Workshop</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">11:00 AM - 12:00 PM</p>
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                                <img alt="Explore Hacks Speaker Aman Mittal" class="speaker"
+                                    src="./img/speakers/Aman.jpg" style="width: 8rem; height:auto; flex-wrap: wrap;">
+                            </div>
+
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
+                                <p class="schedule-item-time" style="font-size: medium;">Aman Mittal</p>
+                                <p class="schedule-item-time summary"
+                                    style="font-size: medium; margin-top: 0 !important">
+                                    Developer Advocate at Draftbit</p>
+                            </div>
+                        </div>
+                        </a>
+
+                        <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Opening Ceremony</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">12:30 PM - 1:30 PM</p>
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                                <img alt="Explore Hacks Speaker Leo Xu" class="speaker"
+                                    src="./img/icons/ExploreHacksMoon.png"
+                                    style="width: 8rem; height:auto; flex-wrap: wrap;">
+                            </div>
+
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
+                                <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Explore
+                                    Hacks
+                                    Team</p>
+                            </div>
+                        </div>
+                        </a>
+
+                        <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Building a Cloud-Connected
+                                    AR/VR App</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">2:00 PM - 2:45 PM</p>
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                                <img alt="Explore Hacks Speaker Alon Grinshpoon" class="speaker"
+                                    src="./img/speakers/Alon.png" style="width: 8rem; height:auto; flex-wrap: wrap;">
+                            </div>
+
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
+                                <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Alon
+                                    Grinshpoon</p>
+                                <p class="schedule-item-time summary"
+                                    style="font-size: medium; margin-top: 0 !important">
+                                    CEO & Founder of echoAR</p>
+                            </div>
+                        </div>
+                        </a>
+
+                        <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Entrepreneurship Workshop</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">4:00 PM - 5:00 PM</p>
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                                <img alt="Explore Hacks Speaker Jamie Beaton" class="speaker"
+                                    src="./img/speakers/Jamie.png" style="width: 8rem; height:auto; flex-wrap: wrap;">
+                            </div>
+
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
+                                <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Jamie Beaton
+                                </p>
+                                <p class="schedule-item-time summary"
+                                    style="font-size: medium; margin-top: 0 !important">
+                                    CEO &
+                                    Co-Founder of Crimson Education</p>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Techniques to Improve your
+                                    Programming Skills</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">5:30 PM - 6:30 PM</p>
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                                <img alt="Explore Hacks Speaker Jamie Beaton" class="speaker"
+                                    src="./img/speakers/codeone.png" style="width: 8rem; height:auto; flex-wrap: wrap;">
+                            </div>
+
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
+                                <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Niranjan
+                                    Mathirajan & Dhanish Natarajan</p>
+                            </div>
+                        </div>
+
+
+                        <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;" href="https://explorehacks.org/discord">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Game Night 🎮
+                                </p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">8:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day" data-aos="fade-down">
+                        <h2 class="schedule-date" data-aos="fade-down" itemprop="startDate">July 24th</h2>
+
+                        <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Computer Vision Fundamentals
+                                </p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">9:00 AM - 10:00 AM</p>
+
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                                <img alt="Explore Hacks Speaker Noah Anderson" class="speaker"
+                                    src="./img/speakers/noah.png" style="width: 8rem; height:auto; flex-wrap: wrap;">
+                            </div>
+
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
+                                <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Noah
+                                    Anderson</p>
+                                <p class="schedule-item-time summary"
+                                    style="font-size: medium; margin-top: 0 !important">
+                                    CS Undergrad at Stanford studying Computer Vision </p>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Introduction to Database
+                                    Design</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">11:00 AM - 12:00 PM</p>
+
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap;">
+                                <img alt="Explore Hacks Speaker Ani Ravi" class="speaker" src="./img/speakers/ani.jpeg"
+                                    style="width: 8rem; height:8rem; flex-wrap: wrap;">
+                            </div>
+
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; max-width: 100%; flex-wrap: wrap; flex-direction: column;">
+                                <p class="schedule-item-time" itemprop="sponsor" style="font-size: medium;">Ani Ravi</p>
+                                <p class="schedule-item-time summary"
+                                    style="font-size: medium; margin-top: 0 !important">
+                                    Software Engineer at Zendoor </p>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item-workshop" data-aos="fade-down" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Game Night</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">8:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day" data-aos="fade-left">
+                        <h2 class="schedule-date" data-aos="fade-left" itemprop="startDate">July 25th</h2>
+
+                        <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Submissions</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">9:00 AM - 11:00 AM</p>
+                        </div>
+
+                        <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Judging</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">11:00 AM - 3:00 PM</p>
+                        </div>
+
+                        <div class="schedule-item-workshop" data-aos="fade-left" itemprop="about subEvent">
+                            <a style="text-decoration: none; color: white;"
+                                href="https://hackclub.zoom.us/j/96032791715?pwd=cld5Vk1GR1oxTnpvbVFjYXRIbCtvUT09">
+                                <p class="schedule-item-heading" itemprop="about subEvent">Closing Ceremony</p>
+                            </a>
+                            <p class="schedule-item-time" itemprop="startDate endDate">8:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                var hslColors = [
+                    [231, 40, 15, 8],
+                    [231, 40, 15, 3],
+                    [231, 40, 15, 3]
+                ]
+                var i = 0;
+                var hue = hslColors[i][0];
+                var saturation = hslColors[i][1];
+                var value = hslColors[i][2];
+                var count = 0;
+                $('.schedule-item-workshop').each(function () {
+                    count++;
+                    if (count > hslColors[i][3]) {
+                        i++;
+                        hue = hslColors[i][0];
+                        saturation = hslColors[i][1];
+                        value = hslColors[i][2];
+                        count = 1;
+                    }
+                    value += 5;
+                    var hsvText = "hsl(" + hue + "," + saturation + "%," + value + "%)";
+                    $(this).css({
+                        "background-color": hsvText
+                    });
+                });
+            </script>
+            <section class="gray-section" id="team" style="padding-top: 6rem">
+
+                <div class="team-title" data-aos="zoom-out">Speakers / Mentors</div>
+                <div class="speaker-container" data-aos="zoom-out" itemprop="event speaker"
+                    style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                    <div class="team-container" data-aos="zoom-out">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/speakers/Aman.jpg">
+                        <div style="text-align:center;">
+                            <h3 class="speaker-text">Aman Mittal</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">Developer Advocate
+                                at
+                                <br>
+                                Draftbit
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="team-container" data-aos="zoom-out">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/speakers/Jamie.png">
+                        <div style="text-align:center;">
+                            <h3 class="speaker-text">Jamie Beaton</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">CEO & Co-Founder of
+                                <br>
+                                Crimson Education
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="team-container" data-aos="zoom-out">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/speakers/Alon.png">
+                        <div style="text-align:center;">
+                            <h3 class="speaker-text">Alon Grinshpoon</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">CEO & Founder of
+                                <br>
+                                echoAR
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="team-container" data-aos="zoom-out">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/speakers/tao.jpg">
+                        <div style="text-align:center;">
+                            <h3 class="speaker-text">Tao Xu</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">Member of Techinal
+                                Staff at <br>
+                                OpenAI</h3>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/speakers/noah.png">
+                        <div style="text-align:center;">
+                            <h3 class="speaker-text">Noah Anderson</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">CS Undergrad at
+                                Stanford
+                                <br>studying Computer Vision
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="team-container" data-aos="zoom-out">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/speakers/roger.jpeg">
+                        <div style="text-align:center;">
+                            <h3 class="speaker-text">Roger Xu</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">Principal Engineer
+                                at
+                                <br>Apple
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="team-container" data-aos="zoom-out">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/speakers/ani.jpeg">
+                        <div style="text-align:center;">
+                            <h3 class="speaker-text">Ani Ravi</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%; ">Software Engineer
+                                at<br>
+                                Zendoor
+                        </div>
+                    </div>
+                </div>
+                <div class='team-title' data-aos="zoom-out">Judges</div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;padding-bottom: 60px;">
+                    <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/judges/dmytro.jpg">
+                        <div style="text-align:center;">
+                            <h3 class="team-text">Dmytro Budym</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">Software Development
+                                Engineer in Test, airSlate</h3>
+                        </div>
+                    </div>
+                    <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/judges/Sergei.jpg">
+                        <div style="text-align:center;">
+                            <h3 class="team-text">Sergei Golitsyn</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">Senior Software
+                                Engineer
+                                at
+                                Zillion Whales</h3>
+                        </div>
+                    </div>
+                    <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/judges/Anh.jpeg">
+                        <div style="text-align:center;">
+                            <h3 class="team-text">Anh Khoa Tran</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">Founder of VSPACE
+                                Education</h3>
+                        </div>
+                    </div>
+                    <div class="judge-container" data-aos="zoom-out" itemprop="event judges">
+                        <img alt="Event Speaker in Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/judges/Smaranjit.jpg">
+                        <div style="text-align:center;">
+                            <h3 class="team-text">Smaranjit Ghose</h3>
+                            <h3 class="speaker-desc" style="margin-bottom: 0; padding-bottom: 5%;">MS Data Science at
+                                Columbia
+                                University</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-subtitle" data-aos="zoom-out">Lead Organizers</div>
+                <div class="team-co-founders">
+
+                    <div class="team-co-founder" data-aos="zoom-in" itemprop="director organizer">
+                        <img alt="Program Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/team/Leo.jpg">
+                        <div class="" style="text-align:center;">
+                            <h3 class="team-text">Leo Xu</h3>
+                            <h3 class="speaker-desc">Program Lead</h3>
+                        </div>
+                    </div>
+
+                    <div class="team-co-founder" data-aos="zoom-in" itemprop="director organizer">
+                        <img alt="General Manager of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/team/Danny.jpg">
+                        <div class="" style="text-align:center;">
+                            <h3 class="team-text">Dhanish Natarajan</h3>
+                            <h3 class="speaker-desc">General Manager</h3>
+                        </div>
+                    </div>
+
+                    <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
+                        <img alt="Website Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/team/Niranjan.jpg">
+                        <div class="" style="text-align:center;">
+                            <h3 class="team-text">Niranjan Mathirajan</h3>
+                            <h3 class="speaker-desc">Website Lead</h3>
+                        </div>
+                    </div>
+
+                    <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
+                        <img alt="UI Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/team/David.jpg">
+                        <div class="" style="text-align:center;">
+                            <h3 class="team-text">David Phillips</h3>
+                            <h3 class="speaker-desc">UI Lead</h3>
+                        </div>
+                    </div>
+
+                    <div class="team-lead-organizer" data-aos="zoom-in" itemprop="organizer">
+                        <img alt="Marketing Lead of Explore Hacks" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/team/Sanved.jpg">
+                        <div class="" style="text-align:center;">
+                            <h3 class="team-text">Sanved Doshi</h3>
+                            <h3 class="speaker-desc">Marketing Lead</h3>
+                        </div>
+                    </div>
+
+                    <div class="team-lead-organizer" data-aos="zoom-in">
+                        <img alt="Kaustubh-Khulbe-Img" class="team-img img-fluid border-radius-0 judge-img"
+                            src="img/team/Kaustubh.png">
+                        <div class="" style="text-align:center;">
+                            <h3 class="team-text">Kaustubh Khulbe</h3>
+                            <h3 class="speaker-desc">Content Developer</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-subtitle" data-aos="zoom-out">Contributors</div>
+                <div class="team-co-founders" style="height: 10rem;flex: 1 1 0">
+                    <h3 class="contributer-text" data-aos="zoom-out">Anna Wang</h3>
+                    <h3 class="contributer-text" data-aos="zoom-out">Grace Jin</h3>
+                </div>
+            </section>
+
+            <section class="sponsors" id="sponsor">
+                <h2 class="sponsors-title" data-aos="fade-up">Sponsors</h2>
+                <p class="sponsors-subtitle" data-aos="fade-up" style="color: black">Thank you to all our sponsors for
+                    supporting Explore Hacks!
+                </p>
+                <div class="image-grid" data-aos="fade-left" itemprop="sponsor funder">
+                    <div class="silver-item">
+                        <a href="https://www.digitalocean.com/" target="_blank"><img alt="Digital Ocean"
+                                class="silver-image" src="img/sponsors/digitalocean.png"
+                                style="max-width:100%; max-height:100%;" /></a>
+                    </div>
+                    <div class="silver-item">
+                        <a href="https://www.crimsoneducation.org/us/" target="_blank"><img alt="Crimson Education"
+                                class="silver-image" src="img/sponsors/crimson.png"
+                                style="max-width:100%; max-height:100%;" /></a>
+                    </div>
+                    <div class="silver-item">
+                        <a href="https://www.inspiritai.com/" target="_blank"><img alt="InspiritAI" class="silver-image"
+                                src="img/sponsors/inspiritai.png" style="max-width:100%; max-height:100%;" /></a>
+                    </div>
+
+                    <div class="silver-item">
+                        <a href="https://stickermule.com" target="_blank"><img alt="Stickermule" class="silver-image"
+                                src="img/sponsors/StickerMule.png" style="max-width:100%; max-height:100%;" /></a>
+                    </div>
+
+                    <div class="silver-item">
+                        <a href="https://www.rstudio.com/" target="_blank"><img alt="RStudio" class="silver-image"
+                                src="img/sponsors/RStudio.png" style="max-width:100%; max-height:100%;" /></a>
+                    </div>
+
+                    <div class="silver-item">
+                        <a href="https://slingshotahead.com/" target="_blank"><img alt="Slingshot" class="silver-image"
+                                src="img/sponsors/slingshot.png" style="max-width:100%; max-height:100%;" /></a>
+                    </div>
+
+                </div>
+                <div class="image-grid" data-aos="fade-right">
+                    <div class="bronze-item" itemprop="sponsor funder">
+                        <a href="https://www.sketch.com/" target="_blank"><img alt="Sketch" class="bronze-image"
+                                src="img/sponsors/sketch.png" style="max-width:100%; max-height:100%;" /></a>
+                    </div>
+                    <div class="bronze-item" itemprop="sponsor funder">
+                        <a href="https://www.echoar.xyz/" target="_blank"><img alt="echoAR" class="bronze-image"
+                                src="img/sponsors/echoar.png" style="max-width:100%; max-height:100%;" /></a>
+                    </div>
+                    <div class="bronze-item" itemprop="sponsor funder">
+                        <a href="https://draftbit.com/" target="_blank"><img alt="Draftbit" class="bronze-image"
+                                src="img/sponsors/draftbit.png" style="max-width:100%; max-height:100%;" /></a>
+                    </div>
+                    <div class="bronze-item" itemprop="sponsor funder">
+                        <a href="https://replit.com/" target="_blank"><img alt="Replit" class="bronze-image"
+                                src="img/sponsors/replit.png" style="max-width:100%; max-height:100%;" /></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- this is actually partners section haha-->
+            <section class="partners">
+                <h2 class="partners-title" data-aos="fade-up">Partners</h2>
+                <div class="image-grid2" data-aos="fade-right">
+                    <div class="bronze-item" itemprop="sponsor funder">
+                        <a href="https://discord.gg/KDkKKBDHkM" target="_blank"><img alt="Bay Area Hackathons"
+                                class="bronze-image" src="img/partners/bahacks.png"
+                                style="max-width:93%; max-height:93%;" /></a>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <footer class="footer gray-section">
+            <div class="smicons">
+                <a class="smicon" href="https://www.instagram.com/explore_hacks/" target="_blank"><img
+                        alt="Explore Hacks' Instagram" class="smimage" src="img/icons/black-instagram.svg">
+                    <span>Instagram</span></a>
+                <a class="smicon" href="https://explorehacks.devpost.com/" target="_blank"><img
+                        alt="Explore Hacks' Devpost" class="smimage"
+                        src="img/icons/embed-code.svg"><span>Devpost</span></a>
+                <a class="smicon" href="https://discord.gg/WGqgdCwFb2" target="_blank"><img
+                        alt="Explore Hacks' Discord Server" class="smimage"
+                        src="img/icons/Discord-Logo-Black.svg"><span>Discord</span></a>
+                <a class="smicon" href="https://www.linkedin.com/company/explore-hacks/about/" target="_blank"><img
+                        alt="Explore Hacks' LinkedIn" class="smimage"
+                        src="img/icons/linkedin-round-line.svg"><span>LinkedIn</span></a>
+                <a class="smicon" href="https://medium.com/@explorehacks" target="_blank"><img
+                        alt="Explore Hacks' Medium" class="smimage" src="img/icons/Artboard 1.svg"><span> Medium
+                    </span></a>
+            </div>
+            <p class="footer-text">
+                Questions? Contact us at <a href="mailto:support@explorehacks.org"
+                    style="color: white">support@explorehacks.org</a><br>
+            </p>
+        </footer>
+    </main>
+
+
+    <!--    JS to load preloader until website loads-->
+    <script>
+        let loadingWrapper = document.querySelector('.holder')
+        let dots = document.querySelector('.preloader__dots')
+        window.addEventListener('load', function () {
+            dots.style.animation = "fadeOut 1s";
+            loadingWrapper.style.animation = "fadeOut 1s";
+            setTimeout(() => loadingWrapper.style.display = "none", 1000);
+        })
+    </script>
+    <!--<nav class="navbar">
 <ul class="navbar-nav">
     <li class="nav-item"><a href="#signup">signup</a> </li>
     <li class="nav-item"><a href="#faqs">faq</a></li>
@@ -833,54 +884,55 @@
     <li class="nav-item"><a href="#sponsor">Sponsors</a></li>
 </ul>
 </nav>-->
-<script>
-    (function () {
-        var qs, js, q, s, d = document,
-            gi = d.getElementById,
-            ce = d.createElement,
-            gt = d.getElementsByTagName,
-            id = "typef_orm_share",
-            b = "https://embed.typeform.com/";
-        if (!gi.call(d, id)) {
-            js = ce.call(d, "script");
-            js.id = id;
-            js.src = b + "embed.js";
-            q = gt.call(d, "script")[0];
-            q.parentNode.insertBefore(js, q)
+    <script>
+            (function () {
+                var qs, js, q, s, d = document,
+                    gi = d.getElementById,
+                    ce = d.createElement,
+                    gt = d.getElementsByTagName,
+                    id = "typef_orm_share",
+                    b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                    js = ce.call(d, "script");
+                    js.id = id;
+                    js.src = b + "embed.js";
+                    q = gt.call(d, "script")[0];
+                    q.parentNode.insertBefore(js, q)
+                }
+            })()
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            margin: 0;
         }
-    })()
-</script>
 
-<style>
-    html {
-        scroll-behavior: smooth;
-        margin: 0;
-    }
+        body {
+            margin: 0;
+        }
 
-    body {
-        margin: 0;
-    }
-
-    .vertical-center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-</style>
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    </style>
 
 
-<!-- Theme Custom -->
-<script type = "module" src="main.js"></script>
-<script src="js/custom.js"></script>
-<!-- <script type = "module" src="js/magic.js"></script> -->
-<!-- <script type = "module" src="js/password.js"></script> -->
+    <!-- Theme Custom -->
+    <script type="module" src="main.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- <script type = "module" src="js/magic.js"></script> -->
+    <!-- <script type = "module" src="js/password.js"></script> -->
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>AOS.init({offset: 200});</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({ offset: 200 });</script>
 
 </body>
 <!-- dont move this away -->
 <script src="js/number-animation.js"></script>
+
 </html>

@@ -91,10 +91,11 @@
     width: 100px;
     height: 150px;
     margin-left: 90%;
+    cursor: pointer;
 }
 
 .banner-logo {
-    width: 75%;
+    width: 100%;
     height: auto;
     margin-top: 0.5rem;
     margin-left: auto;

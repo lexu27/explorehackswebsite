@@ -10,6 +10,16 @@ const reset2 = [0,3,3,2,1,3,0];
 
 //JQuery below
 
+$('.banner-container').click((event) => {
+	$("#Totally_Not_Suspicious_Random_Canvas_😏🤫").css("display", "block");
+		$("#info").css("display", "block")
+		$(".main").remove();
+		$("body").css("height", "100%");
+		$("html").css("height", "100%");
+		run();
+});
+
+
 $('#0').click(validation1);
 
 $('#1').click(validation1);

@@ -741,4 +741,5 @@ tags
 
 # Local History for Visual Studio Code
 .history/
-
+.jekyll-cache
+_site

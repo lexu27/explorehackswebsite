@@ -368,7 +368,7 @@ export function run(){
   		finger.x = (event.changedTouches[0].clientX / window.innerWidth) * 2 - 1;
   		finger.y = -(event.changedTouches[0].clientY / window.innerHeight) * 2 + 1;
 	}
-	var audio = new Audio('./img/three/db.mp3');
+	// var audio = new Audio('./img/three/db.mp3');
 	function onClick(event)
 	{
 
@@ -412,10 +412,10 @@ export function run(){
 		// 	this.play();
 		// }, false);
 
-		if (audio.paused)
-		{
-			audio.play();
-		}
+		// if (audio.paused)
+		// {
+		// 	audio.play();
+		// }
 	}
 	var launch = (firework) => {
 		gsap.to(firework.firework.position, {

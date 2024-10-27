@@ -115,7 +115,7 @@ export function run(){
 
 	let disk;
 
-	loader.load( '../img/three/disk.glb', function ( gltf ) {
+	loader.load( 'img/three/disk.glb', function ( gltf ) {
 		console.log(gltf.scene.children);
 		disk = gltf.scene.children.find((child) => child.name === "exploreHacksLogo_v1");
 		disk.scale.set(0.18,0.18,0.18);
@@ -131,7 +131,7 @@ export function run(){
 
 
 
-	loader.load( '../img/three/rocket.glb', function ( gltf ) {
+	loader.load( 'img/three/rocket.glb', function ( gltf ) {
 		child1 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
 		
 		child1.rotation.x = -Math.PI / 2;
@@ -146,7 +146,7 @@ export function run(){
 
 	} );
 
-	loader.load( '../img/three/rocket.glb', function ( gltf ) {
+	loader.load('img/three/rocket.glb', function ( gltf ) {
 		child2 = gltf.scene.children.find((child) => child.name === "exploreHacksRocket_v1");
 
 		child2.rotation.x = Math.PI / 2;
@@ -282,7 +282,7 @@ export function run(){
 
 
 	const planet1Shape = new THREE.SphereGeometry(3, 24, 24);
-	const bluePlanet = new THREE.TextureLoader().load('../img/three/p1.png');
+	const bluePlanet = new THREE.TextureLoader().load('img/three/p1.png');
 	const planet1Material = new THREE.MeshStandardMaterial({ map: bluePlanet});
 	const planet1 = new THREE.Mesh(planet1Shape, planet1Material);
 	planet1.position.x = 30;
@@ -290,7 +290,7 @@ export function run(){
 	planet1.position.z = -40;
 
 	const planet2Shape = new THREE.SphereGeometry(8, 24, 24);
-	const Planet = new THREE.TextureLoader().load('../img/three/p2.png');
+	const Planet = new THREE.TextureLoader().load('img/three/p2.png');
 	const planet2Material = new THREE.MeshStandardMaterial({ map: Planet});
 	const planet2 = new THREE.Mesh(planet2Shape, planet2Material);
 	planet2.position.x = -40;
@@ -298,7 +298,7 @@ export function run(){
 	planet2.position.z = -30;
 
 	const planet3Shape = new THREE.SphereGeometry(8, 24, 24);
-	const Planete = new THREE.TextureLoader().load('../img/three/earth.jpg');
+	const Planete = new THREE.TextureLoader().load('img/three/earth.jpg');
 	const planet3Material = new THREE.MeshStandardMaterial({ map: Planete});
 	const planet3 = new THREE.Mesh(planet3Shape, planet3Material);
 	planet3.position.x = 50;
